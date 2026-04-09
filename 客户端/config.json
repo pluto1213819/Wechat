@@ -1,0 +1,16 @@
+{
+  "server": {
+    "host": "127.0.0.1",
+    "port": 8000
+  },
+  "user": {
+    "username": "",
+    "remember_password": false,
+    "auto_login": false
+  },
+  "chat": {
+    "font_size": 12,
+    "font_family": "Microsoft YaHei UI",
+    "show_timestamp": true
+  }
+}

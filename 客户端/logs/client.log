@@ -1,0 +1,335 @@
+2026-03-20 10:21:12,094 - client_ui - INFO - 尝试连接到 127.0.0.1:8000
+2026-03-20 10:21:12,096 - client_ui - INFO - 已连接到服务器 127.0.0.1:8000
+2026-03-20 10:21:12,098 - client_ui - WARNING - 登录失败: 认证失败：用户名或密码错误。
+2026-03-20 10:21:12,098 - client_ui - ERROR - 接收消息失败: 'function' object has no attribute 'emit'
+2026-03-20 10:21:45,886 - client_ui - INFO - 尝试连接到 127.0.0.1:8000
+2026-03-20 10:21:45,888 - client_ui - INFO - 已连接到服务器 127.0.0.1:8000
+2026-03-20 10:21:45,896 - client_ui - WARNING - 登录失败: 认证失败：用户名或密码错误。
+2026-03-20 10:21:45,897 - client_ui - ERROR - 接收消息失败: 'function' object has no attribute 'emit'
+2026-03-20 10:28:38,656 - client_ui - INFO - 尝试连接到 127.0.0.1:8000
+2026-03-20 10:28:38,658 - client_ui - INFO - 已连接到服务器 127.0.0.1:8000
+2026-03-20 10:28:38,660 - client_ui - WARNING - 登录失败: 认证失败：用户名或密码错误。
+2026-03-20 10:28:52,767 - client_ui - INFO - 尝试连接到 127.0.0.1:8000
+2026-03-20 10:28:52,768 - client_ui - INFO - 已连接到服务器 127.0.0.1:8000
+2026-03-20 10:28:52,774 - client_ui - WARNING - 登录失败: 认证失败：用户名或密码错误。
+2026-03-20 10:29:02,199 - client_ui - INFO - 尝试连接到 127.0.0.1:8000
+2026-03-20 10:29:02,200 - client_ui - INFO - 已连接到服务器 127.0.0.1:8000
+2026-03-20 10:29:02,209 - client_ui - WARNING - 登录失败: 认证失败：用户名或密码错误。
+2026-03-20 10:35:32,031 - client_ui - INFO - 尝试连接到 127.0.0.1:8000
+2026-03-20 10:35:32,041 - client_ui - INFO - 已连接到服务器 127.0.0.1:8000
+2026-03-20 10:35:32,044 - client_ui - WARNING - 登录失败: 认证失败：用户名或密码错误。
+2026-03-20 10:35:44,327 - client_ui - INFO - 尝试连接到 127.0.0.1:8000
+2026-03-20 10:35:44,328 - client_ui - ERROR - 连接服务器失败: [WinError 10049] 在其上下文中，该请求的地址无效。
+2026-03-20 10:35:54,967 - client_ui - INFO - 尝试连接到 127.0.0.1:8000
+2026-03-20 10:35:54,968 - client_ui - INFO - 已连接到服务器 127.0.0.1:8000
+2026-03-20 10:35:54,972 - client_ui - WARNING - 登录失败: 认证失败：用户名或密码错误。
+2026-03-20 10:46:01,607 - client_ui - INFO - 尝试连接到 127.0.0.1:8000
+2026-03-20 10:46:01,608 - client_ui - INFO - 已连接到服务器 127.0.0.1:8000
+2026-03-20 10:46:01,612 - client_ui - WARNING - 登录失败: 认证失败：用户名或密码错误。
+2026-03-20 10:58:06,583 - client_ui - INFO - 尝试连接到 127.0.0.1:8000
+2026-03-20 10:58:06,584 - client_ui - INFO - 已连接到服务器 127.0.0.1:8000
+2026-03-20 10:58:06,586 - client_ui - WARNING - 登录失败: 认证失败：用户名或密码错误。
+2026-03-20 11:08:29,758 - client_ui - INFO - 尝试连接到 127.0.0.1:8000
+2026-03-20 11:08:29,760 - client_ui - INFO - 已连接到服务器 127.0.0.1:8000
+2026-03-20 11:08:58,159 - client_ui - INFO - 尝试连接到 127.0.0.1:8000
+2026-03-20 11:08:58,164 - client_ui - INFO - 已连接到服务器 127.0.0.1:8000
+2026-03-27 15:35:53,961 - client_ui - INFO - 尝试连接到 127.0.0.1:8000
+2026-03-27 15:35:55,997 - client_ui - ERROR - 连接被拒绝，请确保服务器已启动
+2026-03-27 16:12:14,495 - client_ui - INFO - Connecting to 127.0.0.1:8000
+2026-03-27 16:12:14,498 - client_ui - INFO - Connected to server 127.0.0.1:8000
+2026-03-27 16:12:14,774 - client_ui - INFO - Login successful: test
+2026-03-27 16:12:44,503 - client_ui - INFO - Connecting to 127.0.0.1:8000
+2026-03-27 16:12:46,528 - client_ui - ERROR - Connection refused, please ensure server is running
+2026-03-27 16:13:12,956 - client_ui - INFO - Connecting to 127.0.0.1:8000
+2026-03-27 16:13:12,959 - client_ui - INFO - Connected to server 127.0.0.1:8000
+2026-03-27 16:13:13,260 - client_ui - INFO - Login successful: test
+2026-03-27 16:35:29,044 - client_ui - INFO - Connecting to 127.0.0.1:8000
+2026-03-27 16:35:29,045 - client_ui - INFO - Connected to server 127.0.0.1:8000
+2026-03-27 16:35:29,247 - client_ui - INFO - Login successful: test
+2026-03-27 16:48:18,222 - client_ui - INFO - Connecting to 127.0.0.1:8000
+2026-03-27 16:48:18,224 - client_ui - INFO - Connected to server 127.0.0.1:8000
+2026-03-27 16:48:18,460 - client_ui - INFO - Login successful: test
+2026-03-27 16:52:15,496 - client_ui - INFO - Connecting to 127.0.0.1:8000
+2026-03-27 16:52:15,499 - client_ui - INFO - Connected to server 127.0.0.1:8000
+2026-03-27 16:52:15,748 - client_ui - INFO - Login successful: test
+2026-03-27 16:53:48,870 - client_ui - INFO - Connecting to 127.0.0.1:8000
+2026-03-27 16:53:50,903 - client_ui - ERROR - Connection refused, please ensure server is running
+2026-03-27 21:53:49,596 - client_ui - INFO - Connecting to 127.0.0.1:8000
+2026-03-27 21:53:49,598 - client_ui - INFO - Connected to server 127.0.0.1:8000
+2026-03-27 21:53:50,099 - client_ui - INFO - Login successful: test
+2026-03-27 21:54:16,097 - client_ui - INFO - Connecting to 127.0.0.1:8000
+2026-03-27 21:54:16,098 - client_ui - INFO - Connected to server 127.0.0.1:8000
+2026-03-27 21:54:16,599 - client_ui - INFO - Login successful: 1
+2026-03-27 21:54:16,734 - client_ui - ERROR - Callback execution failed: name 'QListWidgetItem' is not defined
+2026-03-27 21:54:20,664 - client_ui - ERROR - Callback execution failed: name 'QListWidgetItem' is not defined
+2026-03-27 21:54:20,989 - client_ui - ERROR - Callback execution failed: name 'QListWidgetItem' is not defined
+2026-03-27 21:54:21,098 - client_ui - ERROR - Callback execution failed: name 'QListWidgetItem' is not defined
+2026-03-27 22:00:12,970 - client_ui - INFO - Disconnected from server
+2026-03-27 22:00:12,971 - client_ui - ERROR - Failed to parse message: [WinError 10038] 在一个非套接字上尝试了一个操作。
+2026-03-27 22:00:14,267 - client_ui - ERROR - Failed to parse message: [WinError 10038] 在一个非套接字上尝试了一个操作。
+2026-03-27 22:00:14,267 - client_ui - INFO - Disconnected from server
+2026-03-27 22:01:27,319 - client_ui - INFO - Connecting to 127.0.0.1:8000
+2026-03-27 22:01:27,320 - client_ui - INFO - Connected to server 127.0.0.1:8000
+2026-03-27 22:01:27,821 - client_ui - INFO - Login successful: test
+2026-03-27 22:01:38,287 - client_ui - INFO - Connecting to 127.0.0.1:8000
+2026-03-27 22:01:38,313 - client_ui - INFO - Connected to server 127.0.0.1:8000
+2026-03-27 22:01:38,813 - client_ui - INFO - Login successful: test
+2026-03-27 22:03:19,603 - client_ui - INFO - Connecting to 127.0.0.1:8000
+2026-03-27 22:03:19,605 - client_ui - INFO - Connected to server 127.0.0.1:8000
+2026-03-27 22:03:20,106 - client_ui - INFO - Login successful: user1
+2026-03-27 22:03:20,253 - client_ui - ERROR - Callback execution failed: name 'QListWidgetItem' is not defined
+2026-03-27 22:03:22,110 - client_ui - ERROR - Callback execution failed: name 'QListWidgetItem' is not defined
+2026-03-27 22:03:22,651 - client_ui - ERROR - Callback execution failed: name 'QListWidgetItem' is not defined
+2026-03-27 22:03:22,759 - client_ui - ERROR - Callback execution failed: name 'QListWidgetItem' is not defined
+2026-03-27 22:03:22,987 - client_ui - ERROR - Callback execution failed: name 'QListWidgetItem' is not defined
+2026-03-27 22:03:27,797 - client_ui - ERROR - Callback execution failed: name 'QListWidgetItem' is not defined
+2026-03-27 22:03:27,906 - client_ui - ERROR - Callback execution failed: name 'QListWidgetItem' is not defined
+2026-03-27 22:03:28,115 - client_ui - ERROR - Callback execution failed: name 'QListWidgetItem' is not defined
+2026-03-27 23:13:04,788 - client_ui - ERROR - Failed to parse message: [WinError 10038] 在一个非套接字上尝试了一个操作。
+2026-03-27 23:13:04,789 - client_ui - INFO - Disconnected from server
+2026-03-27 23:13:04,802 - client_ui - ERROR - Failed to parse message: [WinError 10038] 在一个非套接字上尝试了一个操作。
+2026-03-27 23:13:04,802 - client_ui - INFO - Disconnected from server
+2026-04-01 09:50:02,209 - client_ui - INFO - Connecting to 127.0.0.1:8000
+2026-04-01 09:50:02,211 - client_ui - INFO - Connected to server 127.0.0.1:8000
+2026-04-01 09:50:02,712 - client_ui - INFO - Login successful: test
+2026-04-01 09:52:02,045 - client_ui - INFO - Connecting to 127.0.0.1:8000
+2026-04-01 09:52:02,047 - client_ui - INFO - Connected to server 127.0.0.1:8000
+2026-04-01 09:52:02,548 - client_ui - WARNING - Login failed: 用户不存在
+2026-04-01 09:52:11,802 - client_ui - INFO - Connecting to 127.0.0.1:8000
+2026-04-01 09:52:11,803 - client_ui - INFO - Connected to server 127.0.0.1:8000
+2026-04-01 09:52:12,304 - client_ui - INFO - Login successful: admin
+2026-04-01 09:52:41,261 - client_ui - ERROR - Callback execution failed: name 'QListWidgetItem' is not defined
+2026-04-01 09:52:46,735 - client_ui - ERROR - Callback execution failed: name 'QListWidgetItem' is not defined
+2026-04-01 09:52:47,170 - client_ui - ERROR - Callback execution failed: name 'QListWidgetItem' is not defined
+2026-04-01 09:52:47,281 - client_ui - ERROR - Callback execution failed: name 'QListWidgetItem' is not defined
+2026-04-01 09:52:47,498 - client_ui - ERROR - Callback execution failed: name 'QListWidgetItem' is not defined
+2026-04-01 09:52:47,605 - client_ui - ERROR - Callback execution failed: name 'QListWidgetItem' is not defined
+2026-04-01 09:52:57,777 - client_ui - ERROR - Callback execution failed: name 'QListWidgetItem' is not defined
+2026-04-01 09:52:57,996 - client_ui - ERROR - Callback execution failed: name 'QListWidgetItem' is not defined
+2026-04-01 09:52:58,214 - client_ui - ERROR - Callback execution failed: name 'QListWidgetItem' is not defined
+2026-04-01 09:52:58,321 - client_ui - ERROR - Callback execution failed: name 'QListWidgetItem' is not defined
+2026-04-01 09:52:58,539 - client_ui - ERROR - Callback execution failed: name 'QListWidgetItem' is not defined
+2026-04-01 09:52:58,645 - client_ui - ERROR - Callback execution failed: name 'QListWidgetItem' is not defined
+2026-04-01 09:52:58,865 - client_ui - ERROR - Callback execution failed: name 'QListWidgetItem' is not defined
+2026-04-01 09:52:58,973 - client_ui - ERROR - Callback execution failed: name 'QListWidgetItem' is not defined
+2026-04-01 09:52:59,205 - client_ui - ERROR - Callback execution failed: name 'QListWidgetItem' is not defined
+2026-04-01 09:52:59,314 - client_ui - ERROR - Callback execution failed: name 'QListWidgetItem' is not defined
+2026-04-01 09:52:59,531 - client_ui - ERROR - Callback execution failed: name 'QListWidgetItem' is not defined
+2026-04-01 09:52:59,639 - client_ui - ERROR - Callback execution failed: name 'QListWidgetItem' is not defined
+2026-04-01 09:52:59,846 - client_ui - ERROR - Callback execution failed: name 'QListWidgetItem' is not defined
+2026-04-01 09:53:11,007 - client_ui - ERROR - Callback execution failed: name 'QListWidgetItem' is not defined
+2026-04-01 09:53:11,114 - client_ui - ERROR - Callback execution failed: name 'QListWidgetItem' is not defined
+2026-04-01 09:53:11,331 - client_ui - ERROR - Callback execution failed: name 'QListWidgetItem' is not defined
+2026-04-01 09:53:28,090 - client_ui - ERROR - Failed to parse message: [WinError 10038] 在一个非套接字上尝试了一个操作。
+2026-04-01 09:53:28,090 - client_ui - INFO - Disconnected from server
+2026-04-01 09:53:31,138 - client_ui - ERROR - Failed to parse message: [WinError 10038] 在一个非套接字上尝试了一个操作。
+2026-04-01 09:53:31,138 - client_ui - INFO - Disconnected from server
+2026-04-01 10:31:44,249 - client_ui - INFO - Connecting to 127.0.0.1:8000
+2026-04-01 10:31:44,252 - client_ui - INFO - Connected to server 127.0.0.1:8000
+2026-04-01 10:31:44,753 - client_ui - INFO - Login successful: user1
+2026-04-01 10:32:14,851 - client_ui - INFO - Connecting to 127.0.0.1:8000
+2026-04-01 10:32:14,854 - client_ui - INFO - Connected to server 127.0.0.1:8000
+2026-04-01 10:32:15,354 - client_ui - INFO - Login successful: user2
+2026-04-01 10:33:25,378 - client_ui - ERROR - Failed to parse message: [WinError 10038] 在一个非套接字上尝试了一个操作。
+2026-04-01 10:33:25,378 - client_ui - INFO - Disconnected from server
+2026-04-01 10:33:30,775 - client_ui - INFO - Connecting to 127.0.0.1:8000
+2026-04-01 10:33:30,776 - client_ui - INFO - Connected to server 127.0.0.1:8000
+2026-04-01 10:33:31,277 - client_ui - INFO - Login successful: user3
+2026-04-01 10:33:55,041 - client_ui - INFO - Connecting to 127.0.0.1:8000
+2026-04-01 10:33:55,043 - client_ui - INFO - Connected to server 127.0.0.1:8000
+2026-04-01 10:33:55,543 - client_ui - INFO - Login successful: user3
+2026-04-01 10:33:55,674 - client_ui - ERROR - Callback execution failed: name 'QListWidgetItem' is not defined
+2026-04-01 10:33:57,424 - client_ui - ERROR - Callback execution failed: name 'QListWidgetItem' is not defined
+2026-04-01 10:33:57,857 - client_ui - ERROR - Callback execution failed: name 'QListWidgetItem' is not defined
+2026-04-01 10:33:58,071 - client_ui - ERROR - Callback execution failed: name 'QListWidgetItem' is not defined
+2026-04-01 10:33:58,178 - client_ui - ERROR - Callback execution failed: name 'QListWidgetItem' is not defined
+2026-04-01 10:34:20,821 - client_ui - ERROR - Callback execution failed: name 'QListWidgetItem' is not defined
+2026-04-01 10:34:21,038 - client_ui - ERROR - Callback execution failed: name 'QListWidgetItem' is not defined
+2026-04-01 10:34:21,269 - client_ui - ERROR - Callback execution failed: name 'QListWidgetItem' is not defined
+2026-04-01 10:34:21,377 - client_ui - ERROR - Callback execution failed: name 'QListWidgetItem' is not defined
+2026-04-01 10:34:21,592 - client_ui - ERROR - Callback execution failed: name 'QListWidgetItem' is not defined
+2026-04-01 10:34:26,731 - client_ui - ERROR - Callback execution failed: name 'QListWidgetItem' is not defined
+2026-04-01 10:34:26,948 - client_ui - ERROR - Callback execution failed: name 'QListWidgetItem' is not defined
+2026-04-01 10:34:27,057 - client_ui - ERROR - Callback execution failed: name 'QListWidgetItem' is not defined
+2026-04-01 10:34:27,274 - client_ui - ERROR - Callback execution failed: name 'QListWidgetItem' is not defined
+2026-04-01 10:34:27,491 - client_ui - ERROR - Callback execution failed: name 'QListWidgetItem' is not defined
+2026-04-01 10:34:27,722 - client_ui - ERROR - Callback execution failed: name 'QListWidgetItem' is not defined
+2026-04-01 10:34:28,259 - client_ui - ERROR - Callback execution failed: name 'QListWidgetItem' is not defined
+2026-04-01 10:34:28,375 - client_ui - ERROR - Callback execution failed: name 'QListWidgetItem' is not defined
+2026-04-01 10:34:28,593 - client_ui - ERROR - Callback execution failed: name 'QListWidgetItem' is not defined
+2026-04-01 10:34:48,372 - client_ui - ERROR - Failed to send message: [WinError 10054] 远程主机强迫关闭了一个现有的连接。
+2026-04-01 10:34:48,372 - client_ui - ERROR - Failed to parse message: [WinError 10038] 在一个非套接字上尝试了一个操作。
+2026-04-01 10:34:48,372 - client_ui - INFO - Disconnected from server
+2026-04-01 10:34:49,101 - client_ui - ERROR - Failed to send message: [WinError 10054] 远程主机强迫关闭了一个现有的连接。
+2026-04-01 10:34:49,101 - client_ui - INFO - Disconnected from server
+2026-04-01 11:02:49,829 - client_ui - INFO - Connecting to 127.0.0.1:8000
+2026-04-01 11:02:49,831 - client_ui - INFO - Connected to server 127.0.0.1:8000
+2026-04-01 11:02:50,331 - client_ui - INFO - Login successful: user1
+2026-04-01 11:03:32,235 - client_ui - INFO - Connecting to 127.0.0.1:8000
+2026-04-01 11:03:32,236 - client_ui - INFO - Connected to server 127.0.0.1:8000
+2026-04-01 11:03:32,737 - client_ui - INFO - Login successful: user2
+2026-04-01 11:03:55,874 - client_ui - ERROR - Callback execution failed: name 'QListWidgetItem' is not defined
+2026-04-01 11:04:04,617 - client_ui - ERROR - Callback execution failed: name 'QListWidgetItem' is not defined
+2026-04-01 11:04:04,946 - client_ui - ERROR - Callback execution failed: name 'QListWidgetItem' is not defined
+2026-04-01 11:04:05,161 - client_ui - ERROR - Callback execution failed: name 'QListWidgetItem' is not defined
+2026-04-01 11:04:05,270 - client_ui - ERROR - Callback execution failed: name 'QListWidgetItem' is not defined
+2026-04-01 11:04:05,487 - client_ui - ERROR - Callback execution failed: name 'QListWidgetItem' is not defined
+2026-04-01 11:04:05,610 - client_ui - ERROR - Callback execution failed: name 'QListWidgetItem' is not defined
+2026-04-01 11:04:05,826 - client_ui - ERROR - Callback execution failed: name 'QListWidgetItem' is not defined
+2026-04-01 11:04:05,932 - client_ui - ERROR - Callback execution failed: name 'QListWidgetItem' is not defined
+2026-04-01 11:04:07,247 - client_ui - ERROR - Callback execution failed: name 'QListWidgetItem' is not defined
+2026-04-01 11:04:07,456 - client_ui - ERROR - Callback execution failed: name 'QListWidgetItem' is not defined
+2026-04-01 11:05:07,646 - client_ui - ERROR - Callback execution failed: name 'QListWidgetItem' is not defined
+2026-04-01 11:05:07,753 - client_ui - ERROR - Callback execution failed: name 'QListWidgetItem' is not defined
+2026-04-01 11:05:07,876 - client_ui - ERROR - Callback execution failed: name 'QListWidgetItem' is not defined
+2026-04-01 11:05:08,084 - client_ui - ERROR - Callback execution failed: name 'QListWidgetItem' is not defined
+2026-04-01 11:05:08,200 - client_ui - ERROR - Callback execution failed: name 'QListWidgetItem' is not defined
+2026-04-01 11:05:08,416 - client_ui - ERROR - Callback execution failed: name 'QListWidgetItem' is not defined
+2026-04-01 11:07:16,194 - client_ui - ERROR - Callback execution failed: name 'QListWidgetItem' is not defined
+2026-04-01 11:07:16,424 - client_ui - ERROR - Callback execution failed: name 'QListWidgetItem' is not defined
+2026-04-01 11:07:16,531 - client_ui - ERROR - Callback execution failed: name 'QListWidgetItem' is not defined
+2026-04-01 11:07:16,745 - client_ui - ERROR - Callback execution failed: name 'QListWidgetItem' is not defined
+2026-04-01 11:07:19,035 - client_ui - ERROR - Callback execution failed: name 'QListWidgetItem' is not defined
+2026-04-01 11:07:20,567 - client_ui - ERROR - Callback execution failed: name 'QListWidgetItem' is not defined
+2026-04-01 11:08:26,243 - client_ui - ERROR - Failed to parse message: [WinError 10038] 在一个非套接字上尝试了一个操作。
+2026-04-01 11:08:26,243 - client_ui - INFO - Disconnected from server
+2026-04-01 11:08:27,586 - client_ui - ERROR - Failed to parse message: [WinError 10038] 在一个非套接字上尝试了一个操作。
+2026-04-01 11:08:27,587 - client_ui - INFO - Disconnected from server
+2026-04-01 11:33:40,144 - client_ui - INFO - Connecting to 127.0.0.1:8000
+2026-04-01 11:33:40,146 - client_ui - INFO - Connected to server 127.0.0.1:8000
+2026-04-01 11:33:40,647 - client_ui - INFO - Login successful: user1
+2026-04-01 11:33:53,995 - client_ui - INFO - Connecting to 127.0.0.1:8000
+2026-04-01 11:33:53,996 - client_ui - INFO - Connected to server 127.0.0.1:8000
+2026-04-01 11:33:54,497 - client_ui - INFO - Login successful: user3
+2026-04-01 11:34:04,738 - client_ui - ERROR - Callback execution failed: name 'QListWidgetItem' is not defined
+2026-04-01 11:34:13,154 - client_ui - ERROR - Callback execution failed: name 'QListWidgetItem' is not defined
+2026-04-01 11:34:13,598 - client_ui - ERROR - Callback execution failed: name 'QListWidgetItem' is not defined
+2026-04-01 11:34:13,707 - client_ui - ERROR - Callback execution failed: name 'QListWidgetItem' is not defined
+2026-04-01 11:34:37,026 - client_ui - ERROR - Failed to parse message: [WinError 10038] 在一个非套接字上尝试了一个操作。
+2026-04-01 11:34:37,026 - client_ui - INFO - Disconnected from server
+2026-04-01 11:34:38,573 - client_ui - ERROR - Failed to parse message: [WinError 10038] 在一个非套接字上尝试了一个操作。
+2026-04-01 11:34:38,573 - client_ui - INFO - Disconnected from server
+2026-04-02 16:52:28,251 - client_ui - INFO - Connecting to 127.0.0.1:8000
+2026-04-02 16:52:28,253 - client_ui - INFO - Connected to server 127.0.0.1:8000
+2026-04-02 16:52:28,753 - client_ui - INFO - Login successful: user1
+2026-04-02 16:52:39,041 - client_ui - INFO - Connecting to 127.0.0.1:8000
+2026-04-02 16:52:39,043 - client_ui - INFO - Connected to server 127.0.0.1:8000
+2026-04-02 16:52:39,543 - client_ui - INFO - Login successful: user3
+2026-04-02 16:52:56,134 - client_ui - ERROR - Callback execution failed: name 'QListWidgetItem' is not defined
+2026-04-02 16:53:01,057 - client_ui - ERROR - Callback execution failed: name 'QListWidgetItem' is not defined
+2026-04-02 16:53:01,381 - client_ui - ERROR - Callback execution failed: name 'QListWidgetItem' is not defined
+2026-04-02 16:53:01,601 - client_ui - ERROR - Callback execution failed: name 'QListWidgetItem' is not defined
+2026-04-02 16:53:01,710 - client_ui - ERROR - Callback execution failed: name 'QListWidgetItem' is not defined
+2026-04-02 16:53:01,927 - client_ui - ERROR - Callback execution failed: name 'QListWidgetItem' is not defined
+2026-04-02 16:53:02,036 - client_ui - ERROR - Callback execution failed: name 'QListWidgetItem' is not defined
+2026-04-02 16:53:02,476 - client_ui - ERROR - Callback execution failed: name 'QListWidgetItem' is not defined
+2026-04-02 16:53:02,596 - client_ui - ERROR - Callback execution failed: name 'QListWidgetItem' is not defined
+2026-04-02 16:53:02,812 - client_ui - ERROR - Callback execution failed: name 'QListWidgetItem' is not defined
+2026-04-02 16:53:03,030 - client_ui - ERROR - Callback execution failed: name 'QListWidgetItem' is not defined
+2026-04-02 16:53:03,574 - client_ui - ERROR - Callback execution failed: name 'QListWidgetItem' is not defined
+2026-04-02 16:53:03,788 - client_ui - ERROR - Callback execution failed: name 'QListWidgetItem' is not defined
+2026-04-02 16:53:06,964 - client_ui - ERROR - Callback execution failed: name 'QListWidgetItem' is not defined
+2026-04-02 16:53:07,178 - client_ui - ERROR - Callback execution failed: name 'QListWidgetItem' is not defined
+2026-04-02 16:53:07,286 - client_ui - ERROR - Callback execution failed: name 'QListWidgetItem' is not defined
+2026-04-02 16:53:07,505 - client_ui - ERROR - Callback execution failed: name 'QListWidgetItem' is not defined
+2026-04-02 16:53:15,162 - client_ui - ERROR - Callback execution failed: name 'QListWidgetItem' is not defined
+2026-04-02 16:53:15,391 - client_ui - ERROR - Callback execution failed: name 'QListWidgetItem' is not defined
+2026-04-02 16:53:15,492 - client_ui - ERROR - Callback execution failed: name 'QListWidgetItem' is not defined
+2026-04-02 16:53:17,034 - client_ui - ERROR - Callback execution failed: name 'QListWidgetItem' is not defined
+2026-04-02 16:53:17,246 - client_ui - ERROR - Callback execution failed: name 'QListWidgetItem' is not defined
+2026-04-02 16:53:17,465 - client_ui - ERROR - Callback execution failed: name 'QListWidgetItem' is not defined
+2026-04-02 16:53:18,116 - client_ui - ERROR - Callback execution failed: name 'QListWidgetItem' is not defined
+2026-04-02 16:53:18,232 - client_ui - ERROR - Callback execution failed: name 'QListWidgetItem' is not defined
+2026-04-02 16:53:33,003 - client_ui - ERROR - Callback execution failed: name 'QListWidgetItem' is not defined
+2026-04-02 16:53:33,110 - client_ui - ERROR - Callback execution failed: name 'QListWidgetItem' is not defined
+2026-04-02 16:53:33,320 - client_ui - ERROR - Callback execution failed: name 'QListWidgetItem' is not defined
+2026-04-02 16:53:54,857 - client_ui - INFO - Disconnected from server
+2026-04-02 16:53:54,858 - client_ui - ERROR - Failed to parse message: [WinError 10038] 在一个非套接字上尝试了一个操作。
+2026-04-02 16:53:56,212 - client_ui - INFO - Disconnected from server
+2026-04-02 16:53:56,212 - client_ui - ERROR - Failed to parse message: [WinError 10038] 在一个非套接字上尝试了一个操作。
+2026-04-02 17:28:45,160 - client_ui - INFO - Connecting to 127.0.0.1:8000
+2026-04-02 17:28:45,161 - client_ui - INFO - Connected to server 127.0.0.1:8000
+2026-04-02 17:28:45,662 - client_ui - INFO - Login successful: user1
+2026-04-02 17:28:45,798 - client_ui - ERROR - Callback execution failed: name 'QListWidgetItem' is not defined
+2026-04-02 17:29:36,685 - client_ui - ERROR - Failed to parse message: [WinError 10038] 在一个非套接字上尝试了一个操作。
+2026-04-02 17:29:36,686 - client_ui - INFO - Disconnected from server
+2026-04-02 17:31:31,611 - client_ui - INFO - Connecting to 127.0.0.1:8000
+2026-04-02 17:31:31,612 - client_ui - INFO - Connected to server 127.0.0.1:8000
+2026-04-02 17:31:32,113 - client_ui - INFO - Login successful: user1
+2026-04-02 17:31:32,254 - client_ui - ERROR - Callback execution failed: name 'QListWidgetItem' is not defined
+2026-04-02 17:32:05,644 - client_ui - INFO - Connecting to 127.0.0.1:8000
+2026-04-02 17:32:05,645 - client_ui - INFO - Connected to server 127.0.0.1:8000
+2026-04-02 17:32:06,146 - client_ui - INFO - Login successful: user2
+2026-04-02 17:33:27,464 - client_ui - ERROR - Failed to parse message: [WinError 10038] 在一个非套接字上尝试了一个操作。
+2026-04-02 17:33:27,464 - client_ui - INFO - Disconnected from server
+2026-04-02 17:33:30,462 - client_ui - INFO - Connecting to 127.0.0.1:8000
+2026-04-02 17:33:30,462 - client_ui - INFO - Connected to server 127.0.0.1:8000
+2026-04-02 17:33:30,963 - client_ui - INFO - Login successful: user4
+2026-04-02 17:33:43,707 - client_ui - INFO - Connecting to 127.0.0.1:8000
+2026-04-02 17:33:43,709 - client_ui - INFO - Connected to server 127.0.0.1:8000
+2026-04-02 17:33:44,209 - client_ui - INFO - Login successful: user4
+2026-04-02 17:34:02,185 - client_ui - ERROR - Callback execution failed: name 'QListWidgetItem' is not defined
+2026-04-02 17:34:05,028 - client_ui - ERROR - Callback execution failed: name 'QListWidgetItem' is not defined
+2026-04-02 17:34:05,569 - client_ui - ERROR - Callback execution failed: name 'QListWidgetItem' is not defined
+2026-04-02 17:34:05,688 - client_ui - ERROR - Callback execution failed: name 'QListWidgetItem' is not defined
+2026-04-02 17:34:05,897 - client_ui - ERROR - Callback execution failed: name 'QListWidgetItem' is not defined
+2026-04-02 17:34:09,730 - client_ui - ERROR - Callback execution failed: name 'QListWidgetItem' is not defined
+2026-04-02 17:34:09,847 - client_ui - ERROR - Callback execution failed: name 'QListWidgetItem' is not defined
+2026-04-02 17:34:10,054 - client_ui - ERROR - Callback execution failed: name 'QListWidgetItem' is not defined
+2026-04-02 17:34:10,929 - client_ui - ERROR - Callback execution failed: name 'QListWidgetItem' is not defined
+2026-04-02 17:34:11,046 - client_ui - ERROR - Callback execution failed: name 'QListWidgetItem' is not defined
+2026-04-02 17:34:11,259 - client_ui - ERROR - Callback execution failed: name 'QListWidgetItem' is not defined
+2026-04-02 17:34:11,378 - client_ui - ERROR - Callback execution failed: name 'QListWidgetItem' is not defined
+2026-04-02 17:34:11,587 - client_ui - ERROR - Callback execution failed: name 'QListWidgetItem' is not defined
+2026-04-02 17:34:11,702 - client_ui - ERROR - Callback execution failed: name 'QListWidgetItem' is not defined
+2026-04-02 17:34:11,912 - client_ui - ERROR - Callback execution failed: name 'QListWidgetItem' is not defined
+2026-04-02 17:34:12,353 - client_ui - ERROR - Callback execution failed: name 'QListWidgetItem' is not defined
+2026-04-02 17:34:12,576 - client_ui - ERROR - Callback execution failed: name 'QListWidgetItem' is not defined
+2026-04-02 17:34:12,692 - client_ui - ERROR - Callback execution failed: name 'QListWidgetItem' is not defined
+2026-04-02 17:34:33,458 - client_ui - ERROR - Callback execution failed: name 'QListWidgetItem' is not defined
+2026-04-02 17:34:34,553 - client_ui - ERROR - Callback execution failed: name 'QListWidgetItem' is not defined
+2026-04-02 17:34:40,803 - client_ui - ERROR - Failed to parse message: [WinError 10038] 在一个非套接字上尝试了一个操作。
+2026-04-02 17:34:40,803 - client_ui - INFO - Disconnected from server
+2026-04-02 17:34:41,842 - client_ui - ERROR - Failed to parse message: [WinError 10038] 在一个非套接字上尝试了一个操作。
+2026-04-02 17:34:41,842 - client_ui - INFO - Disconnected from server
+2026-04-02 17:59:59,114 - client_ui - INFO - Connecting to 127.0.0.1:8000
+2026-04-02 17:59:59,115 - client_ui - INFO - Connected to server 127.0.0.1:8000
+2026-04-02 17:59:59,616 - client_ui - INFO - Login successful: user2
+2026-04-02 18:00:40,206 - client_ui - INFO - Connecting to 127.0.0.1:8000
+2026-04-02 18:00:40,207 - client_ui - INFO - Connected to server 127.0.0.1:8000
+2026-04-02 18:00:40,708 - client_ui - INFO - Login successful: user4
+2026-04-02 18:00:40,835 - client_ui - ERROR - Callback execution failed: name 'QListWidgetItem' is not defined
+2026-04-02 18:00:44,457 - client_ui - ERROR - Callback execution failed: name 'QListWidgetItem' is not defined
+2026-04-02 18:00:44,666 - client_ui - ERROR - Callback execution failed: name 'QListWidgetItem' is not defined
+2026-04-02 18:00:44,781 - client_ui - ERROR - Callback execution failed: name 'QListWidgetItem' is not defined
+2026-04-02 18:01:09,381 - client_ui - ERROR - Callback execution failed: name 'QListWidgetItem' is not defined
+2026-04-02 18:01:16,938 - client_ui - ERROR - Callback execution failed: name 'QListWidgetItem' is not defined
+2026-04-02 18:01:17,161 - client_ui - ERROR - Callback execution failed: name 'QListWidgetItem' is not defined
+2026-04-02 18:01:17,258 - client_ui - ERROR - Callback execution failed: name 'QListWidgetItem' is not defined
+2026-04-02 18:01:17,481 - client_ui - ERROR - Callback execution failed: name 'QListWidgetItem' is not defined
+2026-04-02 18:01:17,598 - client_ui - ERROR - Callback execution failed: name 'QListWidgetItem' is not defined
+2026-04-02 18:01:17,694 - client_ui - ERROR - Callback execution failed: name 'QListWidgetItem' is not defined
+2026-04-02 18:01:25,381 - client_ui - ERROR - Callback execution failed: name 'QListWidgetItem' is not defined
+2026-04-02 18:01:25,477 - client_ui - ERROR - Callback execution failed: name 'QListWidgetItem' is not defined
+2026-04-02 18:01:25,694 - client_ui - ERROR - Callback execution failed: name 'QListWidgetItem' is not defined
+2026-04-02 18:01:35,239 - client_ui - ERROR - Callback execution failed: name 'QListWidgetItem' is not defined
+2026-04-02 18:01:35,461 - client_ui - ERROR - Callback execution failed: name 'QListWidgetItem' is not defined
+2026-04-02 18:01:35,560 - client_ui - ERROR - Callback execution failed: name 'QListWidgetItem' is not defined
+2026-04-02 18:01:35,676 - client_ui - ERROR - Callback execution failed: name 'QListWidgetItem' is not defined
+2026-04-02 18:01:35,884 - client_ui - ERROR - Callback execution failed: name 'QListWidgetItem' is not defined
+2026-04-02 18:01:44,203 - client_ui - ERROR - Callback execution failed: name 'QListWidgetItem' is not defined
+2026-04-02 18:01:44,319 - client_ui - ERROR - Callback execution failed: name 'QListWidgetItem' is not defined
+2026-04-02 18:01:44,527 - client_ui - ERROR - Callback execution failed: name 'QListWidgetItem' is not defined
+2026-04-02 18:01:44,638 - client_ui - ERROR - Callback execution failed: name 'QListWidgetItem' is not defined
+2026-04-02 18:02:01,094 - client_ui - ERROR - Failed to parse message: [WinError 10038] 在一个非套接字上尝试了一个操作。
+2026-04-02 18:02:01,094 - client_ui - INFO - Disconnected from server
+2026-04-02 18:02:02,915 - client_ui - INFO - Connecting to 127.0.0.1:8000
+2026-04-02 18:02:02,916 - client_ui - INFO - Connected to server 127.0.0.1:8000
+2026-04-02 18:02:03,417 - client_ui - INFO - Login successful: user1
+2026-04-02 18:02:29,204 - client_ui - INFO - Connecting to 127.0.0.1:8000
+2026-04-02 18:02:29,206 - client_ui - INFO - Connected to server 127.0.0.1:8000
+2026-04-02 18:02:29,707 - client_ui - INFO - Login successful: user1
+2026-04-02 18:03:25,599 - client_ui - INFO - Disconnected from server
+2026-04-02 18:03:25,599 - client_ui - ERROR - Failed to parse message: [WinError 10038] 在一个非套接字上尝试了一个操作。
+2026-04-02 18:03:26,527 - client_ui - ERROR - Failed to parse message: [WinError 10038] 在一个非套接字上尝试了一个操作。
+2026-04-02 18:03:26,527 - client_ui - INFO - Disconnected from server

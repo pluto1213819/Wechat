@@ -1,0 +1,26 @@
+{
+    "server": {
+      "host": "127.0.0.1",
+      "port": 8000,
+      "max_connections": 100
+    },
+    "database": {
+      "path": "im_database.db",
+      "backup_enabled": true,
+      "backup_interval_hours": 24
+    },
+    "security": {
+      "password_min_length": 6,
+      "max_login_attempts": 5,
+      "lock_duration_hours": 24
+    },
+    "avatars": {
+      "max_size_mb": 2,
+      "allowed_formats": ["png", "jpg", "jpeg", "gif"]
+    },
+    "logging": {
+      "level": "INFO",
+      "max_files": 10,
+      "max_size_mb": 10
+    }
+  }

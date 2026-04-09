@@ -1,0 +1,2031 @@
+2026-03-20 09:37:35,968 - root - INFO - [系统] 服务器界面初始化完成
+2026-03-20 09:37:42,279 - root - INFO - [系统] 服务器已启动，监听 0.0.0.0:8000
+2026-03-20 09:37:42,279 - root - INFO - [网络] 服务器已启动，正在监听 0.0.0.0:8000
+2026-03-20 09:38:21,729 - root - INFO - [系统] 服务器已停止
+2026-03-27 17:11:15,665 - database - INFO - 数据库路径: E:\tset\通讯\3.10\im_database.db
+2026-03-27 17:11:15,666 - database - INFO - 创建数据库目录: E:\tset\通讯\3.10
+2026-03-27 17:11:15,666 - database - INFO - ✅ 数据库初始化完成: E:\tset\通讯\3.10\im_database.db
+2026-03-27 17:11:15,989 - root - INFO - [系统] 服务器界面初始化完成
+2026-03-27 17:11:21,983 - root - INFO - [系统] 服务器已启动，监听 127.0.0.1:8000
+2026-03-27 17:11:21,983 - root - INFO - [网络] 服务器已启动，正在监听 127.0.0.1:8000
+2026-03-27 17:11:27,983 - network_server - INFO - [认证] 验证用户: test
+2026-03-27 17:11:27,985 - network_server - INFO - [认证] 找到用户: test, 用户信息: {'id': 1, 'username': 'test', 'nickname': '测试用户', 'password_hash': '$2b$12$3/D8heNkydOaR7o4pSr.YOA4l51D2MfgUes4c3rAT51kcIZYLlsLq', 'status': 'offline', 'last_login': None, 'created_at': '2026-03-20 03:01:51'}
+2026-03-27 17:11:28,187 - network_server - INFO - [认证] 用户 'test' 密码验证成功
+2026-03-27 17:11:28,187 - root - INFO - [系统] 📥 用户 'test' (127.0.0.1) 登录成功
+2026-03-27 17:11:28,196 - root - INFO - [系统] 用户 'test' 已上线。当前在线: 1 人
+2026-03-27 17:12:41,769 - root - INFO - [系统] 服务器已停止
+2026-03-27 17:13:23,735 - database - INFO - 数据库路径: E:\tset\通讯\3.10\im_database.db
+2026-03-27 17:13:23,736 - database - INFO - 创建数据库目录: E:\tset\通讯\3.10
+2026-03-27 17:13:23,737 - database - INFO - ✅ 数据库初始化完成: E:\tset\通讯\3.10\im_database.db
+2026-03-27 17:13:24,110 - root - INFO - [系统] 服务器界面初始化完成
+2026-03-27 17:13:25,956 - root - INFO - [系统] 服务器已启动，监听 127.0.0.1:8000
+2026-03-27 17:13:25,958 - root - INFO - [网络] 服务器已启动，正在监听 127.0.0.1:8000
+2026-03-27 17:15:19,330 - database - INFO - 数据库路径: E:\tset\通讯\3.10\im_database.db
+2026-03-27 17:15:19,330 - database - INFO - 创建数据库目录: E:\tset\通讯\3.10
+2026-03-27 17:15:19,332 - database - INFO - ✅ 数据库初始化完成: E:\tset\通讯\3.10\im_database.db
+2026-03-27 17:15:19,605 - root - INFO - [系统] 服务器界面初始化完成
+2026-03-27 17:15:21,019 - root - INFO - [系统] 服务器已启动，监听 127.0.0.1:8000
+2026-03-27 17:15:21,019 - root - INFO - [网络] 服务器已启动，正在监听 127.0.0.1:8000
+2026-03-27 17:15:32,332 - network_server - INFO - [认证] 验证用户: test
+2026-03-27 17:15:32,333 - network_server - INFO - [认证] 找到用户: test, 用户信息: {'id': 1, 'username': 'test', 'nickname': '测试用户', 'password_hash': '$2b$12$3/D8heNkydOaR7o4pSr.YOA4l51D2MfgUes4c3rAT51kcIZYLlsLq', 'status': 'offline', 'last_login': None, 'created_at': '2026-03-20 03:01:51'}
+2026-03-27 17:15:32,617 - network_server - INFO - [认证] 用户 'test' 密码验证成功
+2026-03-27 17:15:32,618 - root - INFO - [系统] 📥 用户 'test' (127.0.0.1) 登录成功
+2026-03-27 17:15:32,625 - root - INFO - [系统] 用户 'test' 已上线。当前在线: 1 人
+2026-03-27 17:15:32,878 - root - INFO - [认证] 客户端 127.0.0.1:2003 发送了无效的认证数据
+2026-03-27 17:18:42,169 - network_server - INFO - [认证] 验证用户: admin
+2026-03-27 17:18:42,171 - network_server - INFO - [认证] 找到用户: admin, 用户信息: {'id': 2, 'username': 'admin', 'nickname': '管理员', 'password_hash': '$2b$12$TfIOHMHV8wlvBTIvjW98EupHG2U808sSc8tnT6smDFzPm9Cpqmg2O', 'status': 'offline', 'last_login': None, 'created_at': '2026-03-20 03:01:52'}
+2026-03-27 17:18:42,463 - network_server - INFO - [认证] 用户 'admin' 密码验证失败
+2026-03-27 17:19:29,216 - network_server - INFO - [认证] 验证用户: admin
+2026-03-27 17:19:29,218 - network_server - INFO - [认证] 找到用户: admin, 用户信息: {'id': 2, 'username': 'admin', 'nickname': '管理员', 'password_hash': '$2b$12$TfIOHMHV8wlvBTIvjW98EupHG2U808sSc8tnT6smDFzPm9Cpqmg2O', 'status': 'offline', 'last_login': None, 'created_at': '2026-03-20 03:01:52'}
+2026-03-27 17:19:29,485 - network_server - INFO - [认证] 用户 'admin' 密码验证失败
+2026-03-27 17:19:47,486 - network_server - INFO - [认证] 验证用户: admin
+2026-03-27 17:19:47,488 - network_server - INFO - [认证] 找到用户: admin, 用户信息: {'id': 2, 'username': 'admin', 'nickname': '管理员', 'password_hash': '$2b$12$TfIOHMHV8wlvBTIvjW98EupHG2U808sSc8tnT6smDFzPm9Cpqmg2O', 'status': 'offline', 'last_login': None, 'created_at': '2026-03-20 03:01:52'}
+2026-03-27 17:19:47,723 - network_server - INFO - [认证] 用户 'admin' 密码验证失败
+2026-03-27 17:27:27,772 - root - INFO - [系统] 服务器已停止
+2026-03-27 17:36:07,629 - database - INFO - 数据库路径: E:\tset\通讯\3.10\im_database.db
+2026-03-27 17:36:07,630 - database - INFO - 创建数据库目录: E:\tset\通讯\3.10
+2026-03-27 17:36:07,639 - database - INFO - ✅ 数据库初始化完成: E:\tset\通讯\3.10\im_database.db
+2026-03-27 17:36:08,001 - root - INFO - [系统] 服务器界面初始化完成
+2026-03-27 17:42:50,035 - root - INFO - [系统] 服务器已启动，监听 127.0.0.1:8000
+2026-03-27 17:42:50,038 - root - INFO - [网络] 服务器已启动，正在监听 127.0.0.1:8000
+2026-03-27 17:42:50,280 - network_server - INFO - [认证] 验证用户: test
+2026-03-27 17:42:50,281 - network_server - INFO - [认证] 找到用户: test, 用户信息: {'id': 1, 'username': 'test', 'nickname': '测试用户', 'password_hash': '$2b$12$3/D8heNkydOaR7o4pSr.YOA4l51D2MfgUes4c3rAT51kcIZYLlsLq', 'status': 'offline', 'last_login': None, 'created_at': '2026-03-20 03:01:51'}
+2026-03-27 17:42:50,461 - network_server - INFO - [认证] 用户 'test' 密码验证成功
+2026-03-27 17:42:50,462 - root - INFO - [系统] 📥 用户 'test' (127.0.0.1) 登录成功
+2026-03-27 17:42:50,468 - root - INFO - [系统] 用户 'test' 已上线。当前在线: 1 人
+2026-03-27 17:42:50,813 - root - INFO - [认证] 客户端 127.0.0.1:5887 发送了无效的认证数据
+2026-03-27 17:44:56,059 - root - INFO - [认证] 客户端 127.0.0.1:2358 发送了无效的认证数据
+2026-03-27 17:45:05,501 - root - INFO - [系统] 服务器已停止
+2026-03-27 17:45:10,801 - database - INFO - 数据库路径: e:\tset\通讯\3.10\im_database.db
+2026-03-27 17:45:10,801 - database - INFO - 创建数据库目录: e:\tset\通讯\3.10
+2026-03-27 17:45:10,802 - database - INFO - ✅ 数据库初始化完成: e:\tset\通讯\3.10\im_database.db
+2026-03-27 17:45:11,112 - root - INFO - [系统] 服务器界面初始化完成
+2026-03-27 17:46:16,932 - database - INFO - ✅ 添加用户成功: '1'
+2026-03-27 17:46:47,429 - root - INFO - [系统] 服务器已启动，监听 127.0.0.1:8000
+2026-03-27 17:46:47,430 - root - INFO - [网络] 服务器已启动，正在监听 127.0.0.1:8000
+2026-03-27 17:47:11,096 - network_server - INFO - [认证] 验证用户: 1
+2026-03-27 17:47:11,097 - network_server - INFO - [认证] 找到用户: 1, 用户信息: {'id': 3, 'username': '1', 'nickname': '', 'password_hash': '$2b$12$v6n5cDMOQlO13O.qHtknDejwAoiJA7UQ5qC1aPmBU7aNq7PBrETMK', 'status': 'offline', 'last_login': None, 'created_at': '2026-03-27 09:46:16'}
+2026-03-27 17:47:11,356 - network_server - INFO - [认证] 用户 '1' 密码验证成功
+2026-03-27 17:47:11,357 - root - INFO - [系统] 📥 用户 '1' (127.0.0.1) 登录成功
+2026-03-27 17:47:11,365 - root - INFO - [系统] 用户 '1' 已上线。当前在线: 1 人
+2026-03-27 17:47:11,624 - root - INFO - [认证] 客户端 127.0.0.1:8946 发送了无效的认证数据
+2026-03-27 17:53:49,393 - network_server - INFO - [认证] 验证用户: test
+2026-03-27 17:53:49,393 - network_server - INFO - [认证] 找到用户: test, 用户信息: {'id': 1, 'username': 'test', 'nickname': '测试用户', 'password_hash': '$2b$12$3/D8heNkydOaR7o4pSr.YOA4l51D2MfgUes4c3rAT51kcIZYLlsLq', 'status': 'offline', 'last_login': None, 'created_at': '2026-03-20 03:01:51'}
+2026-03-27 17:53:49,684 - network_server - INFO - [认证] 用户 'test' 密码验证成功
+2026-03-27 17:53:49,684 - root - INFO - [系统] 📥 用户 'test' (127.0.0.1) 登录成功
+2026-03-27 17:53:49,689 - root - INFO - [系统] 用户 'test' 已上线。当前在线: 2 人
+2026-03-27 17:53:49,923 - root - INFO - [认证] 客户端 127.0.0.1:7550 发送了无效的认证数据
+2026-03-27 18:01:56,551 - root - INFO - [认证] 客户端 127.0.0.1:2522 发送了无效的认证数据
+2026-03-27 18:05:18,109 - root - ERROR - 加载配置失败: cannot access local variable 'QMessageBox' where it is not associated with a value
+2026-03-27 18:05:18,109 - root - INFO - [认证] 客户端 127.0.0.1:4384 发送了无效的认证数据
+2026-03-27 18:05:18,186 - database - INFO - 数据库路径: E:\tset\通讯\3.10\im_database.db
+2026-03-27 18:05:18,186 - database - INFO - 创建数据库目录: E:\tset\通讯\3.10
+2026-03-27 18:05:18,187 - database - INFO - ✅ 数据库初始化完成: E:\tset\通讯\3.10\im_database.db
+2026-03-27 18:05:18,467 - root - INFO - [系统] 服务器界面初始化完成
+2026-03-27 19:41:12,857 - root - INFO - [系统] 服务器已启动，监听 127.0.0.1:8000
+2026-03-27 19:41:12,857 - root - INFO - [网络] 服务器已启动，正在监听 127.0.0.1:8000
+2026-03-27 19:41:20,941 - root - INFO - [系统] 服务器已停止
+2026-03-27 19:41:32,496 - root - INFO - [系统] 服务器已停止
+2026-03-27 19:43:32,526 - database - INFO - 数据库路径: e:\tset\通讯\3.10\im_database.db
+2026-03-27 19:43:32,526 - database - INFO - 创建数据库目录: e:\tset\通讯\3.10
+2026-03-27 19:43:32,527 - database - INFO - ✅ 数据库初始化完成: e:\tset\通讯\3.10\im_database.db
+2026-03-27 19:43:32,827 - root - INFO - [系统] 服务器界面初始化完成
+2026-03-27 19:43:36,112 - root - INFO - [系统] 服务器已启动，监听 127.0.0.1:8000
+2026-03-27 19:43:36,113 - root - INFO - [网络] 服务器已启动，正在监听 127.0.0.1:8000
+2026-03-27 19:44:09,329 - network_server - INFO - [认证] 验证用户: test
+2026-03-27 19:44:09,331 - network_server - INFO - [认证] 找到用户: test, 用户信息: {'id': 1, 'username': 'test', 'nickname': '测试用户', 'password_hash': '$2b$12$3/D8heNkydOaR7o4pSr.YOA4l51D2MfgUes4c3rAT51kcIZYLlsLq', 'status': 'offline', 'last_login': None, 'created_at': '2026-03-20 03:01:51'}
+2026-03-27 19:44:09,573 - network_server - INFO - [认证] 用户 'test' 密码验证成功
+2026-03-27 19:44:09,573 - root - INFO - [系统] 📥 用户 'test' (127.0.0.1) 登录成功
+2026-03-27 19:44:09,582 - root - INFO - [系统] 用户 'test' 已上线。当前在线: 1 人
+2026-03-27 19:44:09,869 - root - INFO - [认证] 客户端 127.0.0.1:4036 发送了无效的认证数据
+2026-03-27 19:45:59,594 - root - INFO - [系统] 服务器已停止
+2026-03-27 19:52:14,706 - database - INFO - 数据库路径: e:\tset\通讯\3.10\im_database.db
+2026-03-27 19:52:14,706 - database - INFO - 创建数据库目录: e:\tset\通讯\3.10
+2026-03-27 19:52:14,707 - database - INFO - ✅ 数据库初始化完成: e:\tset\通讯\3.10\im_database.db
+2026-03-27 19:52:14,982 - root - INFO - [系统] 服务器界面初始化完成
+2026-03-27 19:52:16,408 - root - INFO - [系统] 服务器已启动，监听 127.0.0.1:8000
+2026-03-27 19:52:16,409 - root - INFO - [网络] 服务器已启动，正在监听 127.0.0.1:8000
+2026-03-27 19:52:50,273 - network_server - INFO - [认证] 验证用户: test
+2026-03-27 19:52:50,274 - network_server - INFO - [认证] 找到用户: test, 用户信息: {'id': 1, 'username': 'test', 'nickname': '测试用户', 'password_hash': '$2b$12$3/D8heNkydOaR7o4pSr.YOA4l51D2MfgUes4c3rAT51kcIZYLlsLq', 'status': 'offline', 'last_login': None, 'created_at': '2026-03-20 03:01:51'}
+2026-03-27 19:52:50,494 - network_server - INFO - [认证] 用户 'test' 密码验证成功
+2026-03-27 19:52:50,495 - root - INFO - [系统] 📥 用户 'test' (127.0.0.1) 登录成功
+2026-03-27 19:52:50,499 - root - INFO - [系统] 用户 'test' 已上线。当前在线: 1 人
+2026-03-27 19:52:50,803 - root - INFO - [认证] 客户端 127.0.0.1:4536 发送了无效的认证数据
+2026-03-27 19:54:06,627 - root - INFO - [系统] 服务器已停止
+2026-03-27 19:57:27,843 - database - INFO - 数据库路径: E:\tset\通讯\3.10\im_database.db
+2026-03-27 19:57:27,843 - database - INFO - 创建数据库目录: E:\tset\通讯\3.10
+2026-03-27 19:57:27,844 - database - INFO - ✅ 数据库初始化完成: E:\tset\通讯\3.10\im_database.db
+2026-03-27 19:57:28,110 - root - INFO - [系统] 服务器界面初始化完成
+2026-03-27 19:57:31,794 - root - INFO - [系统] 服务器已启动，监听 127.0.0.1:8000
+2026-03-27 19:57:31,795 - root - INFO - [网络] 服务器已启动，正在监听 127.0.0.1:8000
+2026-03-27 19:57:33,825 - network_server - INFO - [认证] 验证用户: test
+2026-03-27 19:57:33,827 - network_server - INFO - [认证] 找到用户: test, 用户信息: {'id': 1, 'username': 'test', 'nickname': '测试用户', 'password_hash': '$2b$12$3/D8heNkydOaR7o4pSr.YOA4l51D2MfgUes4c3rAT51kcIZYLlsLq', 'status': 'offline', 'last_login': None, 'created_at': '2026-03-20 03:01:51'}
+2026-03-27 19:57:34,029 - network_server - INFO - [认证] 用户 'test' 密码验证失败
+2026-03-27 19:58:42,305 - network_server - INFO - [认证] 验证用户: testuser
+2026-03-27 19:58:42,306 - network_server - INFO - [认证] 找到用户: testuser, 用户信息: {'id': 4, 'username': 'testuser', 'nickname': '测试用户', 'password_hash': '$2b$12$NcXDEozbKVD1JgUnBTyIK.705Agv.qX6x/GJTUNAGwQorTfTV6D96', 'status': 'offline', 'last_login': None, 'created_at': '2026-03-27 11:58:27'}
+2026-03-27 19:58:42,588 - network_server - INFO - [认证] 用户 'testuser' 密码验证成功
+2026-03-27 19:58:42,588 - root - INFO - [系统] 📥 用户 'testuser' (127.0.0.1) 登录成功
+2026-03-27 19:58:42,595 - root - INFO - [系统] 用户 'testuser' 已上线。当前在线: 1 人
+2026-03-27 19:59:36,694 - database - INFO - 数据库路径: E:\tset\通讯\3.10\im_database.db
+2026-03-27 19:59:36,694 - database - INFO - 创建数据库目录: E:\tset\通讯\3.10
+2026-03-27 19:59:36,695 - database - INFO - ✅ 数据库初始化完成: E:\tset\通讯\3.10\im_database.db
+2026-03-27 19:59:36,995 - root - INFO - [系统] 服务器界面初始化完成
+2026-03-27 19:59:43,520 - root - INFO - [系统] 服务器已启动，监听 127.0.0.1:8000
+2026-03-27 19:59:43,520 - root - INFO - [网络] 服务器已启动，正在监听 127.0.0.1:8000
+2026-03-27 19:59:48,144 - network_server - INFO - [认证] 验证用户: testuser
+2026-03-27 19:59:48,145 - network_server - INFO - [认证] 找到用户: testuser, 用户信息: {'id': 4, 'username': 'testuser', 'nickname': '测试用户', 'password_hash': '$2b$12$NcXDEozbKVD1JgUnBTyIK.705Agv.qX6x/GJTUNAGwQorTfTV6D96', 'status': 'offline', 'last_login': None, 'created_at': '2026-03-27 11:58:27'}
+2026-03-27 19:59:48,337 - network_server - INFO - [认证] 用户 'testuser' 密码验证成功
+2026-03-27 19:59:48,338 - root - INFO - [系统] 📥 用户 'testuser' (127.0.0.1) 登录成功
+2026-03-27 19:59:48,344 - root - INFO - [系统] 用户 'testuser' 已上线。当前在线: 1 人
+2026-03-27 20:02:18,880 - network_server - INFO - [认证] 验证用户: test
+2026-03-27 20:02:18,881 - network_server - INFO - [认证] 找到用户: test, 用户信息: {'id': 1, 'username': 'test', 'nickname': '测试用户', 'password_hash': '$2b$12$3/D8heNkydOaR7o4pSr.YOA4l51D2MfgUes4c3rAT51kcIZYLlsLq', 'status': 'offline', 'last_login': None, 'created_at': '2026-03-20 03:01:51'}
+2026-03-27 20:02:19,135 - network_server - INFO - [认证] 用户 'test' 密码验证成功
+2026-03-27 20:02:19,135 - root - INFO - [系统] 📥 用户 'test' (127.0.0.1) 登录成功
+2026-03-27 20:02:19,143 - root - INFO - [系统] 用户 'test' 已上线。当前在线: 2 人
+2026-03-27 20:02:19,424 - root - INFO - [认证] 客户端 127.0.0.1:1506 发送了无效的认证数据
+2026-03-27 20:05:42,251 - root - INFO - [系统] 服务器已停止
+2026-03-27 20:08:03,245 - database - INFO - 数据库路径: e:\tset\通讯\3.10\im_database.db
+2026-03-27 20:08:03,245 - database - INFO - 创建数据库目录: e:\tset\通讯\3.10
+2026-03-27 20:08:03,247 - database - INFO - ✅ 数据库初始化完成: e:\tset\通讯\3.10\im_database.db
+2026-03-27 20:08:03,847 - root - INFO - [系统] 服务器界面初始化完成
+2026-03-27 20:08:07,414 - root - INFO - [系统] 服务器已启动，监听 127.0.0.1:8000
+2026-03-27 20:08:07,414 - root - INFO - [网络] 服务器已启动，正在监听 127.0.0.1:8000
+2026-03-27 20:10:05,110 - network_server - INFO - [认证] 验证用户: testuser
+2026-03-27 20:10:05,110 - network_server - INFO - [认证] 找到用户: testuser, 用户信息: {'id': 4, 'username': 'testuser', 'nickname': '测试用户', 'password_hash': '$2b$12$NcXDEozbKVD1JgUnBTyIK.705Agv.qX6x/GJTUNAGwQorTfTV6D96', 'status': 'offline', 'last_login': None, 'created_at': '2026-03-27 11:58:27'}
+2026-03-27 20:10:05,305 - network_server - INFO - [认证] 用户 'testuser' 密码验证成功
+2026-03-27 20:10:05,306 - root - INFO - [系统] 📥 用户 'testuser' (127.0.0.1) 登录成功
+2026-03-27 20:10:05,312 - root - INFO - [系统] 用户 'testuser' 已上线。当前在线: 1 人
+2026-03-27 20:11:23,253 - network_server - INFO - [认证] 验证用户: testuser
+2026-03-27 20:11:23,254 - network_server - INFO - [认证] 找到用户: testuser, 用户信息: {'id': 4, 'username': 'testuser', 'nickname': '测试用户', 'password_hash': '$2b$12$NcXDEozbKVD1JgUnBTyIK.705Agv.qX6x/GJTUNAGwQorTfTV6D96', 'status': 'offline', 'last_login': None, 'created_at': '2026-03-27 11:58:27'}
+2026-03-27 20:11:23,470 - network_server - INFO - [认证] 用户 'testuser' 密码验证成功
+2026-03-27 20:11:23,470 - root - INFO - [系统] 📥 用户 'testuser' (127.0.0.1) 登录成功
+2026-03-27 20:11:23,472 - root - INFO - [系统] 用户 'testuser' 已上线。当前在线: 1 人
+2026-03-27 20:13:31,626 - root - ERROR - 加载配置失败: cannot access local variable 'QMessageBox' where it is not associated with a value
+2026-03-27 20:13:31,627 - root - INFO - [认证] 客户端 127.0.0.1:8985 发送了无效的认证数据
+2026-03-27 20:13:31,704 - database - INFO - 数据库路径: e:\tset\通讯\3.10\im_database.db
+2026-03-27 20:13:31,705 - database - INFO - 创建数据库目录: e:\tset\通讯\3.10
+2026-03-27 20:13:31,706 - database - INFO - ✅ 数据库初始化完成: e:\tset\通讯\3.10\im_database.db
+2026-03-27 20:13:32,113 - root - INFO - [系统] 服务器界面初始化完成
+2026-03-27 20:13:33,567 - root - INFO - [系统] 服务器已启动，监听 127.0.0.1:8000
+2026-03-27 20:13:33,568 - root - INFO - [网络] 服务器已启动，正在监听 127.0.0.1:8000
+2026-03-27 20:13:49,353 - network_server - INFO - [认证] 验证用户: test
+2026-03-27 20:13:49,353 - network_server - INFO - [认证] 找到用户: test, 用户信息: {'id': 1, 'username': 'test', 'nickname': '测试用户', 'password_hash': '$2b$12$3/D8heNkydOaR7o4pSr.YOA4l51D2MfgUes4c3rAT51kcIZYLlsLq', 'status': 'offline', 'last_login': None, 'created_at': '2026-03-20 03:01:51'}
+2026-03-27 20:13:49,578 - network_server - INFO - [认证] 用户 'test' 密码验证成功
+2026-03-27 20:13:49,578 - root - INFO - [系统] 📥 用户 'test' (127.0.0.1) 登录成功
+2026-03-27 20:13:49,582 - root - INFO - [系统] 用户 'test' 已上线。当前在线: 2 人
+2026-03-27 20:13:49,896 - root - INFO - [认证] 客户端 127.0.0.1:2369 发送了无效的认证数据
+2026-03-27 20:15:03,078 - network_server - INFO - [认证] 验证用户: testuser
+2026-03-27 20:15:03,079 - network_server - INFO - [认证] 找到用户: testuser, 用户信息: {'id': 4, 'username': 'testuser', 'nickname': '测试用户', 'password_hash': '$2b$12$NcXDEozbKVD1JgUnBTyIK.705Agv.qX6x/GJTUNAGwQorTfTV6D96', 'status': 'offline', 'last_login': None, 'created_at': '2026-03-27 11:58:27'}
+2026-03-27 20:15:03,302 - network_server - INFO - [认证] 用户 'testuser' 密码验证失败
+2026-03-27 20:15:18,665 - network_server - INFO - [认证] 验证用户: 1
+2026-03-27 20:15:18,666 - network_server - INFO - [认证] 找到用户: 1, 用户信息: {'id': 3, 'username': '1', 'nickname': '', 'password_hash': '$2b$12$v6n5cDMOQlO13O.qHtknDejwAoiJA7UQ5qC1aPmBU7aNq7PBrETMK', 'status': 'offline', 'last_login': None, 'created_at': '2026-03-27 09:46:16'}
+2026-03-27 20:15:18,893 - network_server - INFO - [认证] 用户 '1' 密码验证成功
+2026-03-27 20:15:18,893 - root - INFO - [系统] 📥 用户 '1' (127.0.0.1) 登录成功
+2026-03-27 20:15:18,899 - root - INFO - [系统] 用户 '1' 已上线。当前在线: 3 人
+2026-03-27 20:15:19,215 - root - INFO - [认证] 客户端 127.0.0.1:5961 发送了无效的认证数据
+2026-03-27 20:22:42,302 - network_server - INFO - [认证] 验证用户: test
+2026-03-27 20:22:42,304 - network_server - INFO - [认证] 找到用户: test, 用户信息: {'id': 1, 'username': 'test', 'nickname': '测试用户', 'password_hash': '$2b$12$3/D8heNkydOaR7o4pSr.YOA4l51D2MfgUes4c3rAT51kcIZYLlsLq', 'status': 'offline', 'last_login': None, 'created_at': '2026-03-20 03:01:51'}
+2026-03-27 20:22:42,510 - network_server - INFO - [认证] 用户 'test' 密码验证成功
+2026-03-27 20:22:42,510 - root - INFO - [系统] 📥 用户 'test' (127.0.0.1) 登录成功
+2026-03-27 20:22:42,516 - root - INFO - [系统] 用户 'test' 已上线。当前在线: 3 人
+2026-03-27 20:22:42,833 - root - INFO - [认证] 客户端 127.0.0.1:14287 发送了无效的认证数据
+2026-03-27 20:23:50,684 - network_server - INFO - [认证] 验证用户: 1
+2026-03-27 20:23:50,685 - network_server - INFO - [认证] 找到用户: 1, 用户信息: {'id': 3, 'username': '1', 'nickname': '', 'password_hash': '$2b$12$v6n5cDMOQlO13O.qHtknDejwAoiJA7UQ5qC1aPmBU7aNq7PBrETMK', 'status': 'offline', 'last_login': None, 'created_at': '2026-03-27 09:46:16'}
+2026-03-27 20:23:50,891 - network_server - INFO - [认证] 用户 '1' 密码验证成功
+2026-03-27 20:23:50,891 - root - INFO - [系统] 📥 用户 '1' (127.0.0.1) 登录成功
+2026-03-27 20:23:50,897 - root - INFO - [系统] 用户 '1' 已上线。当前在线: 3 人
+2026-03-27 20:23:51,215 - root - INFO - [认证] 客户端 127.0.0.1:6329 发送了无效的认证数据
+2026-03-27 20:25:18,451 - network_server - INFO - [认证] 验证用户: test
+2026-03-27 20:25:18,453 - network_server - INFO - [认证] 找到用户: test, 用户信息: {'id': 1, 'username': 'test', 'nickname': '测试用户', 'password_hash': '$2b$12$3/D8heNkydOaR7o4pSr.YOA4l51D2MfgUes4c3rAT51kcIZYLlsLq', 'status': 'offline', 'last_login': None, 'created_at': '2026-03-20 03:01:51'}
+2026-03-27 20:25:18,658 - network_server - INFO - [认证] 用户 'test' 密码验证成功
+2026-03-27 20:25:18,658 - root - INFO - [系统] 📥 用户 'test' (127.0.0.1) 登录成功
+2026-03-27 20:25:18,666 - root - INFO - [系统] 用户 'test' 已上线。当前在线: 3 人
+2026-03-27 20:25:19,002 - root - INFO - [认证] 客户端 127.0.0.1:9903 发送了无效的认证数据
+2026-03-27 20:27:38,176 - network_server - INFO - [认证] 验证用户: test
+2026-03-27 20:27:38,179 - network_server - INFO - [认证] 找到用户: test, 用户信息: {'id': 1, 'username': 'test', 'nickname': '测试用户', 'password_hash': '$2b$12$3/D8heNkydOaR7o4pSr.YOA4l51D2MfgUes4c3rAT51kcIZYLlsLq', 'status': 'offline', 'last_login': None, 'created_at': '2026-03-20 03:01:51'}
+2026-03-27 20:27:38,383 - network_server - INFO - [认证] 用户 'test' 密码验证成功
+2026-03-27 20:27:38,384 - root - INFO - [系统] 📥 用户 'test' (127.0.0.1) 登录成功
+2026-03-27 20:27:38,388 - root - INFO - [系统] 用户 'test' 已上线。当前在线: 3 人
+2026-03-27 20:28:05,787 - root - INFO - [系统] 服务器已停止
+2026-03-27 20:28:19,872 - network_server - INFO - [认证] 验证用户: test
+2026-03-27 20:28:19,874 - network_server - INFO - [认证] 找到用户: test, 用户信息: {'id': 1, 'username': 'test', 'nickname': '测试用户', 'password_hash': '$2b$12$3/D8heNkydOaR7o4pSr.YOA4l51D2MfgUes4c3rAT51kcIZYLlsLq', 'status': 'offline', 'last_login': None, 'created_at': '2026-03-20 03:01:51'}
+2026-03-27 20:28:20,078 - network_server - INFO - [认证] 用户 'test' 密码验证成功
+2026-03-27 20:28:20,079 - root - INFO - [系统] 📥 用户 'test' (127.0.0.1) 登录成功
+2026-03-27 20:28:20,085 - root - INFO - [系统] 用户 'test' 已上线。当前在线: 3 人
+2026-03-27 20:28:49,816 - network_server - INFO - [认证] 验证用户: test
+2026-03-27 20:28:49,818 - network_server - INFO - [认证] 找到用户: test, 用户信息: {'id': 1, 'username': 'test', 'nickname': '测试用户', 'password_hash': '$2b$12$3/D8heNkydOaR7o4pSr.YOA4l51D2MfgUes4c3rAT51kcIZYLlsLq', 'status': 'offline', 'last_login': None, 'created_at': '2026-03-20 03:01:51'}
+2026-03-27 20:28:50,022 - network_server - INFO - [认证] 用户 'test' 密码验证成功
+2026-03-27 20:28:50,022 - root - INFO - [系统] 📥 用户 'test' (127.0.0.1) 登录成功
+2026-03-27 20:28:50,027 - root - INFO - [系统] 用户 'test' 已上线。当前在线: 3 人
+2026-03-27 20:29:02,412 - root - INFO - [系统] 服务器已停止
+2026-04-01 09:33:55,760 - database - INFO - 数据库路径: E:\tset\通讯\服务端\im_database.db
+2026-04-01 09:33:55,762 - database - INFO - 创建数据库目录: E:\tset\通讯\服务端
+2026-04-01 09:33:55,764 - database - INFO - ✅ 数据库初始化完成: E:\tset\通讯\服务端\im_database.db
+2026-04-01 09:33:56,327 - root - INFO - [系统] 服务器界面初始化完成
+2026-04-01 09:34:21,500 - root - INFO - [系统] 服务器已启动，监听 127.0.0.1:8000
+2026-04-01 09:34:21,532 - root - INFO - [网络] 服务器已启动，正在监听 127.0.0.1:8000
+2026-04-01 09:34:47,697 - network_server - INFO - [认证] 验证用户: user1
+2026-04-01 09:34:47,700 - network_server - INFO - [认证] 找到用户: user1, 用户信息: {'id': 3, 'username': 'user1', 'nickname': '用户1', 'password_hash': 'password1', 'status': 'offline', 'last_login': '2026-04-01 09:32:27', 'created_at': '2026-04-01 01:32:01'}
+2026-04-01 09:34:47,700 - network_server - INFO - [认证] 用户 'user1' 密码验证成功
+2026-04-01 09:34:47,701 - root - INFO - [系统] 📥 用户 'user1' (127.0.0.1) 登录成功
+2026-04-01 09:34:47,718 - network_server - INFO - [认证] 验证用户: test
+2026-04-01 09:34:47,719 - root - INFO - [系统] 用户 'user1' 已上线。当前在线: 1 人
+2026-04-01 09:34:47,720 - network_server - INFO - [认证] 找到用户: test, 用户信息: {'id': 1, 'username': 'test', 'nickname': '测试用户', 'password_hash': '123456', 'status': 'offline', 'last_login': '2026-04-01 09:32:27', 'created_at': '2026-04-01 01:32:01'}
+2026-04-01 09:34:47,721 - network_server - INFO - [认证] 用户 'test' 密码验证成功
+2026-04-01 09:34:47,721 - root - INFO - [系统] 📥 用户 'test' (127.0.0.1) 登录成功
+2026-04-01 09:34:47,726 - root - INFO - [系统] 用户 'test' 已上线。当前在线: 2 人
+2026-04-01 09:34:47,735 - database - ERROR - 已经是好友关系: user1 -> test
+2026-04-01 09:35:39,849 - network_server - INFO - [认证] 验证用户: user1
+2026-04-01 09:35:39,852 - network_server - INFO - [认证] 找到用户: user1, 用户信息: {'id': 3, 'username': 'user1', 'nickname': '用户1', 'password_hash': 'password1', 'status': 'offline', 'last_login': None, 'created_at': '2026-04-01 01:35:14'}
+2026-04-01 09:35:39,853 - network_server - INFO - [认证] 用户 'user1' 密码验证成功
+2026-04-01 09:35:39,854 - root - INFO - [系统] 📥 用户 'user1' (127.0.0.1) 登录成功
+2026-04-01 09:35:39,854 - network_server - INFO - [认证] 验证用户: test
+2026-04-01 09:35:39,861 - root - INFO - [系统] 用户 'user1' 已上线。当前在线: 2 人
+2026-04-01 09:35:39,865 - network_server - INFO - [认证] 找到用户: test, 用户信息: {'id': 1, 'username': 'test', 'nickname': '测试用户', 'password_hash': '123456', 'status': 'offline', 'last_login': None, 'created_at': '2026-04-01 01:35:13'}
+2026-04-01 09:35:39,866 - network_server - INFO - [认证] 用户 'test' 密码验证成功
+2026-04-01 09:35:39,867 - root - INFO - [系统] 📥 用户 'test' (127.0.0.1) 登录成功
+2026-04-01 09:35:39,871 - root - INFO - [系统] 用户 'test' 已上线。当前在线: 2 人
+2026-04-01 09:35:39,895 - database - INFO - 好友请求发送成功: user1 -> test
+2026-04-01 09:46:35,744 - root - INFO - [系统] 服务器已停止
+2026-04-01 09:46:40,848 - database - INFO - 数据库路径: e:\tset\通讯\服务端\im_database.db
+2026-04-01 09:46:40,849 - database - INFO - 创建数据库目录: e:\tset\通讯\服务端
+2026-04-01 09:46:40,850 - database - INFO - ✅ 数据库初始化完成: e:\tset\通讯\服务端\im_database.db
+2026-04-01 09:46:41,234 - root - INFO - [系统] 服务器界面初始化完成
+2026-04-01 09:46:44,805 - root - INFO - [系统] 服务器已启动，监听 127.0.0.1:8000
+2026-04-01 09:46:44,805 - root - INFO - [网络] 服务器已启动，正在监听 127.0.0.1:8000
+2026-04-01 09:50:02,212 - network_server - INFO - [认证] 验证用户: test
+2026-04-01 09:50:02,214 - network_server - INFO - [认证] 找到用户: test, 用户信息: {'id': 1, 'username': 'test', 'nickname': '222', 'password_hash': '123456', 'status': 'offline', 'last_login': None, 'created_at': '2026-04-01 01:35:13'}
+2026-04-01 09:50:02,214 - network_server - INFO - [认证] 用户 'test' 密码验证成功
+2026-04-01 09:50:02,215 - root - INFO - [系统] 📥 用户 'test' (127.0.0.1) 登录成功
+2026-04-01 09:50:02,222 - root - INFO - [系统] 用户 'test' 已上线。当前在线: 1 人
+2026-04-01 09:52:02,048 - network_server - INFO - [认证] 验证用户: 222
+2026-04-01 09:52:02,049 - network_server - INFO - [认证] 用户 '222' 不存在
+2026-04-01 09:52:11,804 - network_server - INFO - [认证] 验证用户: admin
+2026-04-01 09:52:11,805 - network_server - INFO - [认证] 找到用户: admin, 用户信息: {'id': 2, 'username': 'admin', 'nickname': '333', 'password_hash': '123456', 'status': 'offline', 'last_login': None, 'created_at': '2026-04-01 01:35:13'}
+2026-04-01 09:52:11,805 - network_server - INFO - [认证] 用户 'admin' 密码验证成功
+2026-04-01 09:52:11,805 - root - INFO - [系统] 📥 用户 'admin' (127.0.0.1) 登录成功
+2026-04-01 09:52:11,811 - root - INFO - [系统] 用户 'admin' 已上线。当前在线: 2 人
+2026-04-01 09:52:41,058 - database - INFO - 好友请求发送成功: admin -> test
+2026-04-01 09:53:28,090 - root - INFO - [系统] 📤 用户 'admin' 主动注销退出
+2026-04-01 09:53:28,091 - root - INFO - [系统] 用户 'admin' 已离线。当前在线: 1 人
+2026-04-01 09:53:28,092 - root - INFO - [系统] 📤 用户 'admin' 退出系统
+2026-04-01 09:53:28,092 - root - INFO - [系统] 用户 'admin' 已离线。当前在线: 1 人
+2026-04-01 09:53:31,138 - root - INFO - [系统] 📤 用户 'test' 主动注销退出
+2026-04-01 09:53:31,139 - root - INFO - [系统] 用户 'test' 已离线。当前在线: 0 人
+2026-04-01 09:53:31,140 - root - INFO - [系统] 📤 用户 'test' 退出系统
+2026-04-01 09:53:31,140 - root - INFO - [系统] 用户 'test' 已离线。当前在线: 0 人
+2026-04-01 09:53:45,630 - root - INFO - [系统] 服务器已停止
+2026-04-01 10:14:49,510 - database - INFO - 数据库路径: E:\tset\通讯\服务端\im_database.db
+2026-04-01 10:14:49,511 - database - INFO - 创建数据库目录: E:\tset\通讯\服务端
+2026-04-01 10:14:49,512 - database - INFO - ✅ 数据库初始化完成: E:\tset\通讯\服务端\im_database.db
+2026-04-01 10:14:49,764 - root - INFO - [系统] 服务器界面初始化完成
+2026-04-01 10:14:53,376 - root - INFO - [系统] 服务器已启动，监听 127.0.0.1:8000
+2026-04-01 10:14:53,376 - root - INFO - [网络] 服务器已启动，正在监听 127.0.0.1:8000
+2026-04-01 10:15:02,931 - network_server - INFO - [认证] 验证用户: user1
+2026-04-01 10:15:02,933 - network_server - INFO - [认证] 找到用户: user1, 用户信息: {'id': 1, 'username': 'user1', 'nickname': '用户1', 'password_hash': '123456', 'status': 'offline', 'last_login': None, 'created_at': '2026-04-01 02:14:22'}
+2026-04-01 10:15:02,933 - network_server - INFO - [认证] 用户 'user1' 密码验证成功
+2026-04-01 10:15:02,934 - root - INFO - [系统] 📥 用户 'user1' (127.0.0.1) 登录成功
+2026-04-01 10:15:02,934 - network_server - INFO - [认证] 验证用户: user2
+2026-04-01 10:15:02,951 - root - INFO - [系统] 用户 'user1' 已上线。当前在线: 1 人
+2026-04-01 10:15:02,955 - network_server - INFO - [认证] 找到用户: user2, 用户信息: {'id': 2, 'username': 'user2', 'nickname': '用户2', 'password_hash': '123456', 'status': 'offline', 'last_login': None, 'created_at': '2026-04-01 02:14:22'}
+2026-04-01 10:15:02,955 - network_server - INFO - [认证] 用户 'user2' 密码验证成功
+2026-04-01 10:15:02,956 - root - INFO - [系统] 📥 用户 'user2' (127.0.0.1) 登录成功
+2026-04-01 10:15:02,962 - root - INFO - [系统] 用户 'user2' 已上线。当前在线: 2 人
+2026-04-01 10:15:02,974 - database - INFO - 好友请求发送成功: user2 -> user1
+2026-04-01 10:25:56,469 - root - ERROR - 加载配置失败: cannot access local variable 'QMessageBox' where it is not associated with a value
+2026-04-01 10:25:56,470 - root - INFO - [认证] 客户端 127.0.0.1:7161 发送了无效的认证数据
+2026-04-01 10:25:56,533 - database - INFO - 数据库路径: e:\tset\通讯\服务端\im_database.db
+2026-04-01 10:25:56,534 - database - INFO - 创建数据库目录: e:\tset\通讯\服务端
+2026-04-01 10:25:56,535 - database - INFO - ✅ 数据库初始化完成: e:\tset\通讯\服务端\im_database.db
+2026-04-01 10:25:56,834 - root - INFO - [系统] 服务器界面初始化完成
+2026-04-01 10:26:12,600 - root - INFO - [系统] 服务器已启动，监听 127.0.0.1:8000
+2026-04-01 10:26:12,602 - root - INFO - [网络] 服务器已启动，正在监听 127.0.0.1:8000
+2026-04-01 10:31:06,323 - root - INFO - [系统] 服务器已停止
+2026-04-01 10:31:09,018 - root - INFO - [系统] 服务器已停止
+2026-04-01 10:31:14,250 - database - INFO - 数据库路径: e:\tset\通讯\服务端\im_database.db
+2026-04-01 10:31:14,250 - database - INFO - 创建数据库目录: e:\tset\通讯\服务端
+2026-04-01 10:31:14,252 - database - INFO - ✅ 数据库初始化完成: e:\tset\通讯\服务端\im_database.db
+2026-04-01 10:31:14,717 - root - INFO - [系统] 服务器界面初始化完成
+2026-04-01 10:31:16,200 - root - INFO - [系统] 服务器已启动，监听 127.0.0.1:8000
+2026-04-01 10:31:16,201 - root - INFO - [网络] 服务器已启动，正在监听 127.0.0.1:8000
+2026-04-01 10:31:44,252 - network_server - INFO - [认证] 验证用户: user1
+2026-04-01 10:31:44,255 - network_server - INFO - [认证] 找到用户: user1, 用户信息: {'id': 1, 'username': 'user1', 'nickname': '用户1', 'password_hash': '123456', 'status': 'offline', 'last_login': None, 'created_at': '2026-04-01 02:14:22'}
+2026-04-01 10:31:44,255 - network_server - INFO - [认证] 用户 'user1' 密码验证成功
+2026-04-01 10:31:44,255 - root - INFO - [系统] 📥 用户 'user1' (127.0.0.1) 登录成功
+2026-04-01 10:31:44,268 - root - INFO - [系统] 用户 'user1' 已上线。当前在线: 1 人
+2026-04-01 10:32:14,854 - network_server - INFO - [认证] 验证用户: user2
+2026-04-01 10:32:14,856 - network_server - INFO - [认证] 找到用户: user2, 用户信息: {'id': 2, 'username': 'user2', 'nickname': '用户2', 'password_hash': '123456', 'status': 'offline', 'last_login': None, 'created_at': '2026-04-01 02:14:22'}
+2026-04-01 10:32:14,856 - network_server - INFO - [认证] 用户 'user2' 密码验证成功
+2026-04-01 10:32:14,856 - root - INFO - [系统] 📥 用户 'user2' (127.0.0.1) 登录成功
+2026-04-01 10:32:14,862 - root - INFO - [系统] 用户 'user2' 已上线。当前在线: 2 人
+2026-04-01 10:33:21,410 - database - INFO - 好友请求发送成功: user1 -> user3
+2026-04-01 10:33:25,378 - root - INFO - [系统] 📤 用户 'user1' 主动注销退出
+2026-04-01 10:33:25,379 - root - INFO - [系统] 用户 'user1' 已离线。当前在线: 1 人
+2026-04-01 10:33:25,379 - root - INFO - [系统] 📤 用户 'user1' 退出系统
+2026-04-01 10:33:25,380 - root - INFO - [系统] 用户 'user1' 已离线。当前在线: 1 人
+2026-04-01 10:33:30,776 - network_server - INFO - [认证] 验证用户: user3
+2026-04-01 10:33:30,778 - network_server - INFO - [认证] 找到用户: user3, 用户信息: {'id': 3, 'username': 'user3', 'nickname': '用户3', 'password_hash': '123456', 'status': 'offline', 'last_login': None, 'created_at': '2026-04-01 02:14:22'}
+2026-04-01 10:33:30,778 - network_server - INFO - [认证] 用户 'user3' 密码验证成功
+2026-04-01 10:33:30,779 - root - INFO - [系统] 📥 用户 'user3' (127.0.0.1) 登录成功
+2026-04-01 10:33:30,783 - root - INFO - [系统] 用户 'user3' 已上线。当前在线: 2 人
+2026-04-01 10:33:55,043 - network_server - INFO - [认证] 验证用户: user3
+2026-04-01 10:33:55,044 - network_server - INFO - [认证] 找到用户: user3, 用户信息: {'id': 3, 'username': 'user3', 'nickname': '用户3', 'password_hash': '123456', 'status': 'offline', 'last_login': None, 'created_at': '2026-04-01 02:14:22'}
+2026-04-01 10:33:55,044 - network_server - INFO - [认证] 用户 'user3' 密码验证成功
+2026-04-01 10:33:55,045 - root - INFO - [系统] 📥 用户 'user3' (127.0.0.1) 登录成功
+2026-04-01 10:33:55,051 - root - INFO - [系统] 用户 'user3' 已上线。当前在线: 2 人
+2026-04-01 10:34:42,460 - root - INFO - [系统] 服务器已停止
+2026-04-01 11:01:49,434 - database - INFO - 数据库路径: e:\tset\通讯\服务端\im_database.db
+2026-04-01 11:01:49,434 - database - INFO - 创建数据库目录: e:\tset\通讯\服务端
+2026-04-01 11:01:49,435 - database - INFO - ✅ 数据库初始化完成: e:\tset\通讯\服务端\im_database.db
+2026-04-01 11:01:49,715 - root - INFO - [系统] 服务器界面初始化完成
+2026-04-01 11:02:26,569 - root - INFO - [系统] 服务器已启动，监听 127.0.0.1:8000
+2026-04-01 11:02:26,569 - root - INFO - [网络] 服务器已启动，正在监听 127.0.0.1:8000
+2026-04-01 11:02:49,831 - network_server - INFO - [认证] 验证用户: user1
+2026-04-01 11:02:49,832 - network_server - INFO - [认证] 找到用户: user1, 用户信息: {'id': 1, 'username': 'user1', 'nickname': '用户1', 'password_hash': '123456', 'status': 'offline', 'last_login': None, 'created_at': '2026-04-01 02:14:22'}
+2026-04-01 11:02:49,832 - network_server - INFO - [认证] 用户 'user1' 密码验证成功
+2026-04-01 11:02:49,832 - root - INFO - [系统] 📥 用户 'user1' (127.0.0.1) 登录成功
+2026-04-01 11:02:49,834 - root - INFO - [系统] 用户 'user1' 已上线。当前在线: 1 人
+2026-04-01 11:03:32,237 - network_server - INFO - [认证] 验证用户: user2
+2026-04-01 11:03:32,237 - network_server - INFO - [认证] 找到用户: user2, 用户信息: {'id': 2, 'username': 'user2', 'nickname': '用户2', 'password_hash': '123456', 'status': 'offline', 'last_login': None, 'created_at': '2026-04-01 02:14:22'}
+2026-04-01 11:03:32,237 - network_server - INFO - [认证] 用户 'user2' 密码验证成功
+2026-04-01 11:03:32,238 - root - INFO - [系统] 📥 用户 'user2' (127.0.0.1) 登录成功
+2026-04-01 11:03:32,244 - root - INFO - [系统] 用户 'user2' 已上线。当前在线: 2 人
+2026-04-01 11:03:55,718 - database - INFO - 好友请求发送成功: user2 -> user1
+2026-04-01 11:08:26,243 - root - INFO - [系统] 📤 用户 'user1' 主动注销退出
+2026-04-01 11:08:26,244 - root - INFO - [系统] 用户 'user1' 已离线。当前在线: 1 人
+2026-04-01 11:08:26,244 - root - INFO - [系统] 📤 用户 'user1' 退出系统
+2026-04-01 11:08:26,244 - root - INFO - [系统] 用户 'user1' 已离线。当前在线: 1 人
+2026-04-01 11:08:27,587 - root - INFO - [系统] 📤 用户 'user2' 主动注销退出
+2026-04-01 11:08:27,588 - root - INFO - [系统] 用户 'user2' 已离线。当前在线: 0 人
+2026-04-01 11:08:27,588 - root - INFO - [系统] 📤 用户 'user2' 退出系统
+2026-04-01 11:08:27,588 - root - INFO - [系统] 用户 'user2' 已离线。当前在线: 0 人
+2026-04-01 11:08:35,094 - root - INFO - [系统] 服务器已停止
+2026-04-01 11:09:54,659 - database - INFO - 数据库路径: E:\tset\通讯\服务端\im_database.db
+2026-04-01 11:09:54,660 - database - INFO - 创建数据库目录: E:\tset\通讯\服务端
+2026-04-01 11:09:54,661 - database - INFO - ✅ 数据库初始化完成: E:\tset\通讯\服务端\im_database.db
+2026-04-01 11:09:54,988 - root - INFO - [系统] 服务器界面初始化完成
+2026-04-01 11:09:57,849 - root - INFO - [系统] 服务器已启动，监听 127.0.0.1:8000
+2026-04-01 11:09:57,849 - root - INFO - [网络] 服务器已启动，正在监听 127.0.0.1:8000
+2026-04-01 11:10:07,788 - network_server - INFO - [认证] 验证用户: user1
+2026-04-01 11:10:07,788 - network_server - INFO - [认证] 找到用户: user1, 用户信息: {'id': 1, 'username': 'user1', 'nickname': '用户1', 'password_hash': '123456', 'status': 'offline', 'last_login': None, 'created_at': '2026-04-01 03:09:38'}
+2026-04-01 11:10:07,789 - network_server - INFO - [认证] 用户 'user1' 密码验证成功
+2026-04-01 11:10:07,790 - root - INFO - [系统] 📥 用户 'user1' (127.0.0.1) 登录成功
+2026-04-01 11:10:07,796 - root - INFO - [系统] 用户 'user1' 已上线。当前在线: 1 人
+2026-04-01 11:10:07,797 - network_server - INFO - [认证] 验证用户: user2
+2026-04-01 11:10:07,798 - network_server - INFO - [认证] 找到用户: user2, 用户信息: {'id': 2, 'username': 'user2', 'nickname': '用户2', 'password_hash': '123456', 'status': 'offline', 'last_login': None, 'created_at': '2026-04-01 03:09:38'}
+2026-04-01 11:10:07,799 - network_server - INFO - [认证] 用户 'user2' 密码验证成功
+2026-04-01 11:10:07,800 - root - INFO - [系统] 📥 用户 'user2' (127.0.0.1) 登录成功
+2026-04-01 11:10:07,803 - root - INFO - [系统] 用户 'user2' 已上线。当前在线: 2 人
+2026-04-01 11:10:07,822 - database - INFO - 好友请求发送成功: user2 -> user1
+2026-04-01 11:23:18,912 - database - INFO - 数据库路径: E:\tset\通讯\服务端\im_database.db
+2026-04-01 11:23:18,913 - database - INFO - 创建数据库目录: E:\tset\通讯\服务端
+2026-04-01 11:23:18,914 - database - INFO - ✅ 数据库初始化完成: E:\tset\通讯\服务端\im_database.db
+2026-04-01 11:23:19,381 - root - INFO - [系统] 服务器界面初始化完成
+2026-04-01 11:23:29,869 - root - INFO - [网络] 服务器已启动，正在监听 127.0.0.1:8000
+2026-04-01 11:23:29,869 - root - INFO - [系统] 服务器已启动，监听 127.0.0.1:8000
+2026-04-01 11:23:37,570 - network_server - INFO - [认证] 验证用户: user1
+2026-04-01 11:23:37,571 - network_server - INFO - [认证] 找到用户: user1, 用户信息: {'id': 1, 'username': 'user1', 'nickname': '用户1', 'password_hash': '123456', 'status': 'offline', 'last_login': None, 'created_at': '2026-04-01 03:22:47'}
+2026-04-01 11:23:37,571 - network_server - INFO - [认证] 用户 'user1' 密码验证成功
+2026-04-01 11:23:37,571 - root - INFO - [系统] 📥 用户 'user1' (127.0.0.1) 登录成功
+2026-04-01 11:23:37,578 - root - INFO - [系统] 用户 'user1' 已上线。当前在线: 1 人
+2026-04-01 11:23:37,578 - network_server - INFO - [认证] 验证用户: user2
+2026-04-01 11:23:37,579 - network_server - INFO - [认证] 找到用户: user2, 用户信息: {'id': 2, 'username': 'user2', 'nickname': '用户2', 'password_hash': '123456', 'status': 'offline', 'last_login': None, 'created_at': '2026-04-01 03:22:47'}
+2026-04-01 11:23:37,579 - network_server - INFO - [认证] 用户 'user2' 密码验证成功
+2026-04-01 11:23:37,580 - root - INFO - [系统] 📥 用户 'user2' (127.0.0.1) 登录成功
+2026-04-01 11:23:37,581 - root - INFO - [系统] 用户 'user2' 已上线。当前在线: 2 人
+2026-04-01 11:23:37,589 - database - INFO - 好友请求发送成功: user2 -> user1
+2026-04-01 11:27:31,794 - root - INFO - [系统] 服务器已停止
+2026-04-01 11:28:56,689 - database - INFO - 数据库路径: E:\tset\通讯\服务端\im_database.db
+2026-04-01 11:28:56,691 - database - INFO - 创建数据库目录: E:\tset\通讯\服务端
+2026-04-01 11:28:56,692 - database - INFO - ✅ 数据库初始化完成: E:\tset\通讯\服务端\im_database.db
+2026-04-01 11:28:57,324 - root - INFO - [系统] 服务器界面初始化完成
+2026-04-01 11:29:16,143 - root - INFO - [网络] 服务器已启动，正在监听 127.0.0.1:8000
+2026-04-01 11:29:16,143 - root - INFO - [系统] 服务器已启动，监听 127.0.0.1:8000
+2026-04-01 11:29:43,766 - network_server - INFO - [认证] 验证用户: user1
+2026-04-01 11:29:43,767 - network_server - INFO - [认证] 找到用户: user1, 用户信息: {'id': 1, 'username': 'user1', 'nickname': '用户1', 'password_hash': '123456', 'status': 'offline', 'last_login': None, 'created_at': '2026-04-01 03:26:23'}
+2026-04-01 11:29:43,767 - network_server - INFO - [认证] 用户 'user1' 密码验证成功
+2026-04-01 11:29:43,767 - root - INFO - [系统] 📥 用户 'user1' (127.0.0.1) 登录成功
+2026-04-01 11:29:43,767 - network_server - INFO - [认证] 验证用户: user2
+2026-04-01 11:29:43,776 - root - INFO - [系统] 用户 'user1' 已上线。当前在线: 1 人
+2026-04-01 11:29:43,776 - network_server - INFO - [认证] 找到用户: user2, 用户信息: {'id': 2, 'username': 'user2', 'nickname': '用户2', 'password_hash': '123456', 'status': 'offline', 'last_login': None, 'created_at': '2026-04-01 03:26:23'}
+2026-04-01 11:29:43,776 - network_server - INFO - [认证] 用户 'user2' 密码验证成功
+2026-04-01 11:29:43,777 - root - INFO - [系统] 📥 用户 'user2' (127.0.0.1) 登录成功
+2026-04-01 11:30:39,879 - database - INFO - 数据库路径: E:\tset\通讯\服务端\im_database.db
+2026-04-01 11:30:39,880 - database - INFO - 创建数据库目录: E:\tset\通讯\服务端
+2026-04-01 11:30:39,884 - database - INFO - ✅ 数据库初始化完成: E:\tset\通讯\服务端\im_database.db
+2026-04-01 11:30:40,459 - root - INFO - [系统] 服务器界面初始化完成
+2026-04-01 11:30:41,751 - root - INFO - [系统] 服务器已启动，监听 127.0.0.1:8000
+2026-04-01 11:30:41,752 - root - INFO - [网络] 服务器已启动，正在监听 127.0.0.1:8000
+2026-04-01 11:30:55,647 - network_server - INFO - [认证] 验证用户: user1
+2026-04-01 11:30:55,649 - network_server - INFO - [认证] 找到用户: user1, 用户信息: {'id': 1, 'username': 'user1', 'nickname': '用户1', 'password_hash': '123456', 'status': 'offline', 'last_login': None, 'created_at': '2026-04-01 03:26:23'}
+2026-04-01 11:30:55,649 - network_server - INFO - [认证] 用户 'user1' 密码验证成功
+2026-04-01 11:30:55,649 - root - INFO - [系统] 📥 用户 'user1' (127.0.0.1) 登录成功
+2026-04-01 11:30:55,649 - network_server - INFO - [认证] 验证用户: user2
+2026-04-01 11:30:55,661 - root - INFO - [系统] 用户 'user1' 已上线。当前在线: 1 人
+2026-04-01 11:30:55,662 - network_server - INFO - [认证] 找到用户: user2, 用户信息: {'id': 2, 'username': 'user2', 'nickname': '用户2', 'password_hash': '123456', 'status': 'offline', 'last_login': None, 'created_at': '2026-04-01 03:26:23'}
+2026-04-01 11:30:55,663 - network_server - INFO - [认证] 用户 'user2' 密码验证成功
+2026-04-01 11:30:55,663 - root - INFO - [系统] 📥 用户 'user2' (127.0.0.1) 登录成功
+2026-04-01 11:30:55,665 - root - INFO - [系统] 用户 'user2' 已上线。当前在线: 2 人
+2026-04-01 11:30:55,670 - database - ERROR - 已经有待处理的好友申请: user2 -> user1
+2026-04-01 11:32:52,557 - root - ERROR - 加载配置失败: cannot access local variable 'QMessageBox' where it is not associated with a value
+2026-04-01 11:32:52,557 - root - INFO - [认证] 客户端 127.0.0.1:4495 发送了无效的认证数据
+2026-04-01 11:32:52,653 - database - INFO - 数据库路径: e:\tset\通讯\服务端\im_database.db
+2026-04-01 11:32:52,653 - database - INFO - 创建数据库目录: e:\tset\通讯\服务端
+2026-04-01 11:32:52,654 - database - INFO - ✅ 数据库初始化完成: e:\tset\通讯\服务端\im_database.db
+2026-04-01 11:32:53,081 - root - INFO - [系统] 服务器界面初始化完成
+2026-04-01 11:32:57,714 - root - INFO - [系统] 服务器已启动，监听 127.0.0.1:8000
+2026-04-01 11:32:57,714 - root - INFO - [网络] 服务器已启动，正在监听 127.0.0.1:8000
+2026-04-01 11:33:40,147 - network_server - INFO - [认证] 验证用户: user1
+2026-04-01 11:33:40,148 - network_server - INFO - [认证] 找到用户: user1, 用户信息: {'id': 1, 'username': 'user1', 'nickname': '用户1', 'password_hash': '123456', 'status': 'offline', 'last_login': None, 'created_at': '2026-04-01 03:26:23'}
+2026-04-01 11:33:40,148 - network_server - INFO - [认证] 用户 'user1' 密码验证成功
+2026-04-01 11:33:40,148 - root - INFO - [系统] 📥 用户 'user1' (127.0.0.1) 登录成功
+2026-04-01 11:33:40,155 - root - INFO - [系统] 用户 'user1' 已上线。当前在线: 2 人
+2026-04-01 11:33:53,997 - network_server - INFO - [认证] 验证用户: user3
+2026-04-01 11:33:53,998 - network_server - INFO - [认证] 找到用户: user3, 用户信息: {'id': 3, 'username': 'user3', 'nickname': '用户3', 'password_hash': '123456', 'status': 'offline', 'last_login': None, 'created_at': '2026-04-01 03:26:23'}
+2026-04-01 11:33:53,998 - network_server - INFO - [认证] 用户 'user3' 密码验证成功
+2026-04-01 11:33:53,998 - root - INFO - [系统] 📥 用户 'user3' (127.0.0.1) 登录成功
+2026-04-01 11:33:54,005 - root - INFO - [系统] 用户 'user3' 已上线。当前在线: 3 人
+2026-04-01 11:34:04,525 - database - INFO - 好友请求发送成功: user3 -> user1
+2026-04-01 11:34:37,026 - root - INFO - [系统] 📤 用户 'user3' 主动注销退出
+2026-04-01 11:34:37,027 - root - INFO - [系统] 用户 'user3' 已离线。当前在线: 2 人
+2026-04-01 11:34:37,027 - root - INFO - [系统] 📤 用户 'user3' 退出系统
+2026-04-01 11:34:37,027 - root - INFO - [系统] 用户 'user3' 已离线。当前在线: 2 人
+2026-04-01 11:34:38,573 - root - INFO - [系统] 📤 用户 'user1' 主动注销退出
+2026-04-01 11:34:38,575 - root - INFO - [系统] 用户 'user1' 已离线。当前在线: 1 人
+2026-04-01 11:34:38,575 - root - INFO - [系统] 📤 用户 'user1' 退出系统
+2026-04-01 11:34:38,575 - root - INFO - [系统] 用户 'user1' 已离线。当前在线: 1 人
+2026-04-01 11:35:01,875 - root - INFO - [系统] 服务器已停止
+2026-04-02 16:43:51,040 - database - INFO - 数据库路径: E:\tset\通讯\服务端\im_database.db
+2026-04-02 16:43:51,041 - database - INFO - 创建数据库目录: E:\tset\通讯\服务端
+2026-04-02 16:43:51,042 - database - INFO - ✅ 数据库初始化完成: E:\tset\通讯\服务端\im_database.db
+2026-04-02 16:43:51,761 - root - INFO - [系统] 服务器界面初始化完成
+2026-04-02 16:47:43,052 - root - INFO - [网络] 服务器已启动，正在监听 127.0.0.1:8000
+2026-04-02 16:47:43,052 - root - INFO - [系统] 服务器已启动，监听 127.0.0.1:8000
+2026-04-02 16:52:28,254 - network_server - INFO - [认证] 验证用户: user1
+2026-04-02 16:52:28,256 - network_server - INFO - [认证] 找到用户: user1, 用户信息: {'id': 1, 'username': 'user1', 'nickname': '用户1', 'password_hash': '123456', 'status': 'offline', 'last_login': None, 'created_at': '2026-04-02 08:40:26'}
+2026-04-02 16:52:28,256 - network_server - INFO - [认证] 用户 'user1' 密码验证成功
+2026-04-02 16:52:28,256 - root - INFO - [系统] 📥 用户 'user1' (127.0.0.1) 登录成功
+2026-04-02 16:52:28,285 - root - INFO - [系统] 用户 'user1' 已上线。当前在线: 1 人
+2026-04-02 16:52:39,043 - network_server - INFO - [认证] 验证用户: user3
+2026-04-02 16:52:39,044 - network_server - INFO - [认证] 找到用户: user3, 用户信息: {'id': 3, 'username': 'user3', 'nickname': '用户3', 'password_hash': '123456', 'status': 'offline', 'last_login': None, 'created_at': '2026-04-02 08:40:26'}
+2026-04-02 16:52:39,044 - network_server - INFO - [认证] 用户 'user3' 密码验证成功
+2026-04-02 16:52:39,044 - root - INFO - [系统] 📥 用户 'user3' (127.0.0.1) 登录成功
+2026-04-02 16:52:39,051 - root - INFO - [系统] 用户 'user3' 已上线。当前在线: 2 人
+2026-04-02 16:52:56,025 - database - INFO - 好友请求发送成功: user3 -> user1
+2026-04-02 16:53:54,857 - root - INFO - [系统] 📤 用户 'user3' 主动注销退出
+2026-04-02 16:53:54,859 - root - INFO - [系统] 用户 'user3' 已离线。当前在线: 1 人
+2026-04-02 16:53:54,859 - root - INFO - [系统] 📤 用户 'user3' 退出系统
+2026-04-02 16:53:54,859 - root - INFO - [系统] 用户 'user3' 已离线。当前在线: 1 人
+2026-04-02 16:53:56,212 - root - INFO - [系统] 📤 用户 'user1' 主动注销退出
+2026-04-02 16:53:56,212 - root - INFO - [系统] 用户 'user1' 已离线。当前在线: 0 人
+2026-04-02 16:53:56,213 - root - INFO - [系统] 📤 用户 'user1' 退出系统
+2026-04-02 16:53:56,214 - root - INFO - [系统] 用户 'user1' 已离线。当前在线: 0 人
+2026-04-02 17:01:31,322 - root - INFO - [系统] 服务器已停止
+2026-04-02 17:24:06,561 - database - INFO - 数据库路径: E:\tset\通讯\服务端\im_database.db
+2026-04-02 17:24:06,562 - database - INFO - 创建数据库目录: E:\tset\通讯\服务端
+2026-04-02 17:24:06,562 - database - INFO - ✅ 数据库初始化完成: E:\tset\通讯\服务端\im_database.db
+2026-04-02 17:24:06,879 - root - INFO - [系统] 服务器界面初始化完成
+2026-04-02 17:24:08,105 - root - INFO - [系统] 服务器已启动，监听 127.0.0.1:8000
+2026-04-02 17:24:08,105 - root - INFO - [网络] 服务器已启动，正在监听 127.0.0.1:8000
+2026-04-02 17:24:26,238 - network_server - INFO - [认证] 验证用户: user1
+2026-04-02 17:24:26,239 - network_server - INFO - [认证] 找到用户: user1, 用户信息: {'id': 1, 'username': 'user1', 'nickname': '用户1', 'password_hash': '123456', 'status': 'offline', 'last_login': None, 'created_at': '2026-04-02 08:40:26'}
+2026-04-02 17:24:26,239 - network_server - INFO - [认证] 用户 'user1' 密码验证成功
+2026-04-02 17:24:26,240 - root - INFO - [系统] 📥 用户 'user1' (127.0.0.1) 登录成功
+2026-04-02 17:24:26,245 - root - INFO - [系统] 用户 'user1' 已上线。当前在线: 1 人
+2026-04-02 17:24:26,245 - network_server - INFO - [认证] 验证用户: user3
+2026-04-02 17:24:26,245 - network_server - INFO - [认证] 找到用户: user3, 用户信息: {'id': 3, 'username': 'user3', 'nickname': '用户3', 'password_hash': '123456', 'status': 'offline', 'last_login': None, 'created_at': '2026-04-02 08:40:26'}
+2026-04-02 17:24:26,245 - network_server - INFO - [认证] 用户 'user3' 密码验证成功
+2026-04-02 17:24:26,245 - root - INFO - [系统] 📥 用户 'user3' (127.0.0.1) 登录成功
+2026-04-02 17:24:26,248 - root - INFO - [系统] 用户 'user3' 已上线。当前在线: 2 人
+2026-04-02 17:24:26,258 - database - INFO - 好友请求发送成功: user3 -> user1
+2026-04-02 17:25:33,247 - network_server - INFO - [认证] 验证用户: user1
+2026-04-02 17:25:33,248 - network_server - INFO - [认证] 找到用户: user1, 用户信息: {'id': 1, 'username': 'user1', 'nickname': '用户1', 'password_hash': '123456', 'status': 'offline', 'last_login': None, 'created_at': '2026-04-02 08:40:26'}
+2026-04-02 17:25:33,249 - network_server - INFO - [认证] 用户 'user1' 密码验证成功
+2026-04-02 17:25:33,249 - root - INFO - [系统] 📥 用户 'user1' (127.0.0.1) 登录成功
+2026-04-02 17:25:33,249 - network_server - INFO - [认证] 验证用户: user2
+2026-04-02 17:25:33,251 - root - INFO - [系统] 用户 'user1' 已上线。当前在线: 2 人
+2026-04-02 17:25:33,253 - network_server - INFO - [认证] 找到用户: user2, 用户信息: {'id': 2, 'username': 'user2', 'nickname': '用户2', 'password_hash': '123456', 'status': 'offline', 'last_login': None, 'created_at': '2026-04-02 08:40:26'}
+2026-04-02 17:25:33,253 - network_server - INFO - [认证] 用户 'user2' 密码验证成功
+2026-04-02 17:25:33,255 - root - INFO - [系统] 📥 用户 'user2' (127.0.0.1) 登录成功
+2026-04-02 17:25:33,257 - root - INFO - [系统] 用户 'user2' 已上线。当前在线: 3 人
+2026-04-02 17:25:33,270 - database - INFO - 好友请求发送成功: user2 -> user1
+2026-04-02 17:26:14,944 - root - INFO - [系统] 服务器已停止
+2026-04-02 17:26:16,085 - root - INFO - [网络] 服务器已启动，正在监听 127.0.0.1:8000
+2026-04-02 17:26:16,085 - root - INFO - [系统] 服务器已启动，监听 127.0.0.1:8000
+2026-04-02 17:28:07,257 - root - INFO - [认证] 客户端 127.0.0.1:10286 发送了无效的认证数据
+2026-04-02 17:28:07,257 - root - ERROR - 加载配置失败: cannot access local variable 'QMessageBox' where it is not associated with a value
+2026-04-02 17:28:07,357 - database - INFO - 数据库路径: e:\tset\通讯\服务端\im_database.db
+2026-04-02 17:28:07,358 - database - INFO - 创建数据库目录: e:\tset\通讯\服务端
+2026-04-02 17:28:07,359 - database - INFO - ✅ 数据库初始化完成: e:\tset\通讯\服务端\im_database.db
+2026-04-02 17:28:07,867 - root - INFO - [系统] 服务器界面初始化完成
+2026-04-02 17:28:16,919 - root - INFO - [系统] 服务器已停止
+2026-04-02 17:28:19,516 - root - INFO - [系统] 服务器已启动，监听 127.0.0.1:8000
+2026-04-02 17:28:19,517 - root - INFO - [网络] 服务器已启动，正在监听 127.0.0.1:8000
+2026-04-02 17:28:45,161 - network_server - INFO - [认证] 验证用户: user1
+2026-04-02 17:28:45,163 - network_server - INFO - [认证] 找到用户: user1, 用户信息: {'id': 1, 'username': 'user1', 'nickname': '用户1', 'password_hash': '123456', 'status': 'offline', 'last_login': None, 'created_at': '2026-04-02 08:40:26'}
+2026-04-02 17:28:45,163 - network_server - INFO - [认证] 用户 'user1' 密码验证成功
+2026-04-02 17:28:45,163 - root - INFO - [系统] 📥 用户 'user1' (127.0.0.1) 登录成功
+2026-04-02 17:28:45,168 - root - INFO - [系统] 用户 'user1' 已上线。当前在线: 1 人
+2026-04-02 17:28:57,364 - root - ERROR - 加载配置失败: cannot access local variable 'QMessageBox' where it is not associated with a value
+2026-04-02 17:28:57,364 - root - INFO - [认证] 客户端 127.0.0.1:6176 发送了无效的认证数据
+2026-04-02 17:28:57,431 - database - INFO - 数据库路径: e:\tset\通讯\服务端\im_database.db
+2026-04-02 17:28:57,431 - database - INFO - 创建数据库目录: e:\tset\通讯\服务端
+2026-04-02 17:28:57,432 - database - INFO - ✅ 数据库初始化完成: e:\tset\通讯\服务端\im_database.db
+2026-04-02 17:28:57,785 - root - INFO - [系统] 服务器界面初始化完成
+2026-04-02 17:29:22,160 - network_server - INFO - [认证] 验证用户: user2
+2026-04-02 17:29:22,161 - network_server - INFO - [认证] 找到用户: user2, 用户信息: {'id': 2, 'username': 'user2', 'nickname': '用户2', 'password_hash': '123456', 'status': 'offline', 'last_login': None, 'created_at': '2026-04-02 08:40:26'}
+2026-04-02 17:29:22,161 - network_server - INFO - [认证] 用户 'user2' 密码验证成功
+2026-04-02 17:29:22,162 - root - INFO - [系统] 📥 用户 'user2' (127.0.0.1) 登录成功
+2026-04-02 17:29:22,165 - root - INFO - [系统] 用户 'user2' 已上线。当前在线: 2 人
+2026-04-02 17:29:36,685 - root - INFO - [系统] 📤 用户 'user1' 主动注销退出
+2026-04-02 17:29:36,686 - root - INFO - [系统] 用户 'user1' 已离线。当前在线: 1 人
+2026-04-02 17:29:36,686 - root - INFO - [系统] 📤 用户 'user1' 退出系统
+2026-04-02 17:29:36,686 - root - INFO - [系统] 用户 'user1' 已离线。当前在线: 1 人
+2026-04-02 17:29:59,318 - network_server - INFO - [认证] 验证用户: user1
+2026-04-02 17:29:59,319 - network_server - INFO - [认证] 找到用户: user1, 用户信息: {'id': 1, 'username': 'user1', 'nickname': '用户1', 'password_hash': '123456', 'status': 'offline', 'last_login': None, 'created_at': '2026-04-02 08:40:26'}
+2026-04-02 17:29:59,319 - network_server - INFO - [认证] 用户 'user1' 密码验证成功
+2026-04-02 17:29:59,320 - root - INFO - [系统] 📥 用户 'user1' (127.0.0.1) 登录成功
+2026-04-02 17:29:59,323 - root - INFO - [系统] 用户 'user1' 已上线。当前在线: 2 人
+2026-04-02 17:30:39,528 - root - INFO - [系统] 服务器已停止
+2026-04-02 17:30:43,268 - database - INFO - 数据库路径: e:\tset\通讯\服务端\im_database.db
+2026-04-02 17:30:43,269 - database - INFO - 创建数据库目录: e:\tset\通讯\服务端
+2026-04-02 17:30:43,270 - database - INFO - ✅ 数据库初始化完成: e:\tset\通讯\服务端\im_database.db
+2026-04-02 17:30:43,562 - root - INFO - [系统] 服务器界面初始化完成
+2026-04-02 17:30:45,154 - root - INFO - [系统] 服务器已启动，监听 127.0.0.1:8000
+2026-04-02 17:30:45,156 - root - INFO - [网络] 服务器已启动，正在监听 127.0.0.1:8000
+2026-04-02 17:31:31,613 - network_server - INFO - [认证] 验证用户: user1
+2026-04-02 17:31:31,614 - network_server - INFO - [认证] 找到用户: user1, 用户信息: {'id': 1, 'username': 'user1', 'nickname': '用户1', 'password_hash': '123456', 'status': 'offline', 'last_login': None, 'created_at': '2026-04-02 08:40:26'}
+2026-04-02 17:31:31,614 - network_server - INFO - [认证] 用户 'user1' 密码验证成功
+2026-04-02 17:31:31,614 - root - INFO - [系统] 📥 用户 'user1' (127.0.0.1) 登录成功
+2026-04-02 17:31:31,625 - root - INFO - [系统] 用户 'user1' 已上线。当前在线: 1 人
+2026-04-02 17:32:05,646 - network_server - INFO - [认证] 验证用户: user2
+2026-04-02 17:32:05,646 - network_server - INFO - [认证] 找到用户: user2, 用户信息: {'id': 2, 'username': 'user2', 'nickname': '用户2', 'password_hash': '123456', 'status': 'offline', 'last_login': None, 'created_at': '2026-04-02 08:40:26'}
+2026-04-02 17:32:05,646 - network_server - INFO - [认证] 用户 'user2' 密码验证成功
+2026-04-02 17:32:05,646 - root - INFO - [系统] 📥 用户 'user2' (127.0.0.1) 登录成功
+2026-04-02 17:32:05,651 - root - INFO - [系统] 用户 'user2' 已上线。当前在线: 2 人
+2026-04-02 17:32:29,715 - database - ERROR - 已经有待处理的好友申请: user2 -> user1
+2026-04-02 17:33:13,658 - database - INFO - ✅ 添加用户成功: 'user4'
+2026-04-02 17:33:27,459 - root - INFO - [系统] 📤 用户 'user2' 主动注销退出
+2026-04-02 17:33:27,463 - root - INFO - [系统] 用户 'user2' 已离线。当前在线: 1 人
+2026-04-02 17:33:27,464 - root - INFO - [系统] 📤 用户 'user2' 退出系统
+2026-04-02 17:33:27,464 - root - INFO - [系统] 用户 'user2' 已离线。当前在线: 1 人
+2026-04-02 17:33:30,463 - network_server - INFO - [认证] 验证用户: user4
+2026-04-02 17:33:30,463 - network_server - INFO - [认证] 找到用户: user4, 用户信息: {'id': 4, 'username': 'user4', 'nickname': '', 'password_hash': '123456', 'status': 'offline', 'last_login': None, 'created_at': '2026-04-02 09:33:13'}
+2026-04-02 17:33:30,463 - network_server - INFO - [认证] 用户 'user4' 密码验证成功
+2026-04-02 17:33:30,464 - root - INFO - [系统] 📥 用户 'user4' (127.0.0.1) 登录成功
+2026-04-02 17:33:30,465 - root - INFO - [系统] 用户 'user4' 已上线。当前在线: 2 人
+2026-04-02 17:33:43,709 - network_server - INFO - [认证] 验证用户: user4
+2026-04-02 17:33:43,710 - network_server - INFO - [认证] 找到用户: user4, 用户信息: {'id': 4, 'username': 'user4', 'nickname': '', 'password_hash': '123456', 'status': 'offline', 'last_login': None, 'created_at': '2026-04-02 09:33:13'}
+2026-04-02 17:33:43,711 - network_server - INFO - [认证] 用户 'user4' 密码验证成功
+2026-04-02 17:33:43,711 - root - INFO - [系统] 📥 用户 'user4' (127.0.0.1) 登录成功
+2026-04-02 17:33:43,718 - root - INFO - [系统] 用户 'user4' 已上线。当前在线: 2 人
+2026-04-02 17:34:01,963 - database - INFO - 好友请求发送成功: user4 -> user1
+2026-04-02 17:34:26,581 - database - ERROR - 已经有待处理的好友申请: user1 -> user4
+2026-04-02 17:34:40,803 - root - INFO - [系统] 📤 用户 'user4' 主动注销退出
+2026-04-02 17:34:40,805 - root - INFO - [系统] 用户 'user4' 已离线。当前在线: 1 人
+2026-04-02 17:34:40,805 - root - INFO - [系统] 📤 用户 'user4' 退出系统
+2026-04-02 17:34:40,805 - root - INFO - [系统] 用户 'user4' 已离线。当前在线: 1 人
+2026-04-02 17:34:41,842 - root - INFO - [系统] 📤 用户 'user1' 主动注销退出
+2026-04-02 17:34:41,842 - root - INFO - [系统] 用户 'user1' 已离线。当前在线: 0 人
+2026-04-02 17:34:41,842 - root - INFO - [系统] 📤 用户 'user1' 退出系统
+2026-04-02 17:34:41,842 - root - INFO - [系统] 用户 'user1' 已离线。当前在线: 0 人
+2026-04-02 17:43:49,597 - database - INFO - 数据库路径: E:\tset\通讯\服务端\im_database.db
+2026-04-02 17:43:49,598 - database - INFO - 创建数据库目录: E:\tset\通讯\服务端
+2026-04-02 17:43:49,599 - database - INFO - ✅ 数据库初始化完成: E:\tset\通讯\服务端\im_database.db
+2026-04-02 17:43:50,011 - root - INFO - [系统] 服务器界面初始化完成
+2026-04-02 17:43:51,530 - root - INFO - [系统] 服务器已启动，监听 127.0.0.1:8000
+2026-04-02 17:43:51,531 - root - INFO - [网络] 服务器已启动，正在监听 127.0.0.1:8000
+2026-04-02 17:43:55,941 - network_server - INFO - [认证] 验证用户: user1
+2026-04-02 17:43:55,942 - network_server - INFO - [认证] 找到用户: user1, 用户信息: {'id': 1, 'username': 'user1', 'nickname': '用户1', 'password_hash': '123456', 'status': 'offline', 'last_login': None, 'created_at': '2026-04-02 09:42:26'}
+2026-04-02 17:43:55,942 - network_server - INFO - [认证] 用户 'user1' 密码验证成功
+2026-04-02 17:43:55,942 - root - INFO - [系统] 📥 用户 'user1' (127.0.0.1) 登录成功
+2026-04-02 17:43:55,942 - network_server - INFO - [认证] 验证用户: user4
+2026-04-02 17:43:55,950 - root - INFO - [系统] 用户 'user1' 已上线。当前在线: 1 人
+2026-04-02 17:43:55,951 - network_server - INFO - [认证] 找到用户: user4, 用户信息: {'id': 4, 'username': 'user4', 'nickname': '用户4', 'password_hash': '123456', 'status': 'offline', 'last_login': None, 'created_at': '2026-04-02 09:42:26'}
+2026-04-02 17:43:55,951 - network_server - INFO - [认证] 用户 'user4' 密码验证成功
+2026-04-02 17:43:55,951 - root - INFO - [系统] 📥 用户 'user4' (127.0.0.1) 登录成功
+2026-04-02 17:43:55,952 - root - INFO - [系统] 用户 'user4' 已上线。当前在线: 2 人
+2026-04-02 17:43:55,961 - database - INFO - 好友请求发送成功: user4 -> user1
+2026-04-02 17:43:59,930 - database - ERROR - 已经有待处理的好友申请: user1 -> user4
+2026-04-02 17:45:31,058 - database - INFO - 数据库路径: E:\tset\通讯\服务端\im_database.db
+2026-04-02 17:45:31,059 - database - INFO - 创建数据库目录: E:\tset\通讯\服务端
+2026-04-02 17:45:31,061 - database - INFO - ✅ 数据库初始化完成: E:\tset\通讯\服务端\im_database.db
+2026-04-02 17:45:31,349 - root - INFO - [系统] 服务器界面初始化完成
+2026-04-02 17:45:32,670 - root - INFO - [系统] 服务器已启动，监听 127.0.0.1:8000
+2026-04-02 17:45:32,672 - root - INFO - [网络] 服务器已启动，正在监听 127.0.0.1:8000
+2026-04-02 17:45:38,987 - network_server - INFO - [认证] 验证用户: user1
+2026-04-02 17:45:38,989 - network_server - INFO - [认证] 找到用户: user1, 用户信息: {'id': 1, 'username': 'user1', 'nickname': '用户1', 'password_hash': '123456', 'status': 'offline', 'last_login': None, 'created_at': '2026-04-02 09:42:26'}
+2026-04-02 17:45:38,989 - network_server - INFO - [认证] 用户 'user1' 密码验证成功
+2026-04-02 17:45:38,989 - root - INFO - [系统] 📥 用户 'user1' (127.0.0.1) 登录成功
+2026-04-02 17:45:38,992 - root - INFO - [系统] 用户 'user1' 已上线。当前在线: 1 人
+2026-04-02 17:45:38,992 - network_server - INFO - [认证] 验证用户: user4
+2026-04-02 17:45:38,993 - network_server - INFO - [认证] 找到用户: user4, 用户信息: {'id': 4, 'username': 'user4', 'nickname': '用户4', 'password_hash': '123456', 'status': 'offline', 'last_login': None, 'created_at': '2026-04-02 09:42:26'}
+2026-04-02 17:45:38,993 - network_server - INFO - [认证] 用户 'user4' 密码验证成功
+2026-04-02 17:45:38,994 - root - INFO - [系统] 📥 用户 'user4' (127.0.0.1) 登录成功
+2026-04-02 17:45:38,995 - root - INFO - [系统] 用户 'user4' 已上线。当前在线: 2 人
+2026-04-02 17:45:38,999 - database - ERROR - 已经有待处理的好友申请: user4 -> user1
+2026-04-02 17:51:32,856 - database - INFO - 数据库路径: E:\tset\通讯\服务端\im_database.db
+2026-04-02 17:51:32,856 - database - INFO - 创建数据库目录: E:\tset\通讯\服务端
+2026-04-02 17:51:32,858 - database - INFO - ✅ 数据库初始化完成: E:\tset\通讯\服务端\im_database.db
+2026-04-02 17:51:33,185 - root - INFO - [系统] 服务器界面初始化完成
+2026-04-02 17:51:34,433 - root - INFO - [系统] 服务器已启动，监听 127.0.0.1:8000
+2026-04-02 17:51:34,433 - root - INFO - [网络] 服务器已启动，正在监听 127.0.0.1:8000
+2026-04-02 17:51:39,576 - network_server - INFO - [认证] 验证用户: user1
+2026-04-02 17:51:39,577 - network_server - INFO - [认证] 找到用户: user1, 用户信息: {'id': 1, 'username': 'user1', 'nickname': '用户1', 'password_hash': '123456', 'status': 'offline', 'last_login': None, 'created_at': '2026-04-02 09:42:26'}
+2026-04-02 17:51:39,577 - network_server - INFO - [认证] 用户 'user1' 密码验证成功
+2026-04-02 17:51:39,577 - root - INFO - [系统] 📥 用户 'user1' (127.0.0.1) 登录成功
+2026-04-02 17:51:39,579 - root - INFO - [系统] 用户 'user1' 已上线。当前在线: 1 人
+2026-04-02 17:51:39,579 - network_server - INFO - [认证] 验证用户: user4
+2026-04-02 17:51:39,581 - network_server - INFO - [认证] 找到用户: user4, 用户信息: {'id': 4, 'username': 'user4', 'nickname': '用户4', 'password_hash': '123456', 'status': 'offline', 'last_login': None, 'created_at': '2026-04-02 09:42:26'}
+2026-04-02 17:51:39,581 - network_server - INFO - [认证] 用户 'user4' 密码验证成功
+2026-04-02 17:51:39,581 - root - INFO - [系统] 📥 用户 'user4' (127.0.0.1) 登录成功
+2026-04-02 17:51:39,587 - root - INFO - [系统] 用户 'user4' 已上线。当前在线: 2 人
+2026-04-02 17:51:39,591 - database - ERROR - 已经有待处理的好友申请: user4 -> user1
+2026-04-02 17:55:08,322 - database - INFO - 数据库路径: E:\tset\通讯\服务端\im_database.db
+2026-04-02 17:55:08,323 - database - INFO - 创建数据库目录: E:\tset\通讯\服务端
+2026-04-02 17:55:08,324 - database - INFO - ✅ 数据库初始化完成: E:\tset\通讯\服务端\im_database.db
+2026-04-02 17:55:08,579 - root - INFO - [系统] 服务器界面初始化完成
+2026-04-02 17:55:31,613 - root - INFO - [系统] 服务器已启动，监听 127.0.0.1:8000
+2026-04-02 17:55:31,613 - root - INFO - [网络] 服务器已启动，正在监听 127.0.0.1:8000
+2026-04-02 17:55:41,706 - root - INFO - [系统] 服务器已停止
+2026-04-02 17:55:41,996 - database - INFO - 数据库路径: E:\tset\通讯\服务端\im_database.db
+2026-04-02 17:55:41,997 - database - INFO - 创建数据库目录: E:\tset\通讯\服务端
+2026-04-02 17:55:41,998 - database - INFO - ✅ 数据库初始化完成: E:\tset\通讯\服务端\im_database.db
+2026-04-02 17:55:42,340 - root - INFO - [系统] 服务器界面初始化完成
+2026-04-02 17:55:45,264 - root - INFO - [网络] 服务器已启动，正在监听 127.0.0.1:8000
+2026-04-02 17:55:45,265 - root - INFO - [系统] 服务器已启动，监听 127.0.0.1:8000
+2026-04-02 17:56:06,722 - network_server - INFO - [认证] 验证用户: user1
+2026-04-02 17:56:06,724 - network_server - INFO - [认证] 找到用户: user1, 用户信息: {'id': 1, 'username': 'user1', 'nickname': '用户1', 'password_hash': '123456', 'status': 'offline', 'last_login': None, 'created_at': '2026-04-02 09:55:52'}
+2026-04-02 17:56:06,724 - network_server - INFO - [认证] 用户 'user1' 密码验证成功
+2026-04-02 17:56:06,725 - root - INFO - [系统] 📥 用户 'user1' (127.0.0.1) 登录成功
+2026-04-02 17:56:06,726 - network_server - INFO - [认证] 验证用户: user4
+2026-04-02 17:56:06,728 - root - INFO - [系统] 用户 'user1' 已上线。当前在线: 1 人
+2026-04-02 17:56:06,729 - network_server - INFO - [认证] 找到用户: user4, 用户信息: {'id': 4, 'username': 'user4', 'nickname': '用户4', 'password_hash': '123456', 'status': 'offline', 'last_login': None, 'created_at': '2026-04-02 09:55:52'}
+2026-04-02 17:56:06,729 - network_server - INFO - [认证] 用户 'user4' 密码验证成功
+2026-04-02 17:56:06,730 - root - INFO - [系统] 📥 用户 'user4' (127.0.0.1) 登录成功
+2026-04-02 17:56:06,732 - root - INFO - [系统] 用户 'user4' 已上线。当前在线: 2 人
+2026-04-02 17:56:06,741 - database - INFO - 好友请求发送成功: user4 -> user1
+2026-04-02 17:56:08,235 - network_server - INFO - 处理接受好友请求: user4 -> user1
+2026-04-02 17:56:08,244 - network_server - INFO - 接受好友请求成功: user4 -> user1
+2026-04-02 17:56:08,244 - network_server - INFO - 通知发送者请求被接受: user1 -> user4
+2026-04-02 17:57:17,895 - network_server - INFO - [认证] 验证用户: user1
+2026-04-02 17:57:17,896 - network_server - INFO - [认证] 找到用户: user1, 用户信息: {'id': 1, 'username': 'user1', 'nickname': '用户1', 'password_hash': '123456', 'status': 'offline', 'last_login': None, 'created_at': '2026-04-02 09:55:52'}
+2026-04-02 17:57:17,896 - network_server - INFO - [认证] 用户 'user1' 密码验证成功
+2026-04-02 17:57:17,896 - root - INFO - [系统] 📥 用户 'user1' (127.0.0.1) 登录成功
+2026-04-02 17:57:17,897 - network_server - INFO - [认证] 验证用户: user4
+2026-04-02 17:57:17,898 - root - INFO - [系统] 用户 'user1' 已上线。当前在线: 2 人
+2026-04-02 17:57:17,900 - network_server - INFO - [认证] 找到用户: user4, 用户信息: {'id': 4, 'username': 'user4', 'nickname': '用户4', 'password_hash': '123456', 'status': 'offline', 'last_login': None, 'created_at': '2026-04-02 09:55:52'}
+2026-04-02 17:57:17,900 - network_server - INFO - [认证] 用户 'user4' 密码验证成功
+2026-04-02 17:57:17,900 - root - INFO - [系统] 📥 用户 'user4' (127.0.0.1) 登录成功
+2026-04-02 17:57:17,901 - root - INFO - [系统] 用户 'user4' 已上线。当前在线: 2 人
+2026-04-02 17:57:17,907 - database - ERROR - 已经是好友关系: user1 -> user4
+2026-04-02 17:57:45,194 - network_server - INFO - [认证] 验证用户: user1
+2026-04-02 17:57:45,195 - network_server - INFO - [认证] 找到用户: user1, 用户信息: {'id': 1, 'username': 'user1', 'nickname': '用户1', 'password_hash': '123456', 'status': 'offline', 'last_login': None, 'created_at': '2026-04-02 09:57:33'}
+2026-04-02 17:57:45,196 - network_server - INFO - [认证] 用户 'user1' 密码验证成功
+2026-04-02 17:57:45,196 - root - INFO - [系统] 📥 用户 'user1' (127.0.0.1) 登录成功
+2026-04-02 17:57:45,196 - network_server - INFO - [认证] 验证用户: user4
+2026-04-02 17:57:45,199 - root - INFO - [系统] 用户 'user1' 已上线。当前在线: 2 人
+2026-04-02 17:57:45,200 - network_server - INFO - [认证] 找到用户: user4, 用户信息: {'id': 4, 'username': 'user4', 'nickname': '用户4', 'password_hash': '123456', 'status': 'offline', 'last_login': None, 'created_at': '2026-04-02 09:57:33'}
+2026-04-02 17:57:45,200 - network_server - INFO - [认证] 用户 'user4' 密码验证成功
+2026-04-02 17:57:45,200 - root - INFO - [系统] 📥 用户 'user4' (127.0.0.1) 登录成功
+2026-04-02 17:57:45,201 - root - INFO - [系统] 用户 'user4' 已上线。当前在线: 2 人
+2026-04-02 17:57:45,211 - database - INFO - 好友请求发送成功: user1 -> user4
+2026-04-02 17:59:38,980 - root - ERROR - 加载配置失败: cannot access local variable 'QMessageBox' where it is not associated with a value
+2026-04-02 17:59:38,981 - root - INFO - [认证] 客户端 127.0.0.1:13858 发送了无效的认证数据
+2026-04-02 17:59:39,065 - database - INFO - 数据库路径: e:\tset\通讯\服务端\im_database.db
+2026-04-02 17:59:39,065 - database - INFO - 创建数据库目录: e:\tset\通讯\服务端
+2026-04-02 17:59:39,066 - database - INFO - ✅ 数据库初始化完成: e:\tset\通讯\服务端\im_database.db
+2026-04-02 17:59:39,473 - root - INFO - [系统] 服务器界面初始化完成
+2026-04-02 17:59:40,756 - root - INFO - [系统] 服务器已启动，监听 127.0.0.1:8000
+2026-04-02 17:59:40,756 - root - INFO - [网络] 服务器已启动，正在监听 127.0.0.1:8000
+2026-04-02 17:59:59,115 - network_server - INFO - [认证] 验证用户: user2
+2026-04-02 17:59:59,117 - network_server - INFO - [认证] 找到用户: user2, 用户信息: {'id': 2, 'username': 'user2', 'nickname': '用户2', 'password_hash': '123456', 'status': 'offline', 'last_login': None, 'created_at': '2026-04-02 09:57:33'}
+2026-04-02 17:59:59,117 - network_server - INFO - [认证] 用户 'user2' 密码验证成功
+2026-04-02 17:59:59,118 - root - INFO - [系统] 📥 用户 'user2' (127.0.0.1) 登录成功
+2026-04-02 17:59:59,120 - root - INFO - [系统] 用户 'user2' 已上线。当前在线: 3 人
+2026-04-02 18:00:40,207 - network_server - INFO - [认证] 验证用户: user4
+2026-04-02 18:00:40,209 - network_server - INFO - [认证] 找到用户: user4, 用户信息: {'id': 4, 'username': 'user4', 'nickname': '用户4', 'password_hash': '123456', 'status': 'offline', 'last_login': None, 'created_at': '2026-04-02 09:57:33'}
+2026-04-02 18:00:40,209 - network_server - INFO - [认证] 用户 'user4' 密码验证成功
+2026-04-02 18:00:40,209 - root - INFO - [系统] 📥 用户 'user4' (127.0.0.1) 登录成功
+2026-04-02 18:00:40,214 - root - INFO - [系统] 用户 'user4' 已上线。当前在线: 3 人
+2026-04-02 18:01:09,193 - database - INFO - 好友请求发送成功: user4 -> user2
+2026-04-02 18:01:41,315 - database - ERROR - 已经有待处理的好友申请: user2 -> user4
+2026-04-02 18:02:01,093 - root - INFO - [系统] 📤 用户 'user2' 主动注销退出
+2026-04-02 18:02:01,094 - root - INFO - [系统] 用户 'user2' 已离线。当前在线: 2 人
+2026-04-02 18:02:01,094 - root - INFO - [系统] 📤 用户 'user2' 退出系统
+2026-04-02 18:02:01,094 - root - INFO - [系统] 用户 'user2' 已离线。当前在线: 2 人
+2026-04-02 18:02:02,916 - network_server - INFO - [认证] 验证用户: user1
+2026-04-02 18:02:02,918 - network_server - INFO - [认证] 找到用户: user1, 用户信息: {'id': 1, 'username': 'user1', 'nickname': '用户1', 'password_hash': '123456', 'status': 'offline', 'last_login': None, 'created_at': '2026-04-02 09:57:33'}
+2026-04-02 18:02:02,918 - network_server - INFO - [认证] 用户 'user1' 密码验证成功
+2026-04-02 18:02:02,919 - root - INFO - [系统] 📥 用户 'user1' (127.0.0.1) 登录成功
+2026-04-02 18:02:02,920 - root - INFO - [系统] 用户 'user1' 已上线。当前在线: 2 人
+2026-04-02 18:02:29,207 - network_server - INFO - [认证] 验证用户: user1
+2026-04-02 18:02:29,208 - network_server - INFO - [认证] 找到用户: user1, 用户信息: {'id': 1, 'username': 'user1', 'nickname': '用户1', 'password_hash': '123456', 'status': 'offline', 'last_login': None, 'created_at': '2026-04-02 09:57:33'}
+2026-04-02 18:02:29,208 - network_server - INFO - [认证] 用户 'user1' 密码验证成功
+2026-04-02 18:02:29,208 - root - INFO - [系统] 📥 用户 'user1' (127.0.0.1) 登录成功
+2026-04-02 18:02:29,214 - root - INFO - [系统] 用户 'user1' 已上线。当前在线: 2 人
+2026-04-02 18:03:14,666 - database - ERROR - 已经有待处理的好友申请: user1 -> user4
+2026-04-02 18:03:25,599 - root - INFO - [系统] 📤 用户 'user4' 主动注销退出
+2026-04-02 18:03:25,600 - root - INFO - [系统] 用户 'user4' 已离线。当前在线: 1 人
+2026-04-02 18:03:25,600 - root - INFO - [系统] 📤 用户 'user4' 退出系统
+2026-04-02 18:03:25,600 - root - INFO - [系统] 用户 'user4' 已离线。当前在线: 1 人
+2026-04-02 18:03:26,527 - root - INFO - [系统] 📤 用户 'user1' 主动注销退出
+2026-04-02 18:03:26,528 - root - INFO - [系统] 用户 'user1' 已离线。当前在线: 0 人
+2026-04-02 18:03:26,528 - root - INFO - [系统] 📤 用户 'user1' 退出系统
+2026-04-02 18:03:26,528 - root - INFO - [系统] 用户 'user1' 已离线。当前在线: 0 人
+2026-04-02 18:03:51,586 - root - INFO - [系统] 服务器已停止
+2026-04-02 18:03:57,659 - root - INFO - [系统] 服务器已停止
+2026-04-02 20:36:58,173 - database - INFO - 数据库路径: E:\tset\通讯\服务端\im_database.db
+2026-04-02 20:36:58,174 - database - INFO - 创建数据库目录: E:\tset\通讯\服务端
+2026-04-02 20:36:58,272 - database - INFO - ✅ 数据库初始化完成: E:\tset\通讯\服务端\im_database.db
+2026-04-02 20:36:59,161 - root - INFO - [系统] 服务器界面初始化完成
+2026-04-02 20:39:58,269 - database - INFO - 数据库路径: E:\tset\通讯\服务端\im_database.db
+2026-04-02 20:39:58,270 - database - INFO - 创建数据库目录: E:\tset\通讯\服务端
+2026-04-02 20:39:58,272 - database - INFO - ✅ 数据库初始化完成: E:\tset\通讯\服务端\im_database.db
+2026-04-02 20:39:58,847 - root - INFO - [系统] 服务器界面初始化完成
+2026-04-02 22:51:22,167 - root - ERROR - 加载配置失败: cannot access local variable 'QMessageBox' where it is not associated with a value
+2026-04-02 22:51:22,335 - database - INFO - 数据库路径: e:\tset\通讯\服务端\im_database.db
+2026-04-02 22:51:22,336 - database - INFO - 创建数据库目录: e:\tset\通讯\服务端
+2026-04-02 22:51:22,337 - database - INFO - ✅ 数据库初始化完成: e:\tset\通讯\服务端\im_database.db
+2026-04-02 22:51:23,024 - root - INFO - [系统] 服务器界面初始化完成
+2026-04-02 22:51:27,194 - user_ui - ERROR - 加载用户列表失败: 'last_login'
+2026-04-02 22:51:33,438 - user_ui - ERROR - 加载用户列表失败: 'last_login'
+2026-04-02 22:51:36,007 - user_ui - ERROR - 加载用户列表失败: 'last_login'
+2026-04-02 22:51:41,195 - root - INFO - [错误] 启动服务器失败: IMServer.__init__() got an unexpected keyword argument 'db'
+2026-04-02 22:51:43,212 - root - INFO - [错误] 启动服务器失败: IMServer.__init__() got an unexpected keyword argument 'db'
+2026-04-02 22:55:54,328 - root - ERROR - 加载配置失败: cannot access local variable 'QMessageBox' where it is not associated with a value
+2026-04-02 22:55:54,401 - database - INFO - 数据库路径: e:\tset\通讯\服务端\im_database.db
+2026-04-02 22:55:54,401 - database - INFO - 创建数据库目录: e:\tset\通讯\服务端
+2026-04-02 22:55:54,403 - database - INFO - ✅ 数据库初始化完成: e:\tset\通讯\服务端\im_database.db
+2026-04-02 22:55:54,759 - root - INFO - [系统] 服务器界面初始化完成
+2026-04-02 22:55:57,422 - root - INFO - [错误] 启动服务器失败: IMServer.__init__() got an unexpected keyword argument 'db'
+2026-04-03 10:14:38,124 - database - INFO - 数据库路径: E:\tset\通讯\服务端\im_database.db
+2026-04-03 10:14:38,126 - database - INFO - 创建数据库目录: E:\tset\通讯\服务端
+2026-04-03 10:14:38,127 - database - INFO - [OK] 数据库初始化完成: E:\tset\通讯\服务端\im_database.db
+2026-04-03 10:14:38,522 - root - INFO - [系统] 服务器界面初始化完成
+2026-04-03 10:14:47,052 - root - INFO - [错误] 启动服务器失败: IMServer.__init__() got an unexpected keyword argument 'db'
+2026-04-03 10:14:48,382 - user_ui - ERROR - 加载用户列表失败: 'last_login'
+2026-04-03 10:15:38,660 - root - INFO - [错误] 启动服务器失败: IMServer.__init__() got an unexpected keyword argument 'db'
+2026-04-03 10:19:40,973 - database - INFO - 数据库路径: E:\tset\通讯\服务端\im_database.db
+2026-04-03 10:19:40,973 - database - INFO - 创建数据库目录: E:\tset\通讯\服务端
+2026-04-03 10:19:40,975 - database - INFO - [OK] 数据库初始化完成: E:\tset\通讯\服务端\im_database.db
+2026-04-03 10:19:41,402 - root - INFO - [系统] 服务器界面初始化完成
+2026-04-03 10:20:28,836 - database - INFO - 数据库路径: e:\tset\通讯\服务端\im_database.db
+2026-04-03 10:20:28,837 - database - INFO - 创建数据库目录: e:\tset\通讯\服务端
+2026-04-03 10:20:28,838 - database - INFO - [OK] 数据库初始化完成: e:\tset\通讯\服务端\im_database.db
+2026-04-03 10:20:29,151 - root - INFO - [系统] 服务器界面初始化完成
+2026-04-03 10:20:30,673 - root - INFO - ✅ 服务器已启动，监听 127.0.0.1:8000
+2026-04-03 10:20:30,673 - network_server - INFO - ✅ 服务器已启动，监听 127.0.0.1:8000
+2026-04-03 10:22:24,451 - database - INFO - 数据库路径: e:\tset\通讯\服务端\im_database.db
+2026-04-03 10:22:24,452 - database - INFO - 创建数据库目录: e:\tset\通讯\服务端
+2026-04-03 10:22:24,453 - database - INFO - [OK] 数据库初始化完成: e:\tset\通讯\服务端\im_database.db
+2026-04-03 10:22:24,739 - root - INFO - [系统] 服务器界面初始化完成
+2026-04-03 10:22:25,943 - root - INFO - ✅ 服务器已启动，监听 127.0.0.1:8000
+2026-04-03 10:22:25,943 - network_server - INFO - ✅ 服务器已启动，监听 127.0.0.1:8000
+2026-04-03 10:23:01,434 - database - INFO - 数据库路径: e:\tset\通讯\服务端\im_database.db
+2026-04-03 10:23:01,435 - database - INFO - 创建数据库目录: e:\tset\通讯\服务端
+2026-04-03 10:23:01,437 - database - INFO - [OK] 数据库初始化完成: e:\tset\通讯\服务端\im_database.db
+2026-04-03 10:23:01,749 - root - INFO - [系统] 服务器界面初始化完成
+2026-04-03 10:23:02,966 - root - INFO - ✅ 服务器已启动，监听 127.0.0.1:8000
+2026-04-03 10:23:02,966 - network_server - INFO - ✅ 服务器已启动，监听 127.0.0.1:8000
+2026-04-03 18:29:01,351 - database - INFO - 数据库路径: e:\tset\通讯\服务端\im_database.db
+2026-04-03 18:29:01,351 - database - INFO - 创建数据库目录: e:\tset\通讯\服务端
+2026-04-03 18:29:01,353 - database - INFO - [OK] 数据库初始化完成: e:\tset\通讯\服务端\im_database.db
+2026-04-03 18:29:01,751 - root - INFO - [系统] 服务器界面初始化完成
+2026-04-03 18:29:04,622 - user_ui - ERROR - 加载用户列表失败: 'last_login'
+2026-04-03 18:29:18,169 - root - INFO - ✅ 服务器已启动，监听 127.0.0.1:8000
+2026-04-03 18:29:18,169 - network_server - INFO - ✅ 服务器已启动，监听 127.0.0.1:8000
+2026-04-03 18:35:33,532 - database - INFO - 数据库路径: E:\tset\通讯\服务端\im_database.db
+2026-04-03 18:35:33,533 - database - INFO - 创建数据库目录: E:\tset\通讯\服务端
+2026-04-03 18:35:33,537 - database - INFO - [OK] 数据库初始化完成: E:\tset\通讯\服务端\im_database.db
+2026-04-03 18:35:34,079 - root - INFO - [系统] 服务器界面初始化完成
+2026-04-03 18:35:42,615 - root - INFO - [OK] 服务器已启动，监听 127.0.0.1:8000
+2026-04-03 18:35:42,615 - network_server - INFO - [OK] 服务器已启动，监听 127.0.0.1:8000
+2026-04-03 18:35:42,617 - root - INFO - [系统] 服务器已启动，监听 127.0.0.1:8000
+2026-04-03 18:35:53,530 - user_ui - ERROR - 加载用户列表失败: 'last_login'
+2026-04-03 18:39:42,390 - root - INFO - [系统] 服务器已停止
+2026-04-03 18:40:13,629 - database - INFO - 数据库路径: e:\tset\通讯\服务端\im_database.db
+2026-04-03 18:40:13,630 - database - INFO - 创建数据库目录: e:\tset\通讯\服务端
+2026-04-03 18:40:13,632 - database - INFO - [OK] 数据库初始化完成: e:\tset\通讯\服务端\im_database.db
+2026-04-03 18:40:13,986 - root - INFO - [系统] 服务器界面初始化完成
+2026-04-03 18:45:21,944 - database - INFO - 数据库路径: E:\tset\通讯\服务端\im_database.db
+2026-04-03 18:45:21,944 - database - INFO - 创建数据库目录: E:\tset\通讯\服务端
+2026-04-03 18:45:21,946 - database - INFO - [OK] 数据库初始化完成: E:\tset\通讯\服务端\im_database.db
+2026-04-03 18:45:22,274 - root - INFO - [系统] 服务器界面初始化完成
+2026-04-03 18:48:15,069 - root - INFO - [OK] 服务器已启动，监听 127.0.0.1:8000
+2026-04-03 18:48:15,069 - network_server - INFO - [OK] 服务器已启动，监听 127.0.0.1:8000
+2026-04-03 18:48:15,071 - root - INFO - [系统] 服务器已启动，监听 127.0.0.1:8000
+2026-04-03 18:48:29,840 - user_ui - ERROR - 加载用户列表失败: 'last_login'
+2026-04-03 19:02:10,354 - root - INFO - [系统] 服务器已停止
+2026-04-03 19:02:20,398 - database - INFO - 数据库路径: E:\tset\通讯\服务端\im_database.db
+2026-04-03 19:02:20,398 - database - INFO - 创建数据库目录: E:\tset\通讯\服务端
+2026-04-03 19:02:20,399 - database - INFO - [OK] 数据库初始化完成: E:\tset\通讯\服务端\im_database.db
+2026-04-03 19:02:20,723 - root - INFO - [系统] 服务器界面初始化完成
+2026-04-03 19:02:23,231 - root - INFO - [OK] 服务器已启动，监听 127.0.0.1:8000
+2026-04-03 19:02:23,232 - network_server - INFO - [OK] 服务器已启动，监听 127.0.0.1:8000
+2026-04-03 19:02:23,232 - root - INFO - [系统] 服务器已启动，监听 127.0.0.1:8000
+2026-04-03 19:03:07,671 - root - INFO - [登录] 用户 'testuser1' (127.0.0.1) 登录成功
+2026-04-03 19:03:07,671 - root - INFO - 👤 用户 'testuser1' 已认证 (IP: 127.0.0.1)
+2026-04-03 19:03:07,671 - network_server - INFO - 👤 用户 'testuser1' 已认证 (IP: 127.0.0.1)
+2026-04-03 19:03:07,952 - network_server - ERROR - 消息处理异常: ClientThread._handle_get_friends() takes 1 positional argument but 2 were given
+2026-04-03 19:03:07,952 - network_server - WARNING - 未认证的消息类型: get_friend_requests
+2026-04-03 19:03:07,952 - network_server - WARNING - 未认证的消息类型: get_groups
+2026-04-03 19:03:07,952 - network_server - WARNING - 未认证的消息类型: get_offline_messages
+2026-04-03 19:03:08,015 - root - INFO - 📤 用户 'testuser1' 已断开连接
+2026-04-03 19:03:08,016 - network_server - INFO - 📤 用户 'testuser1' 已断开连接
+2026-04-03 19:06:11,818 - root - INFO - [系统] 服务器已停止
+2026-04-03 19:07:42,153 - database - INFO - 数据库路径: E:\tset\通讯\服务端\im_database.db
+2026-04-03 19:07:42,153 - database - INFO - 创建数据库目录: E:\tset\通讯\服务端
+2026-04-03 19:07:42,155 - database - INFO - [OK] 数据库初始化完成: E:\tset\通讯\服务端\im_database.db
+2026-04-03 19:07:42,505 - root - INFO - [系统] 服务器界面初始化完成
+2026-04-03 19:07:44,160 - root - INFO - [OK] 服务器已启动，监听 127.0.0.1:8000
+2026-04-03 19:07:44,160 - network_server - INFO - [OK] 服务器已启动，监听 127.0.0.1:8000
+2026-04-03 19:07:44,161 - root - INFO - [系统] 服务器已启动，监听 127.0.0.1:8000
+2026-04-03 19:10:58,326 - root - INFO - [登录] 用户 'testuser1' (127.0.0.1) 登录成功
+2026-04-03 19:10:58,326 - root - INFO - 👤 用户 'testuser1' 已认证 (IP: 127.0.0.1)
+2026-04-03 19:10:58,327 - network_server - INFO - 👤 用户 'testuser1' 已认证 (IP: 127.0.0.1)
+2026-04-03 19:10:58,613 - network_server - ERROR - 消息处理异常: ClientThread._handle_get_friends() takes 1 positional argument but 2 were given
+2026-04-03 19:10:58,614 - network_server - WARNING - 未认证的消息类型: get_friend_requests
+2026-04-03 19:10:58,614 - network_server - WARNING - 未认证的消息类型: get_groups
+2026-04-03 19:10:58,614 - network_server - WARNING - 未认证的消息类型: get_offline_messages
+2026-04-03 19:11:08,850 - network_server - WARNING - 未认证的消息类型: search_user
+2026-04-03 19:11:09,765 - network_server - WARNING - 未认证的消息类型: search_user
+2026-04-03 19:11:09,950 - network_server - WARNING - 未认证的消息类型: search_user
+2026-04-03 19:11:28,609 - network_server - WARNING - 未认证的消息类型: heartbeat
+2026-04-03 19:11:35,533 - network_server - WARNING - 未认证的消息类型: search_user
+2026-04-03 19:11:36,021 - network_server - WARNING - 未认证的消息类型: search_user
+2026-04-03 19:11:36,189 - network_server - WARNING - 未认证的消息类型: search_user
+2026-04-03 19:11:36,348 - network_server - WARNING - 未认证的消息类型: search_user
+2026-04-03 19:11:43,212 - network_server - WARNING - 未认证的消息类型: search_user
+2026-04-03 19:11:44,596 - network_server - WARNING - 未认证的消息类型: get_friend_requests
+2026-04-03 19:11:58,610 - network_server - WARNING - 未认证的消息类型: heartbeat
+2026-04-03 19:12:00,086 - network_server - WARNING - 未认证的消息类型: logout
+2026-04-03 19:12:00,182 - root - INFO - 📤 用户 'testuser1' 已断开连接
+2026-04-03 19:12:00,183 - network_server - INFO - 📤 用户 'testuser1' 已断开连接
+2026-04-03 19:19:12,120 - database - INFO - 数据库路径: E:\tset\通讯\服务端\im_database.db
+2026-04-03 19:19:12,120 - database - INFO - 创建数据库目录: E:\tset\通讯\服务端
+2026-04-03 19:19:12,122 - database - INFO - [OK] 数据库初始化完成: E:\tset\通讯\服务端\im_database.db
+2026-04-03 19:19:12,725 - root - INFO - [系统] 服务器界面初始化完成
+2026-04-03 19:20:56,779 - root - INFO - [OK] 服务器已启动，监听 127.0.0.1:8000
+2026-04-03 19:20:56,779 - network_server - INFO - [OK] 服务器已启动，监听 127.0.0.1:8000
+2026-04-03 19:20:56,779 - root - INFO - [系统] 服务器已启动，监听 127.0.0.1:8000
+2026-04-03 19:21:26,124 - root - INFO - [登录] 用户 'testuser1' (127.0.0.1) 登录成功
+2026-04-03 19:21:26,125 - root - INFO - 👤 用户 'testuser1' 已认证 (IP: 127.0.0.1)
+2026-04-03 19:21:26,125 - network_server - INFO - 👤 用户 'testuser1' 已认证 (IP: 127.0.0.1)
+2026-04-03 19:21:26,413 - network_server - ERROR - 消息处理异常: ClientThread._handle_get_friends() takes 1 positional argument but 2 were given
+2026-04-03 19:21:26,414 - network_server - WARNING - 未认证的消息类型: get_friend_requests
+2026-04-03 19:21:26,414 - network_server - WARNING - 未认证的消息类型: get_groups
+2026-04-03 19:21:26,414 - network_server - WARNING - 未认证的消息类型: get_offline_messages
+2026-04-03 19:28:52,624 - root - INFO - [系统] 服务器已停止
+2026-04-03 19:29:02,389 - database - INFO - 数据库路径: E:\tset\通讯\服务端\im_database.db
+2026-04-03 19:29:02,390 - database - INFO - 创建数据库目录: E:\tset\通讯\服务端
+2026-04-03 19:29:02,391 - database - INFO - [OK] 数据库初始化完成: E:\tset\通讯\服务端\im_database.db
+2026-04-03 19:29:02,831 - root - INFO - [系统] 服务器界面初始化完成
+2026-04-03 19:29:05,300 - root - INFO - [OK] 服务器已启动，监听 127.0.0.1:8000
+2026-04-03 19:29:05,300 - network_server - INFO - [OK] 服务器已启动，监听 127.0.0.1:8000
+2026-04-03 19:29:05,301 - root - INFO - [系统] 服务器已启动，监听 127.0.0.1:8000
+2026-04-03 19:34:13,912 - root - INFO - [登录] 用户 'testuser1' (127.0.0.1) 登录成功
+2026-04-03 19:34:13,912 - root - INFO - 👤 用户 'testuser1' 已认证 (IP: 127.0.0.1)
+2026-04-03 19:34:13,912 - network_server - INFO - 👤 用户 'testuser1' 已认证 (IP: 127.0.0.1)
+2026-04-03 19:34:14,189 - network_server - ERROR - 消息处理异常: ClientThread._handle_get_friends() takes 1 positional argument but 2 were given
+2026-04-03 19:34:14,189 - network_server - WARNING - 未认证的消息类型: get_friend_requests
+2026-04-03 19:34:14,189 - network_server - WARNING - 未认证的消息类型: get_groups
+2026-04-03 19:34:14,189 - network_server - WARNING - 未认证的消息类型: get_offline_messages
+2026-04-03 19:34:29,625 - root - INFO - 📤 用户 'testuser1' 已断开连接
+2026-04-03 19:34:29,627 - network_server - INFO - 📤 用户 'testuser1' 已断开连接
+2026-04-03 19:35:32,564 - database - INFO - 数据库路径: E:\tset\通讯\服务端\im_database.db
+2026-04-03 19:35:32,564 - database - INFO - 创建数据库目录: E:\tset\通讯\服务端
+2026-04-03 19:35:32,566 - database - INFO - [OK] 数据库初始化完成: E:\tset\通讯\服务端\im_database.db
+2026-04-03 19:35:32,908 - root - INFO - [系统] 服务器界面初始化完成
+2026-04-03 19:35:40,211 - root - INFO - [OK] 服务器已启动，监听 127.0.0.1:8000
+2026-04-03 19:35:40,211 - network_server - INFO - [OK] 服务器已启动，监听 127.0.0.1:8000
+2026-04-03 19:35:40,212 - root - INFO - [系统] 服务器已启动，监听 127.0.0.1:8000
+2026-04-03 19:36:50,616 - root - INFO - [登录] 用户 'testuser1' (127.0.0.1) 登录成功
+2026-04-03 19:36:50,616 - root - INFO - 👤 用户 'testuser1' 已认证 (IP: 127.0.0.1)
+2026-04-03 19:36:50,616 - network_server - INFO - 👤 用户 'testuser1' 已认证 (IP: 127.0.0.1)
+2026-04-03 19:36:50,900 - network_server - ERROR - 消息处理异常: ClientThread._handle_get_friends() takes 1 positional argument but 2 were given
+2026-04-03 19:36:50,901 - network_server - WARNING - 未认证的消息类型: get_friend_requests
+2026-04-03 19:36:50,901 - network_server - WARNING - 未认证的消息类型: get_groups
+2026-04-03 19:36:50,902 - network_server - WARNING - 未认证的消息类型: get_offline_messages
+2026-04-03 19:38:19,097 - root - INFO - [登录] 用户 'testuser1' (127.0.0.1) 登录成功
+2026-04-03 19:38:19,097 - root - INFO - 👤 用户 'testuser1' 已认证 (IP: 127.0.0.1)
+2026-04-03 19:38:19,098 - network_server - INFO - 👤 用户 'testuser1' 已认证 (IP: 127.0.0.1)
+2026-04-03 19:38:19,377 - network_server - ERROR - 消息处理异常: ClientThread._handle_get_friends() takes 1 positional argument but 2 were given
+2026-04-03 19:38:19,377 - network_server - WARNING - 未认证的消息类型: get_friend_requests
+2026-04-03 19:38:19,378 - network_server - WARNING - 未认证的消息类型: get_groups
+2026-04-03 19:38:19,378 - network_server - WARNING - 未认证的消息类型: get_offline_messages
+2026-04-03 19:51:11,568 - root - INFO - 📤 用户 'testuser1' 已断开连接
+2026-04-03 19:51:11,568 - network_server - INFO - 📤 用户 'testuser1' 已断开连接
+2026-04-03 19:52:08,844 - root - INFO - [系统] 服务器已停止
+2026-04-03 19:55:39,826 - database - INFO - 数据库路径: E:\tset\通讯\服务端\im_database.db
+2026-04-03 19:55:39,827 - database - INFO - 创建数据库目录: E:\tset\通讯\服务端
+2026-04-03 19:55:39,829 - database - INFO - [OK] 数据库初始化完成: E:\tset\通讯\服务端\im_database.db
+2026-04-03 19:55:40,289 - root - INFO - [系统] 服务器界面初始化完成
+2026-04-03 19:55:41,766 - root - INFO - [OK] 服务器已启动，监听 127.0.0.1:8000
+2026-04-03 19:55:41,766 - network_server - INFO - [OK] 服务器已启动，监听 127.0.0.1:8000
+2026-04-03 19:55:41,767 - root - INFO - [系统] 服务器已启动，监听 127.0.0.1:8000
+2026-04-03 19:56:42,196 - root - INFO - [登录] 用户 'testuser1' (127.0.0.1) 登录成功
+2026-04-03 19:56:42,196 - root - INFO - 👤 用户 'testuser1' 已认证 (IP: 127.0.0.1)
+2026-04-03 19:56:42,196 - network_server - INFO - 👤 用户 'testuser1' 已认证 (IP: 127.0.0.1)
+2026-04-03 19:57:23,449 - root - INFO - 📤 用户 'testuser1' 已断开连接
+2026-04-03 19:57:23,449 - network_server - INFO - 📤 用户 'testuser1' 已断开连接
+2026-04-03 19:57:42,230 - root - INFO - [登录] 用户 'testuser1' (127.0.0.1) 登录成功
+2026-04-03 19:57:42,231 - root - INFO - 👤 用户 'testuser1' 已认证 (IP: 127.0.0.1)
+2026-04-03 19:57:42,231 - network_server - INFO - 👤 用户 'testuser1' 已认证 (IP: 127.0.0.1)
+2026-04-03 19:57:42,516 - network_server - ERROR - 消息处理异常: ClientThread._handle_get_friends() takes 1 positional argument but 2 were given
+2026-04-03 19:57:42,517 - network_server - WARNING - 未认证的消息类型: get_friend_requests
+2026-04-03 19:57:42,517 - network_server - WARNING - 未认证的消息类型: get_groups
+2026-04-03 19:57:42,517 - network_server - WARNING - 未认证的消息类型: get_offline_messages
+2026-04-03 19:59:31,577 - root - INFO - [登录] 用户 'testuser1' (127.0.0.1) 登录成功
+2026-04-03 19:59:31,577 - root - INFO - 👤 用户 'testuser1' 已认证 (IP: 127.0.0.1)
+2026-04-03 19:59:31,577 - network_server - INFO - 👤 用户 'testuser1' 已认证 (IP: 127.0.0.1)
+2026-04-03 19:59:31,853 - network_server - ERROR - 消息处理异常: ClientThread._handle_get_friends() takes 1 positional argument but 2 were given
+2026-04-03 19:59:31,854 - network_server - WARNING - 未认证的消息类型: get_friend_requests
+2026-04-03 19:59:31,854 - network_server - WARNING - 未认证的消息类型: get_groups
+2026-04-03 19:59:31,854 - network_server - WARNING - 未认证的消息类型: get_offline_messages
+2026-04-03 20:00:40,635 - root - INFO - 📤 用户 'testuser1' 已断开连接
+2026-04-03 20:00:40,636 - network_server - INFO - 📤 用户 'testuser1' 已断开连接
+2026-04-03 20:05:15,382 - database - INFO - 数据库路径: E:\tset\通讯\服务端\im_database.db
+2026-04-03 20:05:15,382 - database - INFO - 创建数据库目录: E:\tset\通讯\服务端
+2026-04-03 20:05:15,384 - database - INFO - [OK] 数据库初始化完成: E:\tset\通讯\服务端\im_database.db
+2026-04-03 20:05:15,913 - root - INFO - [系统] 服务器界面初始化完成
+2026-04-03 20:05:18,307 - root - INFO - [OK] 服务器已启动，监听 127.0.0.1:8000
+2026-04-03 20:05:18,307 - network_server - INFO - [OK] 服务器已启动，监听 127.0.0.1:8000
+2026-04-03 20:05:18,308 - root - INFO - [系统] 服务器已启动，监听 127.0.0.1:8000
+2026-04-03 20:05:46,184 - root - INFO - [登录] 用户 'testuser1' (127.0.0.1) 登录成功
+2026-04-03 20:05:46,184 - root - INFO - 👤 用户 'testuser1' 已认证 (IP: 127.0.0.1)
+2026-04-03 20:05:46,184 - network_server - INFO - 👤 用户 'testuser1' 已认证 (IP: 127.0.0.1)
+2026-04-03 20:05:46,468 - network_server - ERROR - 消息处理异常: ClientThread._handle_get_friends() takes 1 positional argument but 2 were given
+2026-04-03 20:05:46,468 - network_server - WARNING - 未认证的消息类型: get_friend_requests
+2026-04-03 20:05:46,469 - network_server - WARNING - 未认证的消息类型: get_groups
+2026-04-03 20:05:46,469 - network_server - WARNING - 未认证的消息类型: get_offline_messages
+2026-04-03 20:06:00,292 - root - INFO - 📤 用户 'testuser1' 已断开连接
+2026-04-03 20:06:00,292 - network_server - INFO - 📤 用户 'testuser1' 已断开连接
+2026-04-03 20:06:22,624 - root - INFO - [登录] 用户 'testuser2' (127.0.0.1) 登录成功
+2026-04-03 20:06:22,624 - root - INFO - 👤 用户 'testuser2' 已认证 (IP: 127.0.0.1)
+2026-04-03 20:06:22,624 - network_server - INFO - 👤 用户 'testuser2' 已认证 (IP: 127.0.0.1)
+2026-04-03 20:06:22,908 - network_server - ERROR - 消息处理异常: ClientThread._handle_get_friends() takes 1 positional argument but 2 were given
+2026-04-03 20:06:22,908 - network_server - WARNING - 未认证的消息类型: get_friend_requests
+2026-04-03 20:06:22,908 - network_server - WARNING - 未认证的消息类型: get_groups
+2026-04-03 20:06:22,909 - network_server - WARNING - 未认证的消息类型: get_offline_messages
+2026-04-03 20:06:25,534 - root - INFO - 📤 用户 'testuser2' 已断开连接
+2026-04-03 20:06:25,534 - network_server - INFO - 📤 用户 'testuser2' 已断开连接
+2026-04-03 20:11:29,169 - root - INFO - [系统] 服务器已停止
+2026-04-03 20:15:17,994 - database - INFO - 数据库路径: E:\tset\通讯\服务端\im_database.db
+2026-04-03 20:15:17,995 - database - INFO - 创建数据库目录: E:\tset\通讯\服务端
+2026-04-03 20:15:17,997 - database - INFO - [OK] 数据库初始化完成: E:\tset\通讯\服务端\im_database.db
+2026-04-03 20:15:18,423 - root - INFO - [系统] 服务器界面初始化完成
+2026-04-03 20:15:24,081 - root - INFO - [OK] 服务器已启动，监听 127.0.0.1:8000
+2026-04-03 20:15:24,081 - network_server - INFO - [OK] 服务器已启动，监听 127.0.0.1:8000
+2026-04-03 20:15:24,082 - root - INFO - [系统] 服务器已启动，监听 127.0.0.1:8000
+2026-04-03 20:15:38,467 - root - INFO - [登录] 用户 'testuser1' (127.0.0.1) 登录成功
+2026-04-03 20:15:38,467 - root - INFO - 👤 用户 'testuser1' 已认证 (IP: 127.0.0.1)
+2026-04-03 20:15:38,467 - network_server - INFO - 👤 用户 'testuser1' 已认证 (IP: 127.0.0.1)
+2026-04-03 20:15:38,746 - network_server - ERROR - 消息处理异常: ClientThread._handle_get_friends() takes 1 positional argument but 2 were given
+2026-04-03 20:15:38,746 - network_server - WARNING - 未认证的消息类型: get_friend_requests
+2026-04-03 20:15:38,746 - network_server - WARNING - 未认证的消息类型: get_groups
+2026-04-03 20:15:38,746 - network_server - WARNING - 未认证的消息类型: get_offline_messages
+2026-04-03 20:15:42,799 - root - INFO - 📤 用户 'testuser1' 已断开连接
+2026-04-03 20:15:42,799 - network_server - INFO - 📤 用户 'testuser1' 已断开连接
+2026-04-03 20:17:46,068 - root - INFO - [登录] 用户 'testuser1' (127.0.0.1) 登录成功
+2026-04-03 20:17:46,068 - root - INFO - 👤 用户 'testuser1' 已认证 (IP: 127.0.0.1)
+2026-04-03 20:17:46,068 - network_server - INFO - 👤 用户 'testuser1' 已认证 (IP: 127.0.0.1)
+2026-04-03 20:17:46,349 - network_server - ERROR - 消息处理异常: ClientThread._handle_get_friends() takes 1 positional argument but 2 were given
+2026-04-03 20:17:46,350 - network_server - WARNING - 未认证的消息类型: get_friend_requests
+2026-04-03 20:17:46,350 - network_server - WARNING - 未认证的消息类型: get_groups
+2026-04-03 20:17:46,350 - network_server - WARNING - 未认证的消息类型: get_offline_messages
+2026-04-03 20:17:52,973 - root - INFO - 📤 用户 'testuser1' 已断开连接
+2026-04-03 20:17:52,973 - network_server - INFO - 📤 用户 'testuser1' 已断开连接
+2026-04-03 20:21:25,990 - database - INFO - 数据库路径: E:\tset\通讯\服务端\im_database.db
+2026-04-03 20:21:25,991 - database - INFO - 创建数据库目录: E:\tset\通讯\服务端
+2026-04-03 20:21:25,992 - database - INFO - [OK] 数据库初始化完成: E:\tset\通讯\服务端\im_database.db
+2026-04-03 20:21:26,524 - root - INFO - [系统] 服务器界面初始化完成
+2026-04-03 20:21:31,433 - root - INFO - [OK] 服务器已启动，监听 127.0.0.1:8000
+2026-04-03 20:21:31,433 - network_server - INFO - [OK] 服务器已启动，监听 127.0.0.1:8000
+2026-04-03 20:21:31,435 - root - INFO - [系统] 服务器已启动，监听 127.0.0.1:8000
+2026-04-03 20:21:43,518 - root - INFO - [登录] 用户 'testuser1' (127.0.0.1) 登录成功
+2026-04-03 20:21:43,518 - root - INFO - 👤 用户 'testuser1' 已认证 (IP: 127.0.0.1)
+2026-04-03 20:21:43,519 - network_server - INFO - 👤 用户 'testuser1' 已认证 (IP: 127.0.0.1)
+2026-04-03 20:21:43,804 - network_server - ERROR - 消息处理异常: ClientThread._handle_get_friends() takes 1 positional argument but 2 were given
+2026-04-03 20:21:43,804 - network_server - WARNING - 未认证的消息类型: get_friend_requests
+2026-04-03 20:21:43,804 - network_server - WARNING - 未认证的消息类型: get_groups
+2026-04-03 20:21:43,804 - network_server - WARNING - 未认证的消息类型: get_offline_messages
+2026-04-03 20:22:03,048 - network_server - WARNING - 未认证的消息类型: search_user
+2026-04-03 20:22:07,552 - network_server - WARNING - 未认证的消息类型: search_user
+2026-04-03 20:22:32,952 - network_server - WARNING - 未认证的消息类型: search_user
+2026-04-03 20:26:19,097 - database - INFO - 数据库路径: E:\tset\通讯\服务端\im_database.db
+2026-04-03 20:26:19,098 - database - INFO - 创建数据库目录: E:\tset\通讯\服务端
+2026-04-03 20:26:19,100 - database - INFO - [OK] 数据库初始化完成: E:\tset\通讯\服务端\im_database.db
+2026-04-03 20:26:19,538 - root - INFO - [系统] 服务器界面初始化完成
+2026-04-03 20:26:20,948 - root - INFO - [OK] 服务器已启动，监听 127.0.0.1:8000
+2026-04-03 20:26:20,948 - network_server - INFO - [OK] 服务器已启动，监听 127.0.0.1:8000
+2026-04-03 20:26:20,949 - root - INFO - [系统] 服务器已启动，监听 127.0.0.1:8000
+2026-04-03 20:27:45,281 - root - INFO - [登录] 用户 'testuser1' (127.0.0.1) 登录成功
+2026-04-03 20:27:45,281 - root - INFO - 👤 用户 'testuser1' 已认证 (IP: 127.0.0.1)
+2026-04-03 20:27:45,281 - network_server - INFO - 👤 用户 'testuser1' 已认证 (IP: 127.0.0.1)
+2026-04-03 20:52:12,980 - database - INFO - 数据库路径: E:\tset\通讯\服务端\im_database.db
+2026-04-03 20:52:12,981 - database - INFO - 创建数据库目录: E:\tset\通讯\服务端
+2026-04-03 20:52:12,983 - database - INFO - [OK] 数据库初始化完成: E:\tset\通讯\服务端\im_database.db
+2026-04-03 20:52:13,648 - root - INFO - [系统] 服务器界面初始化完成
+2026-04-03 20:52:46,032 - root - INFO - [OK] 服务器已启动，监听 127.0.0.1:8000
+2026-04-03 20:52:46,032 - network_server - INFO - [OK] 服务器已启动，监听 127.0.0.1:8000
+2026-04-03 20:52:46,033 - root - INFO - [系统] 服务器已启动，监听 127.0.0.1:8000
+2026-04-03 20:54:16,799 - root - INFO - [系统] 服务器已停止
+2026-04-03 20:54:46,349 - database - INFO - 数据库路径: e:\tset\通讯\服务端\im_database.db
+2026-04-03 20:54:46,350 - database - INFO - 创建数据库目录: e:\tset\通讯\服务端
+2026-04-03 20:54:46,352 - database - INFO - [OK] 数据库初始化完成: e:\tset\通讯\服务端\im_database.db
+2026-04-03 20:54:46,724 - root - INFO - [系统] 服务器界面初始化完成
+2026-04-03 20:54:48,316 - root - INFO - [OK] 服务器已启动，监听 127.0.0.1:8000
+2026-04-03 20:54:48,316 - network_server - INFO - [OK] 服务器已启动，监听 127.0.0.1:8000
+2026-04-03 20:54:48,319 - root - INFO - [系统] 服务器已启动，监听 127.0.0.1:8000
+2026-04-03 20:56:05,598 - database - INFO - 数据库路径: e:\tset\通讯\服务端\im_database.db
+2026-04-03 20:56:05,599 - database - INFO - 创建数据库目录: e:\tset\通讯\服务端
+2026-04-03 20:56:05,601 - database - INFO - [OK] 数据库初始化完成: e:\tset\通讯\服务端\im_database.db
+2026-04-03 20:56:06,050 - root - INFO - [系统] 服务器界面初始化完成
+2026-04-03 20:56:07,595 - root - INFO - [OK] 服务器已启动，监听 127.0.0.1:8000
+2026-04-03 20:56:07,595 - network_server - INFO - [OK] 服务器已启动，监听 127.0.0.1:8000
+2026-04-03 20:56:07,597 - root - INFO - [系统] 服务器已启动，监听 127.0.0.1:8000
+2026-04-03 20:57:25,967 - root - INFO - [登录] 用户 'testuser1' (127.0.0.1) 登录成功
+2026-04-03 20:57:25,968 - root - INFO - 👤 用户 'testuser1' 已认证 (IP: 127.0.0.1)
+2026-04-03 20:57:25,968 - network_server - INFO - 👤 用户 'testuser1' 已认证 (IP: 127.0.0.1)
+2026-04-03 20:58:04,629 - root - INFO - 📤 用户 'testuser1' 已断开连接
+2026-04-03 20:58:04,630 - network_server - INFO - 📤 用户 'testuser1' 已断开连接
+2026-04-03 20:58:13,568 - root - INFO - [系统] 服务器已停止
+2026-04-03 21:13:39,363 - database - INFO - 数据库路径: E:\tset\通讯\服务端\im_database.db
+2026-04-03 21:13:39,363 - database - INFO - 创建数据库目录: E:\tset\通讯\服务端
+2026-04-03 21:13:39,365 - database - INFO - [OK] 数据库初始化完成: E:\tset\通讯\服务端\im_database.db
+2026-04-03 21:13:39,810 - root - INFO - [系统] 服务器界面初始化完成
+2026-04-03 21:14:17,496 - root - INFO - [OK] 服务器已启动，监听 127.0.0.1:8000
+2026-04-03 21:14:17,496 - network_server - INFO - [OK] 服务器已启动，监听 127.0.0.1:8000
+2026-04-03 21:14:17,498 - root - INFO - [系统] 服务器已启动，监听 127.0.0.1:8000
+2026-04-03 21:15:05,519 - root - INFO - [登录] 用户 'testuser1' (127.0.0.1) 登录成功
+2026-04-03 21:15:05,521 - network_server - INFO - [登录] 用户 'testuser1' (127.0.0.1) 登录成功
+2026-04-03 21:15:05,522 - root - INFO - 👤 用户 'testuser1' 已认证 (IP: 127.0.0.1)
+2026-04-03 21:15:05,522 - network_server - INFO - 👤 用户 'testuser1' 已认证 (IP: 127.0.0.1)
+2026-04-03 21:18:01,824 - root - INFO - [登录] 用户 'testuser2' (127.0.0.1) 登录成功
+2026-04-03 21:18:01,826 - network_server - INFO - [登录] 用户 'testuser2' (127.0.0.1) 登录成功
+2026-04-03 21:18:01,827 - root - INFO - 👤 用户 'testuser2' 已认证 (IP: 127.0.0.1)
+2026-04-03 21:18:01,827 - network_server - INFO - 👤 用户 'testuser2' 已认证 (IP: 127.0.0.1)
+2026-04-03 21:18:18,405 - database - INFO - [OK] 好友请求发送成功: testuser2 -> testuser1
+2026-04-03 21:18:26,117 - root - INFO - 📤 用户 'testuser2' 已断开连接
+2026-04-03 21:18:26,117 - network_server - INFO - 📤 用户 'testuser2' 已断开连接
+2026-04-03 21:18:27,684 - root - INFO - 📤 用户 'testuser1' 已断开连接
+2026-04-03 21:18:27,684 - network_server - INFO - 📤 用户 'testuser1' 已断开连接
+2026-04-03 21:25:13,445 - root - INFO - [系统] 服务器已停止
+2026-04-03 21:37:42,273 - database - INFO - 数据库路径: E:\tset\通讯\服务端\im_database.db
+2026-04-03 21:37:42,273 - database - INFO - 创建数据库目录: E:\tset\通讯\服务端
+2026-04-03 21:37:42,362 - database - INFO - [OK] 数据库初始化完成: E:\tset\通讯\服务端\im_database.db
+2026-04-03 21:37:43,066 - root - INFO - [系统] 服务器界面初始化完成
+2026-04-03 21:38:01,149 - root - INFO - [OK] 服务器已启动，监听 127.0.0.1:8000
+2026-04-03 21:38:01,149 - network_server - INFO - [OK] 服务器已启动，监听 127.0.0.1:8000
+2026-04-03 21:38:01,151 - root - INFO - [系统] 服务器已启动，监听 127.0.0.1:8000
+2026-04-03 21:38:49,672 - root - INFO - [系统] 服务器已停止
+2026-04-03 21:40:45,464 - database - INFO - 数据库路径: E:\tset\通讯\服务端\im_database.db
+2026-04-03 21:40:45,464 - database - INFO - 创建数据库目录: E:\tset\通讯\服务端
+2026-04-03 21:40:45,468 - database - INFO - [OK] 数据库初始化完成: E:\tset\通讯\服务端\im_database.db
+2026-04-03 21:40:46,006 - root - INFO - [系统] 服务器界面初始化完成
+2026-04-03 21:40:52,532 - root - INFO - [OK] 服务器已启动，监听 127.0.0.1:8000
+2026-04-03 21:40:52,532 - network_server - INFO - [OK] 服务器已启动，监听 127.0.0.1:8000
+2026-04-03 21:40:52,533 - root - INFO - [系统] 服务器已启动，监听 127.0.0.1:8000
+2026-04-03 21:45:50,384 - database - INFO - 数据库路径: E:\tset\通讯\服务端\im_database.db
+2026-04-03 21:45:50,385 - database - INFO - 创建数据库目录: E:\tset\通讯\服务端
+2026-04-03 21:45:50,387 - database - INFO - [OK] 数据库初始化完成: E:\tset\通讯\服务端\im_database.db
+2026-04-03 21:45:50,764 - root - INFO - [系统] 服务器界面初始化完成
+2026-04-03 21:46:13,039 - database - INFO - [OK] 用户注册成功: user1
+2026-04-03 21:46:53,633 - database - INFO - [OK] 用户注册成功: user2
+2026-04-03 21:47:00,820 - root - INFO - [OK] 服务器已启动，监听 127.0.0.1:8000
+2026-04-03 21:47:00,820 - network_server - INFO - [OK] 服务器已启动，监听 127.0.0.1:8000
+2026-04-03 21:47:00,821 - root - INFO - [系统] 服务器已启动，监听 127.0.0.1:8000
+2026-04-03 21:47:50,942 - root - INFO - [登录] 用户 'user1' (127.0.0.1) 登录成功
+2026-04-03 21:47:50,946 - network_server - INFO - [登录] 用户 'user1' (127.0.0.1) 登录成功
+2026-04-03 21:47:50,946 - root - INFO - 👤 用户 'user1' 已认证 (IP: 127.0.0.1)
+2026-04-03 21:47:50,946 - network_server - INFO - 👤 用户 'user1' 已认证 (IP: 127.0.0.1)
+2026-04-03 21:48:25,964 - database - INFO - [OK] 好友请求发送成功: user1 -> user2
+2026-04-03 21:49:18,359 - root - INFO - [登录] 用户 'user2' (127.0.0.1) 登录成功
+2026-04-03 21:49:18,360 - network_server - INFO - [登录] 用户 'user2' (127.0.0.1) 登录成功
+2026-04-03 21:49:18,360 - root - INFO - 👤 用户 'user2' 已认证 (IP: 127.0.0.1)
+2026-04-03 21:49:18,360 - network_server - INFO - 👤 用户 'user2' 已认证 (IP: 127.0.0.1)
+2026-04-03 21:50:26,780 - root - INFO - 📤 用户 'user2' 已断开连接
+2026-04-03 21:50:26,781 - network_server - INFO - 📤 用户 'user2' 已断开连接
+2026-04-03 21:50:38,082 - root - INFO - [注销] 用户 'user1' 注销退出
+2026-04-03 21:50:38,083 - network_server - INFO - [注销] 用户 'user1' 注销退出
+2026-04-03 21:50:38,099 - root - INFO - 📤 用户 'user1' 已断开连接
+2026-04-03 21:50:38,100 - network_server - INFO - 📤 用户 'user1' 已断开连接
+2026-04-03 21:50:38,102 - root - INFO - 📤 用户 'user1' 已断开连接
+2026-04-03 21:50:38,102 - network_server - INFO - 📤 用户 'user1' 已断开连接
+2026-04-03 21:50:53,640 - root - INFO - [登录] 用户 'user2' (127.0.0.1) 登录成功
+2026-04-03 21:50:53,642 - network_server - INFO - [登录] 用户 'user2' (127.0.0.1) 登录成功
+2026-04-03 21:50:53,642 - root - INFO - 👤 用户 'user2' 已认证 (IP: 127.0.0.1)
+2026-04-03 21:50:53,642 - network_server - INFO - 👤 用户 'user2' 已认证 (IP: 127.0.0.1)
+2026-04-03 21:51:02,699 - root - INFO - 📤 用户 'user2' 已断开连接
+2026-04-03 21:51:02,699 - network_server - INFO - 📤 用户 'user2' 已断开连接
+2026-04-03 22:02:28,415 - root - INFO - [系统] 服务器已停止
+2026-04-03 22:04:18,017 - database - INFO - 数据库路径: E:\tset\通讯\服务端\im_database.db
+2026-04-03 22:04:18,017 - database - INFO - 创建数据库目录: E:\tset\通讯\服务端
+2026-04-03 22:04:18,136 - database - INFO - [OK] 数据库初始化完成: E:\tset\通讯\服务端\im_database.db
+2026-04-03 22:04:18,998 - root - INFO - [系统] 服务器界面初始化完成
+2026-04-03 22:04:22,184 - root - INFO - [OK] 服务器已启动，监听 127.0.0.1:8000
+2026-04-03 22:04:22,184 - network_server - INFO - [OK] 服务器已启动，监听 127.0.0.1:8000
+2026-04-03 22:04:22,185 - root - INFO - [系统] 服务器已启动，监听 127.0.0.1:8000
+2026-04-03 22:12:53,351 - root - INFO - [系统] 服务器已停止
+2026-04-03 22:13:43,837 - database - INFO - 数据库路径: e:\tset\通讯\服务端\im_database.db
+2026-04-03 22:13:43,838 - database - INFO - 创建数据库目录: e:\tset\通讯\服务端
+2026-04-03 22:13:43,839 - database - INFO - [OK] 数据库初始化完成: e:\tset\通讯\服务端\im_database.db
+2026-04-03 22:13:44,265 - root - INFO - [系统] 服务器界面初始化完成
+2026-04-03 22:13:45,893 - root - INFO - [OK] 服务器已启动，监听 127.0.0.1:8000
+2026-04-03 22:13:45,893 - network_server - INFO - [OK] 服务器已启动，监听 127.0.0.1:8000
+2026-04-03 22:13:45,894 - root - INFO - [系统] 服务器已启动，监听 127.0.0.1:8000
+2026-04-03 22:18:24,527 - root - INFO - [登录] 用户 'user1' (127.0.0.1) 登录成功
+2026-04-03 22:18:24,531 - network_server - INFO - [登录] 用户 'user1' (127.0.0.1) 登录成功
+2026-04-03 22:18:24,531 - root - INFO - 👤 用户 'user1' 已认证 (IP: 127.0.0.1)
+2026-04-03 22:18:24,531 - network_server - INFO - 👤 用户 'user1' 已认证 (IP: 127.0.0.1)
+2026-04-03 22:19:04,585 - root - INFO - [登录] 用户 'user2' (127.0.0.1) 登录成功
+2026-04-03 22:19:04,586 - network_server - INFO - [登录] 用户 'user2' (127.0.0.1) 登录成功
+2026-04-03 22:19:04,586 - root - INFO - 👤 用户 'user2' 已认证 (IP: 127.0.0.1)
+2026-04-03 22:19:04,586 - network_server - INFO - 👤 用户 'user2' 已认证 (IP: 127.0.0.1)
+2026-04-03 22:19:21,017 - database - ERROR - 已经是好友: user1 -> user2
+2026-04-03 22:19:27,561 - database - ERROR - 已经是好友: user1 -> user2
+2026-04-03 22:19:30,480 - database - ERROR - 已经是好友: user1 -> user2
+2026-04-03 22:19:37,833 - database - ERROR - 已经是好友: user1 -> user2
+2026-04-03 22:19:40,760 - database - ERROR - 已经是好友: user1 -> user2
+2026-04-03 22:19:57,647 - database - ERROR - 已经是好友: user1 -> user2
+2026-04-03 22:20:10,607 - database - ERROR - 已经是好友: user1 -> user2
+2026-04-03 22:20:16,817 - root - INFO - [注销] 用户 'user1' 注销退出
+2026-04-03 22:20:16,818 - network_server - INFO - [注销] 用户 'user1' 注销退出
+2026-04-03 22:20:16,835 - root - INFO - 📤 用户 'user1' 已断开连接
+2026-04-03 22:20:16,836 - network_server - INFO - 📤 用户 'user1' 已断开连接
+2026-04-03 22:20:16,841 - root - INFO - 📤 用户 'user1' 已断开连接
+2026-04-03 22:20:16,841 - network_server - INFO - 📤 用户 'user1' 已断开连接
+2026-04-03 22:20:36,677 - root - INFO - [注销] 用户 'user2' 注销退出
+2026-04-03 22:20:36,677 - network_server - INFO - [注销] 用户 'user2' 注销退出
+2026-04-03 22:20:36,692 - root - INFO - 📤 用户 'user2' 已断开连接
+2026-04-03 22:20:36,693 - network_server - INFO - 📤 用户 'user2' 已断开连接
+2026-04-03 22:20:36,696 - root - INFO - 📤 用户 'user2' 已断开连接
+2026-04-03 22:20:36,696 - network_server - INFO - 📤 用户 'user2' 已断开连接
+2026-04-03 22:40:45,556 - database - INFO - 数据库路径: e:\tset\通讯\服务端\im_database.db
+2026-04-03 22:40:45,556 - database - INFO - 创建数据库目录: e:\tset\通讯\服务端
+2026-04-03 22:40:45,557 - database - INFO - [OK] 数据库初始化完成: e:\tset\通讯\服务端\im_database.db
+2026-04-03 22:40:46,305 - root - INFO - [系统] 服务器界面初始化完成
+2026-04-03 22:40:47,734 - root - INFO - [OK] 服务器已启动，监听 127.0.0.1:8000
+2026-04-03 22:40:47,734 - network_server - INFO - [OK] 服务器已启动，监听 127.0.0.1:8000
+2026-04-03 22:40:47,734 - root - INFO - [系统] 服务器已启动，监听 127.0.0.1:8000
+2026-04-03 22:41:36,440 - root - INFO - [登录] 用户 'user1' (127.0.0.1) 登录成功
+2026-04-03 22:41:36,443 - network_server - INFO - [登录] 用户 'user1' (127.0.0.1) 登录成功
+2026-04-03 22:41:36,443 - root - INFO - 👤 用户 'user1' 已认证 (IP: 127.0.0.1)
+2026-04-03 22:41:36,443 - network_server - INFO - 👤 用户 'user1' 已认证 (IP: 127.0.0.1)
+2026-04-03 22:42:03,890 - root - INFO - [登录] 用户 'user2' (127.0.0.1) 登录成功
+2026-04-03 22:42:03,892 - network_server - INFO - [登录] 用户 'user2' (127.0.0.1) 登录成功
+2026-04-03 22:42:03,892 - root - INFO - 👤 用户 'user2' 已认证 (IP: 127.0.0.1)
+2026-04-03 22:42:03,892 - network_server - INFO - 👤 用户 'user2' 已认证 (IP: 127.0.0.1)
+2026-04-03 22:42:51,532 - network_server - INFO - [添加好友] 收到请求: from=user1, to=user2
+2026-04-03 22:42:51,532 - database - INFO - [好友请求] 查询用户: from=user1, to=user2
+2026-04-03 22:42:51,533 - database - INFO - [好友请求] 查询结果: from_user=True, to_user=True
+2026-04-03 22:42:51,534 - database - ERROR - 已经是好友: user1 -> user2
+2026-04-03 22:42:51,534 - network_server - INFO - [添加好友] 数据库操作结果: False
+2026-04-03 22:43:38,030 - root - INFO - [注销] 用户 'user2' 注销退出
+2026-04-03 22:43:38,030 - network_server - INFO - [注销] 用户 'user2' 注销退出
+2026-04-03 22:43:38,046 - root - INFO - 📤 用户 'user2' 已断开连接
+2026-04-03 22:43:38,046 - network_server - INFO - 📤 用户 'user2' 已断开连接
+2026-04-03 22:43:38,048 - root - INFO - 📤 用户 'user2' 已断开连接
+2026-04-03 22:43:38,049 - network_server - INFO - 📤 用户 'user2' 已断开连接
+2026-04-03 22:44:00,037 - database - INFO - [OK] 用户注册成功: user3
+2026-04-03 22:44:16,446 - root - INFO - [登录] 用户 'user3' (127.0.0.1) 登录成功
+2026-04-03 22:44:16,447 - network_server - INFO - [登录] 用户 'user3' (127.0.0.1) 登录成功
+2026-04-03 22:44:16,447 - root - INFO - 👤 用户 'user3' 已认证 (IP: 127.0.0.1)
+2026-04-03 22:44:16,447 - network_server - INFO - 👤 用户 'user3' 已认证 (IP: 127.0.0.1)
+2026-04-03 22:44:26,626 - network_server - INFO - [添加好友] 收到请求: from=user3, to=user1
+2026-04-03 22:44:26,626 - database - INFO - [好友请求] 查询用户: from=user3, to=user1
+2026-04-03 22:44:26,628 - database - INFO - [好友请求] 查询结果: from_user=True, to_user=True
+2026-04-03 22:44:26,638 - database - INFO - [OK] 好友请求发送成功: user3 -> user1
+2026-04-03 22:44:26,639 - network_server - INFO - [添加好友] 数据库操作结果: True
+2026-04-03 22:45:17,121 - root - INFO - [注销] 用户 'user3' 注销退出
+2026-04-03 22:45:17,122 - network_server - INFO - [注销] 用户 'user3' 注销退出
+2026-04-03 22:45:17,138 - root - INFO - 📤 用户 'user3' 已断开连接
+2026-04-03 22:45:17,138 - network_server - INFO - 📤 用户 'user3' 已断开连接
+2026-04-03 22:45:17,140 - root - INFO - 📤 用户 'user3' 已断开连接
+2026-04-03 22:45:17,141 - network_server - INFO - 📤 用户 'user3' 已断开连接
+2026-04-03 22:45:18,120 - root - INFO - [注销] 用户 'user1' 注销退出
+2026-04-03 22:45:18,121 - network_server - INFO - [注销] 用户 'user1' 注销退出
+2026-04-03 22:45:18,139 - root - INFO - 📤 用户 'user1' 已断开连接
+2026-04-03 22:45:18,139 - network_server - INFO - 📤 用户 'user1' 已断开连接
+2026-04-03 22:45:18,143 - root - INFO - 📤 用户 'user1' 已断开连接
+2026-04-03 22:45:18,143 - network_server - INFO - 📤 用户 'user1' 已断开连接
+2026-04-03 22:57:44,669 - root - INFO - [登录] 用户 'user1' (127.0.0.1) 登录成功
+2026-04-03 22:57:44,672 - network_server - INFO - [登录] 用户 'user1' (127.0.0.1) 登录成功
+2026-04-03 22:57:44,672 - root - INFO - 👤 用户 'user1' 已认证 (IP: 127.0.0.1)
+2026-04-03 22:57:44,672 - network_server - INFO - 👤 用户 'user1' 已认证 (IP: 127.0.0.1)
+2026-04-03 22:58:29,733 - root - INFO - [登录] 用户 'user3' (127.0.0.1) 登录成功
+2026-04-03 22:58:29,735 - network_server - INFO - [登录] 用户 'user3' (127.0.0.1) 登录成功
+2026-04-03 22:58:29,735 - root - INFO - 👤 用户 'user3' 已认证 (IP: 127.0.0.1)
+2026-04-03 22:58:29,735 - network_server - INFO - 👤 用户 'user3' 已认证 (IP: 127.0.0.1)
+2026-04-03 22:59:23,726 - root - INFO - [注销] 用户 'user1' 注销退出
+2026-04-03 22:59:23,727 - network_server - INFO - [注销] 用户 'user1' 注销退出
+2026-04-03 22:59:23,743 - root - INFO - 📤 用户 'user1' 已断开连接
+2026-04-03 22:59:23,743 - network_server - INFO - 📤 用户 'user1' 已断开连接
+2026-04-03 22:59:23,745 - root - INFO - 📤 用户 'user1' 已断开连接
+2026-04-03 22:59:23,745 - network_server - INFO - 📤 用户 'user1' 已断开连接
+2026-04-03 22:59:25,052 - root - INFO - [注销] 用户 'user3' 注销退出
+2026-04-03 22:59:25,053 - network_server - INFO - [注销] 用户 'user3' 注销退出
+2026-04-03 22:59:25,069 - root - INFO - 📤 用户 'user3' 已断开连接
+2026-04-03 22:59:25,070 - network_server - INFO - 📤 用户 'user3' 已断开连接
+2026-04-03 22:59:25,073 - root - INFO - 📤 用户 'user3' 已断开连接
+2026-04-03 22:59:25,073 - network_server - INFO - 📤 用户 'user3' 已断开连接
+2026-04-03 23:00:14,103 - root - INFO - [系统] 服务器已停止
+2026-04-07 09:16:10,438 - database - INFO - 数据库路径: e:\tset\通讯\服务端\im_database.db
+2026-04-07 09:16:10,440 - database - INFO - 创建数据库目录: e:\tset\通讯\服务端
+2026-04-07 09:16:10,442 - database - INFO - [OK] 数据库初始化完成: e:\tset\通讯\服务端\im_database.db
+2026-04-07 09:16:10,834 - root - INFO - [系统] 服务器界面初始化完成
+2026-04-07 09:16:22,051 - root - INFO - [OK] 服务器已启动，监听 127.0.0.1:8000
+2026-04-07 09:16:22,051 - network_server - INFO - [OK] 服务器已启动，监听 127.0.0.1:8000
+2026-04-07 09:16:22,052 - root - INFO - [系统] 服务器已启动，监听 127.0.0.1:8000
+2026-04-07 09:16:44,086 - root - INFO - [登录] 用户 'user1' (127.0.0.1) 登录成功
+2026-04-07 09:16:44,090 - network_server - INFO - [登录] 用户 'user1' (127.0.0.1) 登录成功
+2026-04-07 09:16:44,090 - root - INFO - 👤 用户 'user1' 已认证 (IP: 127.0.0.1)
+2026-04-07 09:16:44,090 - network_server - INFO - 👤 用户 'user1' 已认证 (IP: 127.0.0.1)
+2026-04-07 09:17:07,683 - database - INFO - [OK] 用户注册成功: user4
+2026-04-07 09:17:28,513 - root - INFO - [登录] 用户 'user4' (127.0.0.1) 登录成功
+2026-04-07 09:17:28,514 - network_server - INFO - [登录] 用户 'user4' (127.0.0.1) 登录成功
+2026-04-07 09:17:28,515 - root - INFO - 👤 用户 'user4' 已认证 (IP: 127.0.0.1)
+2026-04-07 09:17:28,515 - network_server - INFO - 👤 用户 'user4' 已认证 (IP: 127.0.0.1)
+2026-04-07 09:17:36,459 - network_server - INFO - [添加好友] 收到请求: from=user4, to=user1
+2026-04-07 09:17:36,459 - database - INFO - [好友请求] 查询用户: from=user4, to=user1
+2026-04-07 09:17:36,464 - database - INFO - [好友请求] 查询结果: from_user=True, to_user=True
+2026-04-07 09:17:36,476 - database - INFO - [OK] 好友请求发送成功: user4 -> user1
+2026-04-07 09:17:36,477 - network_server - INFO - [添加好友] 数据库操作结果: True
+2026-04-07 09:18:47,316 - root - INFO - [注销] 用户 'user4' 注销退出
+2026-04-07 09:18:47,316 - network_server - INFO - [注销] 用户 'user4' 注销退出
+2026-04-07 09:18:47,337 - root - INFO - 📤 用户 'user4' 已断开连接
+2026-04-07 09:18:47,338 - network_server - INFO - 📤 用户 'user4' 已断开连接
+2026-04-07 09:18:47,342 - root - INFO - 📤 用户 'user4' 已断开连接
+2026-04-07 09:18:47,342 - network_server - INFO - 📤 用户 'user4' 已断开连接
+2026-04-07 09:23:27,491 - root - INFO - [注销] 用户 'user1' 注销退出
+2026-04-07 09:23:27,494 - network_server - INFO - [注销] 用户 'user1' 注销退出
+2026-04-07 09:23:27,514 - root - INFO - 📤 用户 'user1' 已断开连接
+2026-04-07 09:23:27,514 - network_server - INFO - 📤 用户 'user1' 已断开连接
+2026-04-07 09:23:27,516 - root - INFO - 📤 用户 'user1' 已断开连接
+2026-04-07 09:23:27,516 - network_server - INFO - 📤 用户 'user1' 已断开连接
+2026-04-07 09:23:36,019 - root - INFO - [系统] 服务器已停止
+2026-04-07 09:26:48,369 - database - INFO - 数据库路径: e:\tset\通讯\服务端\im_database.db
+2026-04-07 09:26:48,369 - database - INFO - 创建数据库目录: e:\tset\通讯\服务端
+2026-04-07 09:26:48,371 - database - INFO - [OK] 数据库初始化完成: e:\tset\通讯\服务端\im_database.db
+2026-04-07 09:26:48,744 - root - INFO - [系统] 服务器界面初始化完成
+2026-04-07 09:26:49,960 - root - INFO - [OK] 服务器已启动，监听 127.0.0.1:8000
+2026-04-07 09:26:49,960 - network_server - INFO - [OK] 服务器已启动，监听 127.0.0.1:8000
+2026-04-07 09:26:49,962 - root - INFO - [系统] 服务器已启动，监听 127.0.0.1:8000
+2026-04-07 09:27:04,139 - root - INFO - [登录] 用户 'user1' (127.0.0.1) 登录成功
+2026-04-07 09:27:04,144 - network_server - INFO - [登录] 用户 'user1' (127.0.0.1) 登录成功
+2026-04-07 09:27:04,144 - root - INFO - 👤 用户 'user1' 已认证 (IP: 127.0.0.1)
+2026-04-07 09:27:04,144 - network_server - INFO - 👤 用户 'user1' 已认证 (IP: 127.0.0.1)
+2026-04-07 09:27:50,799 - root - INFO - [注销] 用户 'user1' 注销退出
+2026-04-07 09:27:50,801 - network_server - INFO - [注销] 用户 'user1' 注销退出
+2026-04-07 09:27:50,824 - root - INFO - 📤 用户 'user1' 已断开连接
+2026-04-07 09:27:50,824 - network_server - INFO - 📤 用户 'user1' 已断开连接
+2026-04-07 09:27:50,828 - root - INFO - 📤 用户 'user1' 已断开连接
+2026-04-07 09:27:50,828 - network_server - INFO - 📤 用户 'user1' 已断开连接
+2026-04-07 09:30:08,668 - root - INFO - [系统] 服务器已停止
+2026-04-07 09:36:58,953 - database - INFO - 数据库路径: e:\tset\通讯\服务端\im_database.db
+2026-04-07 09:36:58,953 - database - INFO - 创建数据库目录: e:\tset\通讯\服务端
+2026-04-07 09:36:58,955 - database - INFO - [OK] 数据库初始化完成: e:\tset\通讯\服务端\im_database.db
+2026-04-07 09:36:59,340 - root - INFO - [系统] 服务器界面初始化完成
+2026-04-07 09:37:01,044 - root - INFO - [OK] 服务器已启动，监听 127.0.0.1:8000
+2026-04-07 09:37:01,044 - network_server - INFO - [OK] 服务器已启动，监听 127.0.0.1:8000
+2026-04-07 09:37:01,046 - root - INFO - [系统] 服务器已启动，监听 127.0.0.1:8000
+2026-04-07 09:37:15,293 - root - INFO - [登录] 用户 'user1' (127.0.0.1) 登录成功
+2026-04-07 09:37:15,300 - network_server - INFO - [登录] 用户 'user1' (127.0.0.1) 登录成功
+2026-04-07 09:37:15,300 - root - INFO - 👤 用户 'user1' 已认证 (IP: 127.0.0.1)
+2026-04-07 09:37:15,300 - network_server - INFO - 👤 用户 'user1' 已认证 (IP: 127.0.0.1)
+2026-04-07 09:38:02,043 - root - INFO - [注销] 用户 'user1' 注销退出
+2026-04-07 09:38:02,044 - network_server - INFO - [注销] 用户 'user1' 注销退出
+2026-04-07 09:38:02,064 - root - INFO - 📤 用户 'user1' 已断开连接
+2026-04-07 09:38:02,064 - network_server - INFO - 📤 用户 'user1' 已断开连接
+2026-04-07 09:38:02,069 - root - INFO - 📤 用户 'user1' 已断开连接
+2026-04-07 09:38:02,069 - network_server - INFO - 📤 用户 'user1' 已断开连接
+2026-04-07 09:38:04,639 - root - INFO - [系统] 服务器已停止
+2026-04-07 09:39:13,731 - database - INFO - 数据库路径: e:\tset\通讯\服务端\im_database.db
+2026-04-07 09:39:13,731 - database - INFO - 创建数据库目录: e:\tset\通讯\服务端
+2026-04-07 09:39:13,733 - database - INFO - [OK] 数据库初始化完成: e:\tset\通讯\服务端\im_database.db
+2026-04-07 09:39:14,042 - root - INFO - [系统] 服务器界面初始化完成
+2026-04-07 09:39:14,977 - root - INFO - [OK] 服务器已启动，监听 127.0.0.1:8000
+2026-04-07 09:39:14,977 - network_server - INFO - [OK] 服务器已启动，监听 127.0.0.1:8000
+2026-04-07 09:39:14,979 - root - INFO - [系统] 服务器已启动，监听 127.0.0.1:8000
+2026-04-07 10:00:01,564 - database - INFO - 数据库路径: e:\tset\通讯\服务端\im_database.db
+2026-04-07 10:00:01,564 - database - INFO - 创建数据库目录: e:\tset\通讯\服务端
+2026-04-07 10:00:01,566 - database - INFO - [OK] 数据库初始化完成: e:\tset\通讯\服务端\im_database.db
+2026-04-07 10:00:02,000 - root - INFO - [系统] 服务器界面初始化完成
+2026-04-07 10:00:07,595 - root - INFO - [OK] 服务器已启动，监听 127.0.0.1:8000
+2026-04-07 10:00:07,596 - network_server - INFO - [OK] 服务器已启动，监听 127.0.0.1:8000
+2026-04-07 10:00:07,597 - root - INFO - [系统] 服务器已启动，监听 127.0.0.1:8000
+2026-04-07 10:00:30,045 - network_server - ERROR - [错误] 客户端处理异常: UserDatabase.add_user() takes from 3 to 5 positional arguments but 6 were given
+2026-04-07 10:00:38,475 - network_server - ERROR - [错误] 客户端处理异常: UserDatabase.add_user() takes from 3 to 5 positional arguments but 6 were given
+2026-04-07 10:08:33,182 - root - INFO - [系统] 服务器已停止
+2026-04-07 10:09:00,395 - database - INFO - 数据库路径: e:\tset\通讯\服务端\im_database.db
+2026-04-07 10:09:00,395 - database - INFO - 创建数据库目录: e:\tset\通讯\服务端
+2026-04-07 10:09:00,397 - database - INFO - [OK] 数据库初始化完成: e:\tset\通讯\服务端\im_database.db
+2026-04-07 10:09:00,747 - root - INFO - [系统] 服务器界面初始化完成
+2026-04-07 10:09:01,729 - root - INFO - [OK] 服务器已启动，监听 127.0.0.1:8000
+2026-04-07 10:09:01,729 - network_server - INFO - [OK] 服务器已启动，监听 127.0.0.1:8000
+2026-04-07 10:09:01,731 - root - INFO - [系统] 服务器已启动，监听 127.0.0.1:8000
+2026-04-07 10:09:31,711 - network_server - ERROR - [错误] 客户端处理异常: UserDatabase.add_user() takes from 3 to 5 positional arguments but 6 were given
+2026-04-07 10:09:50,362 - network_server - ERROR - [错误] 客户端处理异常: UserDatabase.add_user() takes from 3 to 5 positional arguments but 6 were given
+2026-04-07 10:25:27,456 - database - INFO - [WARNING] 用户 user1 账户已被锁定
+2026-04-07 10:41:51,827 - root - INFO - [系统] 服务器已停止
+2026-04-07 10:48:06,911 - database - INFO - 数据库路径: e:\tset\通讯\服务端\im_database.db
+2026-04-07 10:48:06,912 - database - INFO - 创建数据库目录: e:\tset\通讯\服务端
+2026-04-07 10:48:06,914 - database - INFO - [OK] 数据库初始化完成: e:\tset\通讯\服务端\im_database.db
+2026-04-07 10:48:07,457 - root - INFO - [系统] 服务器界面初始化完成
+2026-04-07 10:48:13,127 - database - INFO - [OK] 用户ID 1 账户已解锁
+2026-04-07 10:49:43,771 - root - INFO - [OK] 服务器已启动，监听 127.0.0.1:8000
+2026-04-07 10:49:43,771 - network_server - INFO - [OK] 服务器已启动，监听 127.0.0.1:8000
+2026-04-07 10:49:43,772 - root - INFO - [系统] 服务器已启动，监听 127.0.0.1:8000
+2026-04-07 10:49:49,353 - root - INFO - [登录] 用户 'user1' (127.0.0.1) 登录成功
+2026-04-07 10:49:49,358 - network_server - INFO - [登录] 用户 'user1' (127.0.0.1) 登录成功
+2026-04-07 10:49:49,358 - root - INFO - 👤 用户 'user1' 已认证 (IP: 127.0.0.1)
+2026-04-07 10:49:49,358 - network_server - INFO - 👤 用户 'user1' 已认证 (IP: 127.0.0.1)
+2026-04-07 10:49:53,226 - root - INFO - [注销] 用户 'user1' 注销退出
+2026-04-07 10:49:53,228 - network_server - INFO - [注销] 用户 'user1' 注销退出
+2026-04-07 10:49:53,249 - root - INFO - 📤 用户 'user1' 已断开连接
+2026-04-07 10:49:53,249 - network_server - INFO - 📤 用户 'user1' 已断开连接
+2026-04-07 10:49:53,252 - root - INFO - 📤 用户 'user1' 已断开连接
+2026-04-07 10:49:53,252 - network_server - INFO - 📤 用户 'user1' 已断开连接
+2026-04-07 10:50:22,162 - database - INFO - [WARNING] 用户 user1 账户已被锁定
+2026-04-07 10:50:34,499 - database - INFO - [OK] 用户ID 1 账户已解锁
+2026-04-07 10:50:41,547 - root - INFO - [登录] 用户 'user1' (127.0.0.1) 登录成功
+2026-04-07 10:50:41,548 - network_server - INFO - [登录] 用户 'user1' (127.0.0.1) 登录成功
+2026-04-07 10:50:41,548 - root - INFO - 👤 用户 'user1' 已认证 (IP: 127.0.0.1)
+2026-04-07 10:50:41,549 - network_server - INFO - 👤 用户 'user1' 已认证 (IP: 127.0.0.1)
+2026-04-07 10:58:01,154 - root - INFO - [注销] 用户 'user1' 注销退出
+2026-04-07 10:58:01,156 - network_server - INFO - [注销] 用户 'user1' 注销退出
+2026-04-07 10:58:01,178 - root - INFO - 📤 用户 'user1' 已断开连接
+2026-04-07 10:58:01,178 - network_server - INFO - 📤 用户 'user1' 已断开连接
+2026-04-07 10:58:01,184 - root - INFO - 📤 用户 'user1' 已断开连接
+2026-04-07 10:58:01,184 - network_server - INFO - 📤 用户 'user1' 已断开连接
+2026-04-07 10:58:56,248 - database - INFO - [WARNING] 用户 user1 账户已被锁定
+2026-04-07 10:59:21,482 - database - INFO - [OK] 用户ID 1 账户已解锁
+2026-04-07 10:59:28,692 - root - INFO - [登录] 用户 'user1' (127.0.0.1) 登录成功
+2026-04-07 10:59:28,694 - network_server - INFO - [登录] 用户 'user1' (127.0.0.1) 登录成功
+2026-04-07 10:59:28,694 - root - INFO - 👤 用户 'user1' 已认证 (IP: 127.0.0.1)
+2026-04-07 10:59:28,694 - network_server - INFO - 👤 用户 'user1' 已认证 (IP: 127.0.0.1)
+2026-04-07 11:00:14,493 - root - INFO - [登录] 用户 'user2' (127.0.0.1) 登录成功
+2026-04-07 11:00:14,496 - network_server - INFO - [登录] 用户 'user2' (127.0.0.1) 登录成功
+2026-04-07 11:00:14,496 - root - INFO - 👤 用户 'user2' 已认证 (IP: 127.0.0.1)
+2026-04-07 11:00:14,496 - network_server - INFO - 👤 用户 'user2' 已认证 (IP: 127.0.0.1)
+2026-04-07 11:00:54,463 - root - INFO - [注销] 用户 'user2' 注销退出
+2026-04-07 11:00:54,465 - network_server - INFO - [注销] 用户 'user2' 注销退出
+2026-04-07 11:00:54,490 - root - INFO - 📤 用户 'user2' 已断开连接
+2026-04-07 11:00:54,490 - network_server - INFO - 📤 用户 'user2' 已断开连接
+2026-04-07 11:00:54,494 - root - INFO - 📤 用户 'user2' 已断开连接
+2026-04-07 11:00:54,495 - network_server - INFO - 📤 用户 'user2' 已断开连接
+2026-04-07 11:00:56,346 - root - INFO - [注销] 用户 'user1' 注销退出
+2026-04-07 11:00:56,348 - network_server - INFO - [注销] 用户 'user1' 注销退出
+2026-04-07 11:00:56,366 - root - INFO - 📤 用户 'user1' 已断开连接
+2026-04-07 11:00:56,366 - network_server - INFO - 📤 用户 'user1' 已断开连接
+2026-04-07 11:00:56,368 - root - INFO - 📤 用户 'user1' 已断开连接
+2026-04-07 11:00:56,369 - network_server - INFO - 📤 用户 'user1' 已断开连接
+2026-04-07 11:01:34,327 - root - INFO - [登录] 用户 'user1' (127.0.0.1) 登录成功
+2026-04-07 11:01:34,330 - network_server - INFO - [登录] 用户 'user1' (127.0.0.1) 登录成功
+2026-04-07 11:01:34,331 - root - INFO - 👤 用户 'user1' 已认证 (IP: 127.0.0.1)
+2026-04-07 11:01:34,331 - network_server - INFO - 👤 用户 'user1' 已认证 (IP: 127.0.0.1)
+2026-04-07 11:01:49,251 - network_server - INFO - [踢出] 用户 user1 旧设备被踢出
+2026-04-07 11:01:49,269 - root - INFO - [登录] 用户 'user1' (127.0.0.1) 登录成功
+2026-04-07 11:01:49,270 - network_server - INFO - [登录] 用户 'user1' (127.0.0.1) 登录成功
+2026-04-07 11:01:49,270 - root - INFO - 👤 用户 'user1' 已认证 (IP: 127.0.0.1)
+2026-04-07 11:01:49,270 - network_server - INFO - 👤 用户 'user1' 已认证 (IP: 127.0.0.1)
+2026-04-07 11:01:57,677 - root - INFO - [注销] 用户 'user1' 注销退出
+2026-04-07 11:01:57,679 - network_server - INFO - [注销] 用户 'user1' 注销退出
+2026-04-07 11:01:57,701 - root - INFO - 📤 用户 'user1' 已断开连接
+2026-04-07 11:01:57,702 - network_server - INFO - 📤 用户 'user1' 已断开连接
+2026-04-07 11:01:57,703 - root - INFO - 📤 用户 'user1' 已断开连接
+2026-04-07 11:01:57,703 - network_server - INFO - 📤 用户 'user1' 已断开连接
+2026-04-07 11:01:59,078 - root - INFO - [注销] 用户 'user1' 注销退出
+2026-04-07 11:01:59,079 - network_server - INFO - [注销] 用户 'user1' 注销退出
+2026-04-07 11:01:59,083 - root - INFO - 📤 用户 'user1' 已断开连接
+2026-04-07 11:01:59,083 - network_server - INFO - 📤 用户 'user1' 已断开连接
+2026-04-07 11:01:59,087 - root - INFO - 📤 用户 'user1' 已断开连接
+2026-04-07 11:01:59,087 - network_server - INFO - 📤 用户 'user1' 已断开连接
+2026-04-07 11:07:56,611 - database - INFO - 数据库路径: e:\tset\通讯\服务端\im_database.db
+2026-04-07 11:07:56,611 - database - INFO - 创建数据库目录: e:\tset\通讯\服务端
+2026-04-07 11:07:56,614 - database - INFO - [OK] 数据库初始化完成: e:\tset\通讯\服务端\im_database.db
+2026-04-07 11:07:56,975 - root - INFO - [系统] 服务器界面初始化完成
+2026-04-07 11:09:46,604 - root - INFO - [OK] 服务器已启动，监听 127.0.0.1:8000
+2026-04-07 11:09:46,604 - network_server - INFO - [OK] 服务器已启动，监听 127.0.0.1:8000
+2026-04-07 11:09:46,605 - root - INFO - [系统] 服务器已启动，监听 127.0.0.1:8000
+2026-04-07 11:09:48,281 - root - INFO - [登录] 用户 'user1' (127.0.0.1) 登录成功
+2026-04-07 11:09:48,284 - network_server - INFO - [登录] 用户 'user1' (127.0.0.1) 登录成功
+2026-04-07 11:09:48,284 - root - INFO - 👤 用户 'user1' 已认证 (IP: 127.0.0.1)
+2026-04-07 11:09:48,284 - network_server - INFO - 👤 用户 'user1' 已认证 (IP: 127.0.0.1)
+2026-04-07 11:10:50,794 - root - INFO - [登录] 用户 'user2' (127.0.0.1) 登录成功
+2026-04-07 11:10:50,797 - network_server - INFO - [登录] 用户 'user2' (127.0.0.1) 登录成功
+2026-04-07 11:10:50,797 - root - INFO - 👤 用户 'user2' 已认证 (IP: 127.0.0.1)
+2026-04-07 11:10:50,797 - network_server - INFO - 👤 用户 'user2' 已认证 (IP: 127.0.0.1)
+2026-04-07 11:11:21,301 - root - INFO - [注销] 用户 'user2' 注销退出
+2026-04-07 11:11:21,302 - network_server - INFO - [注销] 用户 'user2' 注销退出
+2026-04-07 11:11:21,320 - root - INFO - 📤 用户 'user2' 已断开连接
+2026-04-07 11:11:21,320 - network_server - INFO - 📤 用户 'user2' 已断开连接
+2026-04-07 11:11:21,323 - root - INFO - 📤 用户 'user2' 已断开连接
+2026-04-07 11:11:21,323 - network_server - INFO - 📤 用户 'user2' 已断开连接
+2026-04-07 11:11:55,312 - root - INFO - [登录] 用户 'user2' (127.0.0.1) 登录成功
+2026-04-07 11:11:55,315 - network_server - INFO - [登录] 用户 'user2' (127.0.0.1) 登录成功
+2026-04-07 11:11:55,315 - root - INFO - 👤 用户 'user2' 已认证 (IP: 127.0.0.1)
+2026-04-07 11:11:55,315 - network_server - INFO - 👤 用户 'user2' 已认证 (IP: 127.0.0.1)
+2026-04-07 11:12:23,505 - root - INFO - [注销] 用户 'user1' 注销退出
+2026-04-07 11:12:23,507 - network_server - INFO - [注销] 用户 'user1' 注销退出
+2026-04-07 11:12:23,530 - root - INFO - 📤 用户 'user1' 已断开连接
+2026-04-07 11:12:23,530 - network_server - INFO - 📤 用户 'user1' 已断开连接
+2026-04-07 11:12:23,534 - root - INFO - 📤 用户 'user1' 已断开连接
+2026-04-07 11:12:23,534 - network_server - INFO - 📤 用户 'user1' 已断开连接
+2026-04-07 11:12:25,412 - root - INFO - [注销] 用户 'user2' 注销退出
+2026-04-07 11:12:25,414 - network_server - INFO - [注销] 用户 'user2' 注销退出
+2026-04-07 11:12:25,428 - root - INFO - 📤 用户 'user2' 已断开连接
+2026-04-07 11:12:25,429 - network_server - INFO - 📤 用户 'user2' 已断开连接
+2026-04-07 11:12:25,431 - root - INFO - 📤 用户 'user2' 已断开连接
+2026-04-07 11:12:25,431 - network_server - INFO - 📤 用户 'user2' 已断开连接
+2026-04-07 11:12:28,186 - root - INFO - [系统] 服务器已停止
+2026-04-07 11:31:34,292 - root - INFO - [OK] 服务器已启动，监听 127.0.0.1:8000
+2026-04-07 11:31:34,293 - network_server - INFO - [OK] 服务器已启动，监听 127.0.0.1:8000
+2026-04-07 11:31:34,294 - root - INFO - [系统] 服务器已启动，监听 127.0.0.1:8000
+2026-04-07 11:32:27,343 - root - INFO - [登录] 用户 'user1' (127.0.0.1) 登录成功
+2026-04-07 11:32:27,346 - network_server - INFO - [登录] 用户 'user1' (127.0.0.1) 登录成功
+2026-04-07 11:32:27,346 - root - INFO - 👤 用户 'user1' 已认证 (IP: 127.0.0.1)
+2026-04-07 11:32:27,346 - network_server - INFO - 👤 用户 'user1' 已认证 (IP: 127.0.0.1)
+2026-04-07 11:34:04,447 - root - INFO - [登录] 用户 'user2' (127.0.0.1) 登录成功
+2026-04-07 11:34:04,449 - network_server - INFO - [登录] 用户 'user2' (127.0.0.1) 登录成功
+2026-04-07 11:34:04,449 - root - INFO - 👤 用户 'user2' 已认证 (IP: 127.0.0.1)
+2026-04-07 11:34:04,449 - network_server - INFO - 👤 用户 'user2' 已认证 (IP: 127.0.0.1)
+2026-04-07 11:36:34,336 - root - INFO - [注销] 用户 'user1' 注销退出
+2026-04-07 11:36:34,337 - network_server - INFO - [注销] 用户 'user1' 注销退出
+2026-04-07 11:36:34,357 - root - INFO - 📤 用户 'user1' 已断开连接
+2026-04-07 11:36:34,358 - network_server - INFO - 📤 用户 'user1' 已断开连接
+2026-04-07 11:36:34,362 - root - INFO - 📤 用户 'user1' 已断开连接
+2026-04-07 11:36:34,362 - network_server - INFO - 📤 用户 'user1' 已断开连接
+2026-04-07 11:36:36,729 - root - INFO - 📤 用户 'user2' 已断开连接
+2026-04-07 11:36:36,729 - network_server - INFO - 📤 用户 'user2' 已断开连接
+2026-04-07 11:38:06,640 - root - INFO - [登录] 用户 'user1' (127.0.0.1) 登录成功
+2026-04-07 11:38:06,642 - network_server - INFO - [登录] 用户 'user1' (127.0.0.1) 登录成功
+2026-04-07 11:38:06,642 - root - INFO - 👤 用户 'user1' 已认证 (IP: 127.0.0.1)
+2026-04-07 11:38:06,642 - network_server - INFO - 👤 用户 'user1' 已认证 (IP: 127.0.0.1)
+2026-04-07 11:38:37,603 - root - INFO - [登录] 用户 'user2' (127.0.0.1) 登录成功
+2026-04-07 11:38:37,606 - network_server - INFO - [登录] 用户 'user2' (127.0.0.1) 登录成功
+2026-04-07 11:38:37,606 - root - INFO - 👤 用户 'user2' 已认证 (IP: 127.0.0.1)
+2026-04-07 11:38:37,606 - network_server - INFO - 👤 用户 'user2' 已认证 (IP: 127.0.0.1)
+2026-04-07 11:40:54,675 - root - INFO - [注销] 用户 'user1' 注销退出
+2026-04-07 11:40:54,676 - network_server - INFO - [注销] 用户 'user1' 注销退出
+2026-04-07 11:40:54,695 - root - INFO - 📤 用户 'user1' 已断开连接
+2026-04-07 11:40:54,695 - network_server - INFO - 📤 用户 'user1' 已断开连接
+2026-04-07 11:40:54,698 - root - INFO - 📤 用户 'user1' 已断开连接
+2026-04-07 11:40:54,698 - network_server - INFO - 📤 用户 'user1' 已断开连接
+2026-04-07 11:41:11,112 - root - INFO - [登录] 用户 'user1' (127.0.0.1) 登录成功
+2026-04-07 11:41:11,115 - network_server - INFO - [登录] 用户 'user1' (127.0.0.1) 登录成功
+2026-04-07 11:41:11,115 - root - INFO - 👤 用户 'user1' 已认证 (IP: 127.0.0.1)
+2026-04-07 11:41:11,115 - network_server - INFO - 👤 用户 'user1' 已认证 (IP: 127.0.0.1)
+2026-04-07 11:41:40,929 - root - INFO - [注销] 用户 'user1' 注销退出
+2026-04-07 11:41:40,929 - network_server - INFO - [注销] 用户 'user1' 注销退出
+2026-04-07 11:41:40,947 - root - INFO - 📤 用户 'user1' 已断开连接
+2026-04-07 11:41:40,947 - network_server - INFO - 📤 用户 'user1' 已断开连接
+2026-04-07 11:41:40,952 - root - INFO - 📤 用户 'user1' 已断开连接
+2026-04-07 11:41:40,952 - network_server - INFO - 📤 用户 'user1' 已断开连接
+2026-04-07 12:16:09,370 - database - INFO - 数据库路径: e:\tset\通讯\服务端\im_database.db
+2026-04-07 12:16:09,370 - database - INFO - 创建数据库目录: e:\tset\通讯\服务端
+2026-04-07 12:16:09,375 - database - INFO - [OK] 数据库初始化完成: e:\tset\通讯\服务端\im_database.db
+2026-04-07 12:16:09,898 - root - INFO - [系统] 服务器界面初始化完成
+2026-04-07 12:16:11,254 - root - INFO - [OK] 服务器已启动，监听 127.0.0.1:8000
+2026-04-07 12:16:11,254 - network_server - INFO - [OK] 服务器已启动，监听 127.0.0.1:8000
+2026-04-07 12:16:11,256 - root - INFO - [系统] 服务器已启动，监听 127.0.0.1:8000
+2026-04-07 12:17:41,702 - root - INFO - [登录] 用户 'user1' (127.0.0.1) 登录成功
+2026-04-07 12:17:41,709 - network_server - INFO - [登录] 用户 'user1' (127.0.0.1) 登录成功
+2026-04-07 12:17:41,710 - root - INFO - 👤 用户 'user1' 已认证 (IP: 127.0.0.1)
+2026-04-07 12:17:41,710 - network_server - INFO - 👤 用户 'user1' 已认证 (IP: 127.0.0.1)
+2026-04-07 12:19:40,093 - root - INFO - [登录] 用户 'user2' (127.0.0.1) 登录成功
+2026-04-07 12:19:40,096 - network_server - INFO - [登录] 用户 'user2' (127.0.0.1) 登录成功
+2026-04-07 12:19:40,097 - root - INFO - 👤 用户 'user2' 已认证 (IP: 127.0.0.1)
+2026-04-07 12:19:40,097 - network_server - INFO - 👤 用户 'user2' 已认证 (IP: 127.0.0.1)
+2026-04-07 12:21:12,450 - root - INFO - [注销] 用户 'user2' 注销退出
+2026-04-07 12:21:12,451 - network_server - INFO - [注销] 用户 'user2' 注销退出
+2026-04-07 12:21:12,469 - root - INFO - 📤 用户 'user2' 已断开连接
+2026-04-07 12:21:12,469 - network_server - INFO - 📤 用户 'user2' 已断开连接
+2026-04-07 12:21:12,475 - root - INFO - 📤 用户 'user2' 已断开连接
+2026-04-07 12:21:12,475 - network_server - INFO - 📤 用户 'user2' 已断开连接
+2026-04-07 12:24:04,400 - root - INFO - [登录] 用户 'user2' (127.0.0.1) 登录成功
+2026-04-07 12:24:04,403 - network_server - INFO - [登录] 用户 'user2' (127.0.0.1) 登录成功
+2026-04-07 12:24:04,403 - root - INFO - 👤 用户 'user2' 已认证 (IP: 127.0.0.1)
+2026-04-07 12:24:04,403 - network_server - INFO - 👤 用户 'user2' 已认证 (IP: 127.0.0.1)
+2026-04-07 12:27:14,097 - root - INFO - [注销] 用户 'user1' 注销退出
+2026-04-07 12:27:14,097 - network_server - INFO - [注销] 用户 'user1' 注销退出
+2026-04-07 12:27:14,115 - root - INFO - 📤 用户 'user1' 已断开连接
+2026-04-07 12:27:14,116 - network_server - INFO - 📤 用户 'user1' 已断开连接
+2026-04-07 12:27:14,119 - root - INFO - 📤 用户 'user1' 已断开连接
+2026-04-07 12:27:14,119 - network_server - INFO - 📤 用户 'user1' 已断开连接
+2026-04-07 12:27:15,014 - root - INFO - [注销] 用户 'user2' 注销退出
+2026-04-07 12:27:15,014 - network_server - INFO - [注销] 用户 'user2' 注销退出
+2026-04-07 12:27:15,034 - root - INFO - 📤 用户 'user2' 已断开连接
+2026-04-07 12:27:15,034 - network_server - INFO - 📤 用户 'user2' 已断开连接
+2026-04-07 12:27:15,038 - root - INFO - 📤 用户 'user2' 已断开连接
+2026-04-07 12:27:15,038 - network_server - INFO - 📤 用户 'user2' 已断开连接
+2026-04-07 12:27:32,709 - root - INFO - [登录] 用户 'user1' (127.0.0.1) 登录成功
+2026-04-07 12:27:32,711 - network_server - INFO - [登录] 用户 'user1' (127.0.0.1) 登录成功
+2026-04-07 12:27:32,711 - root - INFO - 👤 用户 'user1' 已认证 (IP: 127.0.0.1)
+2026-04-07 12:27:32,711 - network_server - INFO - 👤 用户 'user1' 已认证 (IP: 127.0.0.1)
+2026-04-07 12:28:15,055 - root - INFO - [登录] 用户 'user2' (127.0.0.1) 登录成功
+2026-04-07 12:28:15,058 - network_server - INFO - [登录] 用户 'user2' (127.0.0.1) 登录成功
+2026-04-07 12:28:15,058 - root - INFO - 👤 用户 'user2' 已认证 (IP: 127.0.0.1)
+2026-04-07 12:28:15,058 - network_server - INFO - 👤 用户 'user2' 已认证 (IP: 127.0.0.1)
+2026-04-07 12:46:56,426 - root - INFO - [注销] 用户 'user2' 注销退出
+2026-04-07 12:46:56,427 - network_server - INFO - [注销] 用户 'user2' 注销退出
+2026-04-07 12:46:56,449 - root - INFO - 📤 用户 'user2' 已断开连接
+2026-04-07 12:46:56,449 - network_server - INFO - 📤 用户 'user2' 已断开连接
+2026-04-07 12:46:56,454 - root - INFO - 📤 用户 'user2' 已断开连接
+2026-04-07 12:46:56,454 - network_server - INFO - 📤 用户 'user2' 已断开连接
+2026-04-07 13:14:54,748 - root - INFO - [注销] 用户 'user1' 注销退出
+2026-04-07 13:14:54,750 - network_server - INFO - [注销] 用户 'user1' 注销退出
+2026-04-07 13:14:54,764 - root - INFO - 📤 用户 'user1' 已断开连接
+2026-04-07 13:14:54,764 - network_server - INFO - 📤 用户 'user1' 已断开连接
+2026-04-07 13:14:54,767 - root - INFO - 📤 用户 'user1' 已断开连接
+2026-04-07 13:14:54,767 - network_server - INFO - 📤 用户 'user1' 已断开连接
+2026-04-07 13:15:08,498 - database - INFO - 数据库路径: e:\tset\通讯\服务端\im_database.db
+2026-04-07 13:15:08,499 - database - INFO - 创建数据库目录: e:\tset\通讯\服务端
+2026-04-07 13:15:08,500 - database - INFO - [OK] 数据库初始化完成: e:\tset\通讯\服务端\im_database.db
+2026-04-07 13:15:08,855 - root - INFO - [系统] 服务器界面初始化完成
+2026-04-07 13:15:15,966 - root - INFO - [OK] 服务器已启动，监听 127.0.0.1:8000
+2026-04-07 13:15:15,967 - network_server - INFO - [OK] 服务器已启动，监听 127.0.0.1:8000
+2026-04-07 13:15:15,968 - root - INFO - [系统] 服务器已启动，监听 127.0.0.1:8000
+2026-04-07 13:15:52,295 - root - INFO - [系统] 服务器已停止
+2026-04-07 13:16:00,191 - root - INFO - [OK] 服务器已启动，监听 127.0.0.1:8000
+2026-04-07 13:16:00,191 - network_server - INFO - [OK] 服务器已启动，监听 127.0.0.1:8000
+2026-04-07 13:16:00,193 - root - INFO - [系统] 服务器已启动，监听 127.0.0.1:8000
+2026-04-07 13:16:14,308 - root - INFO - [系统] 服务器已停止
+2026-04-07 13:16:31,174 - root - INFO - [OK] 服务器已启动，监听 127.0.0.1:8000
+2026-04-07 13:16:31,174 - network_server - INFO - [OK] 服务器已启动，监听 127.0.0.1:8000
+2026-04-07 13:16:31,176 - root - INFO - [系统] 服务器已启动，监听 127.0.0.1:8000
+2026-04-07 13:16:44,982 - root - INFO - [登录] 用户 'user1' (127.0.0.1) 登录成功
+2026-04-07 13:16:44,986 - network_server - INFO - [登录] 用户 'user1' (127.0.0.1) 登录成功
+2026-04-07 13:16:44,987 - root - INFO - 👤 用户 'user1' 已认证 (IP: 127.0.0.1)
+2026-04-07 13:16:44,987 - network_server - INFO - 👤 用户 'user1' 已认证 (IP: 127.0.0.1)
+2026-04-07 13:17:06,377 - root - INFO - [登录] 用户 'user2' (127.0.0.1) 登录成功
+2026-04-07 13:17:06,381 - network_server - INFO - [登录] 用户 'user2' (127.0.0.1) 登录成功
+2026-04-07 13:17:06,381 - root - INFO - 👤 用户 'user2' 已认证 (IP: 127.0.0.1)
+2026-04-07 13:17:06,381 - network_server - INFO - 👤 用户 'user2' 已认证 (IP: 127.0.0.1)
+2026-04-07 13:46:29,516 - root - INFO - [注销] 用户 'user2' 注销退出
+2026-04-07 13:46:29,518 - network_server - INFO - [注销] 用户 'user2' 注销退出
+2026-04-07 13:46:29,534 - root - INFO - 📤 用户 'user2' 已断开连接
+2026-04-07 13:46:29,535 - network_server - INFO - 📤 用户 'user2' 已断开连接
+2026-04-07 13:46:29,540 - root - INFO - 📤 用户 'user2' 已断开连接
+2026-04-07 13:46:29,540 - network_server - INFO - 📤 用户 'user2' 已断开连接
+2026-04-07 13:46:30,206 - root - INFO - [注销] 用户 'user1' 注销退出
+2026-04-07 13:46:30,207 - network_server - INFO - [注销] 用户 'user1' 注销退出
+2026-04-07 13:46:30,223 - root - INFO - 📤 用户 'user1' 已断开连接
+2026-04-07 13:46:30,223 - network_server - INFO - 📤 用户 'user1' 已断开连接
+2026-04-07 13:46:30,226 - root - INFO - 📤 用户 'user1' 已断开连接
+2026-04-07 13:46:30,226 - network_server - INFO - 📤 用户 'user1' 已断开连接
+2026-04-07 13:46:37,037 - root - INFO - [系统] 服务器已停止
+2026-04-07 13:46:41,884 - database - INFO - 数据库路径: e:\tset\通讯\服务端\im_database.db
+2026-04-07 13:46:41,884 - database - INFO - 创建数据库目录: e:\tset\通讯\服务端
+2026-04-07 13:46:41,886 - database - INFO - [OK] 数据库初始化完成: e:\tset\通讯\服务端\im_database.db
+2026-04-07 13:46:42,449 - root - INFO - [系统] 服务器界面初始化完成
+2026-04-07 13:46:43,708 - root - INFO - [OK] 服务器已启动，监听 127.0.0.1:8000
+2026-04-07 13:46:43,708 - network_server - INFO - [OK] 服务器已启动，监听 127.0.0.1:8000
+2026-04-07 13:46:43,711 - root - INFO - [系统] 服务器已启动，监听 127.0.0.1:8000
+2026-04-07 13:49:28,069 - root - INFO - [登录] 用户 'user1' (127.0.0.1) 登录成功
+2026-04-07 13:49:28,074 - network_server - INFO - [登录] 用户 'user1' (127.0.0.1) 登录成功
+2026-04-07 13:49:28,074 - root - INFO - 👤 用户 'user1' 已认证 (IP: 127.0.0.1)
+2026-04-07 13:49:28,075 - network_server - INFO - 👤 用户 'user1' 已认证 (IP: 127.0.0.1)
+2026-04-07 13:50:01,521 - root - INFO - [登录] 用户 'user2' (127.0.0.1) 登录成功
+2026-04-07 13:50:01,523 - network_server - INFO - [登录] 用户 'user2' (127.0.0.1) 登录成功
+2026-04-07 13:50:01,523 - root - INFO - 👤 用户 'user2' 已认证 (IP: 127.0.0.1)
+2026-04-07 13:50:01,523 - network_server - INFO - 👤 用户 'user2' 已认证 (IP: 127.0.0.1)
+2026-04-07 13:51:18,096 - root - INFO - [注销] 用户 'user2' 注销退出
+2026-04-07 13:51:18,096 - network_server - INFO - [注销] 用户 'user2' 注销退出
+2026-04-07 13:51:18,117 - root - INFO - 📤 用户 'user2' 已断开连接
+2026-04-07 13:51:18,117 - network_server - INFO - 📤 用户 'user2' 已断开连接
+2026-04-07 13:51:18,120 - root - INFO - 📤 用户 'user2' 已断开连接
+2026-04-07 13:51:18,121 - network_server - INFO - 📤 用户 'user2' 已断开连接
+2026-04-07 13:51:21,833 - root - INFO - 📤 用户 'user1' 已断开连接
+2026-04-07 13:51:21,833 - network_server - INFO - 📤 用户 'user1' 已断开连接
+2026-04-07 13:57:00,593 - root - INFO - [登录] 用户 'user1' (127.0.0.1) 登录成功
+2026-04-07 13:57:00,596 - network_server - INFO - [登录] 用户 'user1' (127.0.0.1) 登录成功
+2026-04-07 13:57:00,596 - root - INFO - 👤 用户 'user1' 已认证 (IP: 127.0.0.1)
+2026-04-07 13:57:00,596 - network_server - INFO - 👤 用户 'user1' 已认证 (IP: 127.0.0.1)
+2026-04-07 13:57:12,386 - root - INFO - [注销] 用户 'user1' 注销退出
+2026-04-07 13:57:12,388 - network_server - INFO - [注销] 用户 'user1' 注销退出
+2026-04-07 13:57:12,416 - root - INFO - 📤 用户 'user1' 已断开连接
+2026-04-07 13:57:12,417 - network_server - INFO - 📤 用户 'user1' 已断开连接
+2026-04-07 13:57:12,422 - root - INFO - 📤 用户 'user1' 已断开连接
+2026-04-07 13:57:12,423 - network_server - INFO - 📤 用户 'user1' 已断开连接
+2026-04-07 13:57:29,563 - root - INFO - [登录] 用户 'user2' (127.0.0.1) 登录成功
+2026-04-07 13:57:29,565 - network_server - INFO - [登录] 用户 'user2' (127.0.0.1) 登录成功
+2026-04-07 13:57:29,565 - root - INFO - 👤 用户 'user2' 已认证 (IP: 127.0.0.1)
+2026-04-07 13:57:29,565 - network_server - INFO - 👤 用户 'user2' 已认证 (IP: 127.0.0.1)
+2026-04-07 13:57:38,130 - root - INFO - [注销] 用户 'user2' 注销退出
+2026-04-07 13:57:38,131 - network_server - INFO - [注销] 用户 'user2' 注销退出
+2026-04-07 13:57:38,155 - root - INFO - 📤 用户 'user2' 已断开连接
+2026-04-07 13:57:38,155 - network_server - INFO - 📤 用户 'user2' 已断开连接
+2026-04-07 13:57:38,161 - root - INFO - 📤 用户 'user2' 已断开连接
+2026-04-07 13:57:38,161 - network_server - INFO - 📤 用户 'user2' 已断开连接
+2026-04-07 14:28:30,175 - database - INFO - 数据库路径: e:\tset\通讯\服务端\im_database.db
+2026-04-07 14:28:30,176 - database - INFO - 创建数据库目录: e:\tset\通讯\服务端
+2026-04-07 14:28:30,178 - database - INFO - [OK] 数据库初始化完成: e:\tset\通讯\服务端\im_database.db
+2026-04-07 14:28:30,541 - root - INFO - [系统] 服务器界面初始化完成
+2026-04-07 14:28:31,629 - root - INFO - [OK] 服务器已启动，监听 127.0.0.1:8000
+2026-04-07 14:28:31,629 - network_server - INFO - [OK] 服务器已启动，监听 127.0.0.1:8000
+2026-04-07 14:28:31,631 - root - INFO - [系统] 服务器已启动，监听 127.0.0.1:8000
+2026-04-07 14:34:50,169 - database - INFO - 数据库路径: e:\tset\通讯\服务端\im_database.db
+2026-04-07 14:34:50,170 - database - INFO - 创建数据库目录: e:\tset\通讯\服务端
+2026-04-07 14:34:50,172 - database - INFO - [OK] 数据库初始化完成: e:\tset\通讯\服务端\im_database.db
+2026-04-07 14:34:50,492 - root - INFO - [系统] 服务器界面初始化完成
+2026-04-07 14:34:51,716 - root - INFO - [OK] 服务器已启动，监听 127.0.0.1:8000
+2026-04-07 14:34:51,716 - network_server - INFO - [OK] 服务器已启动，监听 127.0.0.1:8000
+2026-04-07 14:34:51,718 - root - INFO - [系统] 服务器已启动，监听 127.0.0.1:8000
+2026-04-07 14:35:36,414 - root - INFO - [登录] 用户 'user1' (127.0.0.1) 登录成功
+2026-04-07 14:35:36,419 - network_server - INFO - [登录] 用户 'user1' (127.0.0.1) 登录成功
+2026-04-07 14:35:36,419 - root - INFO - 👤 用户 'user1' 已认证 (IP: 127.0.0.1)
+2026-04-07 14:35:36,419 - network_server - INFO - 👤 用户 'user1' 已认证 (IP: 127.0.0.1)
+2026-04-07 14:35:54,303 - root - INFO - [登录] 用户 'user2' (127.0.0.1) 登录成功
+2026-04-07 14:35:54,307 - network_server - INFO - [登录] 用户 'user2' (127.0.0.1) 登录成功
+2026-04-07 14:35:54,308 - root - INFO - 👤 用户 'user2' 已认证 (IP: 127.0.0.1)
+2026-04-07 14:35:54,308 - network_server - INFO - 👤 用户 'user2' 已认证 (IP: 127.0.0.1)
+2026-04-07 14:36:18,203 - root - INFO - [注销] 用户 'user2' 注销退出
+2026-04-07 14:36:18,203 - network_server - INFO - [注销] 用户 'user2' 注销退出
+2026-04-07 14:36:18,221 - root - INFO - 📤 用户 'user2' 已断开连接
+2026-04-07 14:36:18,221 - network_server - INFO - 📤 用户 'user2' 已断开连接
+2026-04-07 14:36:18,226 - root - INFO - 📤 用户 'user2' 已断开连接
+2026-04-07 14:36:18,226 - network_server - INFO - 📤 用户 'user2' 已断开连接
+2026-04-07 14:36:19,661 - root - INFO - [注销] 用户 'user1' 注销退出
+2026-04-07 14:36:19,663 - network_server - INFO - [注销] 用户 'user1' 注销退出
+2026-04-07 14:36:19,687 - root - INFO - 📤 用户 'user1' 已断开连接
+2026-04-07 14:36:19,688 - network_server - INFO - 📤 用户 'user1' 已断开连接
+2026-04-07 14:36:19,693 - root - INFO - 📤 用户 'user1' 已断开连接
+2026-04-07 14:36:19,693 - network_server - INFO - 📤 用户 'user1' 已断开连接
+2026-04-07 14:36:58,693 - root - INFO - [登录] 用户 'user4' (127.0.0.1) 登录成功
+2026-04-07 14:36:58,697 - network_server - INFO - [登录] 用户 'user4' (127.0.0.1) 登录成功
+2026-04-07 14:36:58,697 - root - INFO - 👤 用户 'user4' 已认证 (IP: 127.0.0.1)
+2026-04-07 14:36:58,697 - network_server - INFO - 👤 用户 'user4' 已认证 (IP: 127.0.0.1)
+2026-04-07 15:07:30,221 - root - INFO - [注销] 用户 'user4' 注销退出
+2026-04-07 15:07:30,222 - network_server - INFO - [注销] 用户 'user4' 注销退出
+2026-04-07 15:07:30,239 - root - INFO - 📤 用户 'user4' 已断开连接
+2026-04-07 15:07:30,239 - network_server - INFO - 📤 用户 'user4' 已断开连接
+2026-04-07 15:07:30,242 - root - INFO - 📤 用户 'user4' 已断开连接
+2026-04-07 15:07:30,242 - network_server - INFO - 📤 用户 'user4' 已断开连接
+2026-04-07 15:07:38,780 - root - INFO - [系统] 服务器已停止
+2026-04-07 15:07:51,283 - database - INFO - 数据库路径: e:\tset\通讯\服务端\im_database.db
+2026-04-07 15:07:51,283 - database - INFO - 创建数据库目录: e:\tset\通讯\服务端
+2026-04-07 15:07:51,285 - database - INFO - [OK] 数据库初始化完成: e:\tset\通讯\服务端\im_database.db
+2026-04-07 15:07:51,796 - root - INFO - [系统] 服务器界面初始化完成
+2026-04-07 15:08:12,651 - root - INFO - [OK] 服务器已启动，监听 127.0.0.1:8000
+2026-04-07 15:08:12,651 - network_server - INFO - [OK] 服务器已启动，监听 127.0.0.1:8000
+2026-04-07 15:08:12,653 - root - INFO - [系统] 服务器已启动，监听 127.0.0.1:8000
+2026-04-07 15:09:04,201 - database - INFO - [OK] 用户信息更新成功: user_id=1, fields=['last_login']
+2026-04-07 15:09:04,213 - root - INFO - [登录] 用户 'user1' (127.0.0.1) 登录成功
+2026-04-07 15:09:04,217 - network_server - INFO - [登录] 用户 'user1' (127.0.0.1) 登录成功
+2026-04-07 15:09:04,217 - root - INFO - 👤 用户 'user1' 已认证 (IP: 127.0.0.1)
+2026-04-07 15:09:04,217 - network_server - INFO - 👤 用户 'user1' 已认证 (IP: 127.0.0.1)
+2026-04-07 15:09:04,227 - database - INFO - [OK] 用户信息更新成功: user_id=1, fields=['status']
+2026-04-07 15:09:19,673 - database - INFO - [OK] 用户信息更新成功: user_id=2, fields=['last_login']
+2026-04-07 15:09:19,684 - root - INFO - [登录] 用户 'user2' (127.0.0.1) 登录成功
+2026-04-07 15:09:19,687 - network_server - INFO - [登录] 用户 'user2' (127.0.0.1) 登录成功
+2026-04-07 15:09:19,688 - root - INFO - 👤 用户 'user2' 已认证 (IP: 127.0.0.1)
+2026-04-07 15:09:19,688 - network_server - INFO - 👤 用户 'user2' 已认证 (IP: 127.0.0.1)
+2026-04-07 15:09:19,697 - database - INFO - [OK] 用户信息更新成功: user_id=2, fields=['status']
+2026-04-07 15:10:04,906 - database - INFO - [OK] 用户信息更新成功: user_id=1, fields=['status']
+2026-04-07 15:10:04,913 - root - INFO - 📤 用户 'user1' 已断开连接
+2026-04-07 15:10:04,913 - network_server - INFO - 📤 用户 'user1' 已断开连接
+2026-04-07 15:10:19,905 - database - INFO - [OK] 用户信息更新成功: user_id=2, fields=['status']
+2026-04-07 15:10:23,793 - database - INFO - [OK] 用户信息更新成功: user_id=1, fields=['last_login']
+2026-04-07 15:10:23,804 - root - INFO - [登录] 用户 'user1' (127.0.0.1) 登录成功
+2026-04-07 15:10:23,806 - network_server - INFO - [登录] 用户 'user1' (127.0.0.1) 登录成功
+2026-04-07 15:10:23,806 - root - INFO - 👤 用户 'user1' 已认证 (IP: 127.0.0.1)
+2026-04-07 15:10:23,806 - network_server - INFO - 👤 用户 'user1' 已认证 (IP: 127.0.0.1)
+2026-04-07 15:10:23,814 - database - INFO - [OK] 用户信息更新成功: user_id=1, fields=['status']
+2026-04-07 15:11:19,900 - database - INFO - [OK] 用户信息更新成功: user_id=2, fields=['status']
+2026-04-07 15:11:24,019 - database - INFO - [OK] 用户信息更新成功: user_id=1, fields=['status']
+2026-04-07 15:12:19,896 - database - INFO - [OK] 用户信息更新成功: user_id=2, fields=['status']
+2026-04-07 15:12:24,028 - database - INFO - [OK] 用户信息更新成功: user_id=1, fields=['status']
+2026-04-07 15:13:19,893 - database - INFO - [OK] 用户信息更新成功: user_id=2, fields=['status']
+2026-04-07 15:13:24,027 - database - INFO - [OK] 用户信息更新成功: user_id=1, fields=['status']
+2026-04-07 15:14:19,906 - database - INFO - [OK] 用户信息更新成功: user_id=2, fields=['status']
+2026-04-07 15:14:24,025 - database - INFO - [OK] 用户信息更新成功: user_id=1, fields=['status']
+2026-04-07 15:15:19,892 - database - INFO - [OK] 用户信息更新成功: user_id=2, fields=['status']
+2026-04-07 15:15:24,030 - database - INFO - [OK] 用户信息更新成功: user_id=1, fields=['status']
+2026-04-07 15:16:19,903 - database - INFO - [OK] 用户信息更新成功: user_id=2, fields=['status']
+2026-04-07 15:16:24,022 - database - INFO - [OK] 用户信息更新成功: user_id=1, fields=['status']
+2026-04-07 15:17:19,907 - database - INFO - [OK] 用户信息更新成功: user_id=2, fields=['status']
+2026-04-07 15:17:24,023 - database - INFO - [OK] 用户信息更新成功: user_id=1, fields=['status']
+2026-04-07 15:18:19,894 - database - INFO - [OK] 用户信息更新成功: user_id=2, fields=['status']
+2026-04-07 15:18:24,020 - database - INFO - [OK] 用户信息更新成功: user_id=1, fields=['status']
+2026-04-07 15:19:19,891 - database - INFO - [OK] 用户信息更新成功: user_id=2, fields=['status']
+2026-04-07 15:19:24,027 - database - INFO - [OK] 用户信息更新成功: user_id=1, fields=['status']
+2026-04-07 15:20:19,900 - database - INFO - [OK] 用户信息更新成功: user_id=2, fields=['status']
+2026-04-07 15:20:24,015 - database - INFO - [OK] 用户信息更新成功: user_id=1, fields=['status']
+2026-04-07 15:21:19,896 - database - INFO - [OK] 用户信息更新成功: user_id=2, fields=['status']
+2026-04-07 15:21:24,022 - database - INFO - [OK] 用户信息更新成功: user_id=1, fields=['status']
+2026-04-07 15:22:19,891 - database - INFO - [OK] 用户信息更新成功: user_id=2, fields=['status']
+2026-04-07 15:22:24,027 - database - INFO - [OK] 用户信息更新成功: user_id=1, fields=['status']
+2026-04-07 15:23:19,896 - database - INFO - [OK] 用户信息更新成功: user_id=2, fields=['status']
+2026-04-07 15:23:21,051 - root - INFO - [注销] 用户 'user1' 注销退出
+2026-04-07 15:23:21,051 - network_server - INFO - [注销] 用户 'user1' 注销退出
+2026-04-07 15:23:21,064 - database - INFO - [OK] 用户信息更新成功: user_id=1, fields=['status']
+2026-04-07 15:23:21,072 - root - INFO - 📤 用户 'user1' 已断开连接
+2026-04-07 15:23:21,073 - network_server - INFO - 📤 用户 'user1' 已断开连接
+2026-04-07 15:23:21,074 - database - INFO - [OK] 用户信息更新成功: user_id=1, fields=['status']
+2026-04-07 15:23:21,076 - root - INFO - 📤 用户 'user1' 已断开连接
+2026-04-07 15:23:21,076 - network_server - INFO - 📤 用户 'user1' 已断开连接
+2026-04-07 15:23:23,742 - root - INFO - [注销] 用户 'user2' 注销退出
+2026-04-07 15:23:23,743 - network_server - INFO - [注销] 用户 'user2' 注销退出
+2026-04-07 15:23:23,754 - database - INFO - [OK] 用户信息更新成功: user_id=2, fields=['status']
+2026-04-07 15:23:23,760 - root - INFO - 📤 用户 'user2' 已断开连接
+2026-04-07 15:23:23,760 - network_server - INFO - 📤 用户 'user2' 已断开连接
+2026-04-07 15:23:23,762 - database - INFO - [OK] 用户信息更新成功: user_id=2, fields=['status']
+2026-04-07 15:23:23,763 - root - INFO - 📤 用户 'user2' 已断开连接
+2026-04-07 15:23:23,763 - network_server - INFO - 📤 用户 'user2' 已断开连接
+2026-04-07 15:23:26,630 - root - INFO - [系统] 服务器已停止
+2026-04-07 16:35:17,427 - database - INFO - 数据库路径: e:\tset\通讯\服务端\im_database.db
+2026-04-07 16:35:17,427 - database - INFO - 创建数据库目录: e:\tset\通讯\服务端
+2026-04-07 16:35:17,430 - database - INFO - [OK] 数据库初始化完成: e:\tset\通讯\服务端\im_database.db
+2026-04-07 16:35:18,141 - root - INFO - [系统] 服务器界面初始化完成
+2026-04-07 16:35:19,489 - root - INFO - [OK] 服务器已启动，监听 127.0.0.1:8000
+2026-04-07 16:35:19,489 - network_server - INFO - [OK] 服务器已启动，监听 127.0.0.1:8000
+2026-04-07 16:35:19,490 - root - INFO - [系统] 服务器已启动，监听 127.0.0.1:8000
+2026-04-07 16:35:53,952 - database - INFO - [OK] 用户信息更新成功: user_id=1, fields=['last_login']
+2026-04-07 16:35:53,962 - root - INFO - [登录] 用户 'user1' (127.0.0.1) 登录成功
+2026-04-07 16:35:53,965 - network_server - INFO - [登录] 用户 'user1' (127.0.0.1) 登录成功
+2026-04-07 16:35:53,966 - root - INFO - 👤 用户 'user1' 已认证 (IP: 127.0.0.1)
+2026-04-07 16:35:53,966 - network_server - INFO - 👤 用户 'user1' 已认证 (IP: 127.0.0.1)
+2026-04-07 16:35:53,973 - database - INFO - [OK] 用户信息更新成功: user_id=1, fields=['status']
+2026-04-07 16:36:44,057 - database - INFO - [OK] 用户信息更新成功: user_id=2, fields=['last_login']
+2026-04-07 16:36:44,067 - root - INFO - [登录] 用户 'user2' (127.0.0.1) 登录成功
+2026-04-07 16:36:44,069 - network_server - INFO - [登录] 用户 'user2' (127.0.0.1) 登录成功
+2026-04-07 16:36:44,069 - root - INFO - 👤 用户 'user2' 已认证 (IP: 127.0.0.1)
+2026-04-07 16:36:44,069 - network_server - INFO - 👤 用户 'user2' 已认证 (IP: 127.0.0.1)
+2026-04-07 16:36:44,077 - database - INFO - [OK] 用户信息更新成功: user_id=2, fields=['status']
+2026-04-07 16:36:54,183 - database - INFO - [OK] 用户信息更新成功: user_id=1, fields=['status']
+2026-04-07 16:37:03,504 - database - INFO - [OK] 群组创建成功: 2 (ID: 1)
+2026-04-07 16:37:12,717 - database - INFO - [OK] 用户信息更新成功: user_id=1, fields=['status']
+2026-04-07 16:37:12,723 - root - INFO - 📤 用户 'user1' 已断开连接
+2026-04-07 16:37:12,724 - network_server - INFO - 📤 用户 'user1' 已断开连接
+2026-04-07 16:37:20,374 - root - INFO - [注销] 用户 'user2' 注销退出
+2026-04-07 16:37:20,376 - network_server - INFO - [注销] 用户 'user2' 注销退出
+2026-04-07 16:37:20,388 - database - INFO - [OK] 用户信息更新成功: user_id=2, fields=['status']
+2026-04-07 16:37:20,397 - root - INFO - 📤 用户 'user2' 已断开连接
+2026-04-07 16:37:20,398 - network_server - INFO - 📤 用户 'user2' 已断开连接
+2026-04-07 16:37:20,400 - database - INFO - [OK] 用户信息更新成功: user_id=2, fields=['status']
+2026-04-07 16:37:20,403 - root - INFO - 📤 用户 'user2' 已断开连接
+2026-04-07 16:37:20,403 - network_server - INFO - 📤 用户 'user2' 已断开连接
+2026-04-07 17:04:08,305 - database - INFO - 数据库路径: e:\tset\通讯\服务端\im_database.db
+2026-04-07 17:04:08,306 - database - INFO - 创建数据库目录: e:\tset\通讯\服务端
+2026-04-07 17:04:08,308 - database - INFO - [OK] 数据库初始化完成: e:\tset\通讯\服务端\im_database.db
+2026-04-07 17:04:08,877 - root - INFO - [系统] 服务器界面初始化完成
+2026-04-07 17:04:10,077 - root - INFO - [OK] 服务器已启动，监听 127.0.0.1:8000
+2026-04-07 17:04:10,077 - network_server - INFO - [OK] 服务器已启动，监听 127.0.0.1:8000
+2026-04-07 17:04:10,077 - root - INFO - [系统] 服务器已启动，监听 127.0.0.1:8000
+2026-04-07 17:12:14,843 - root - INFO - [登录] 用户 'user1' (127.0.0.1) 登录成功
+2026-04-07 17:12:14,847 - network_server - INFO - [登录] 用户 'user1' (127.0.0.1) 登录成功
+2026-04-07 17:12:14,847 - root - INFO - 👤 用户 'user1' 已认证 (IP: 127.0.0.1)
+2026-04-07 17:12:14,847 - network_server - INFO - 👤 用户 'user1' 已认证 (IP: 127.0.0.1)
+2026-04-07 17:12:33,070 - root - INFO - [登录] 用户 'user2' (127.0.0.1) 登录成功
+2026-04-07 17:12:33,073 - network_server - INFO - [登录] 用户 'user2' (127.0.0.1) 登录成功
+2026-04-07 17:12:33,073 - root - INFO - 👤 用户 'user2' 已认证 (IP: 127.0.0.1)
+2026-04-07 17:12:33,073 - network_server - INFO - 👤 用户 'user2' 已认证 (IP: 127.0.0.1)
+2026-04-07 17:14:42,918 - root - INFO - [注销] 用户 'user1' 注销退出
+2026-04-07 17:14:42,919 - network_server - INFO - [注销] 用户 'user1' 注销退出
+2026-04-07 17:14:42,933 - root - INFO - 📤 用户 'user1' 已断开连接
+2026-04-07 17:14:42,933 - network_server - INFO - 📤 用户 'user1' 已断开连接
+2026-04-07 17:14:42,935 - root - INFO - 📤 用户 'user1' 已断开连接
+2026-04-07 17:14:42,935 - network_server - INFO - 📤 用户 'user1' 已断开连接
+2026-04-07 17:14:59,953 - root - INFO - [登录] 用户 'user3' (127.0.0.1) 登录成功
+2026-04-07 17:14:59,955 - network_server - INFO - [登录] 用户 'user3' (127.0.0.1) 登录成功
+2026-04-07 17:14:59,955 - root - INFO - 👤 用户 'user3' 已认证 (IP: 127.0.0.1)
+2026-04-07 17:14:59,955 - network_server - INFO - 👤 用户 'user3' 已认证 (IP: 127.0.0.1)
+2026-04-07 17:15:24,484 - network_server - INFO - [添加好友] 收到请求: from=user2, to=user3
+2026-04-07 17:15:24,484 - database - INFO - [好友请求] 查询用户: from=user2, to=user3
+2026-04-07 17:15:24,487 - database - INFO - [好友请求] 查询结果: from_user=True, to_user=True
+2026-04-07 17:15:24,495 - database - INFO - [OK] 好友请求发送成功: user2 -> user3
+2026-04-07 17:15:24,495 - network_server - INFO - [添加好友] 数据库操作结果: True
+2026-04-07 17:15:33,863 - root - INFO - 📤 用户 'user2' 已断开连接
+2026-04-07 17:15:33,863 - network_server - INFO - 📤 用户 'user2' 已断开连接
+2026-04-07 17:16:12,061 - root - INFO - [登录] 用户 'user2' (127.0.0.1) 登录成功
+2026-04-07 17:16:12,062 - network_server - INFO - [登录] 用户 'user2' (127.0.0.1) 登录成功
+2026-04-07 17:16:12,062 - root - INFO - 👤 用户 'user2' 已认证 (IP: 127.0.0.1)
+2026-04-07 17:16:12,062 - network_server - INFO - 👤 用户 'user2' 已认证 (IP: 127.0.0.1)
+2026-04-07 17:33:30,897 - root - INFO - [注销] 用户 'user3' 注销退出
+2026-04-07 17:33:30,909 - network_server - INFO - [注销] 用户 'user3' 注销退出
+2026-04-07 17:33:30,930 - root - INFO - 📤 用户 'user3' 已断开连接
+2026-04-07 17:33:30,930 - network_server - INFO - 📤 用户 'user3' 已断开连接
+2026-04-07 17:33:30,932 - root - INFO - 📤 用户 'user3' 已断开连接
+2026-04-07 17:33:30,933 - network_server - INFO - 📤 用户 'user3' 已断开连接
+2026-04-07 17:33:31,569 - root - INFO - [注销] 用户 'user2' 注销退出
+2026-04-07 17:33:31,573 - network_server - INFO - [注销] 用户 'user2' 注销退出
+2026-04-07 17:33:31,588 - root - INFO - 📤 用户 'user2' 已断开连接
+2026-04-07 17:33:31,589 - network_server - INFO - 📤 用户 'user2' 已断开连接
+2026-04-07 17:33:31,591 - root - INFO - 📤 用户 'user2' 已断开连接
+2026-04-07 17:33:31,591 - network_server - INFO - 📤 用户 'user2' 已断开连接
+2026-04-07 17:35:48,534 - root - INFO - [系统] 服务器已停止
+2026-04-07 19:07:28,092 - database - INFO - 数据库路径: e:\tset\通讯\服务端\im_database.db
+2026-04-07 19:07:28,093 - database - INFO - 创建数据库目录: e:\tset\通讯\服务端
+2026-04-07 19:07:28,094 - database - INFO - [OK] 数据库初始化完成: e:\tset\通讯\服务端\im_database.db
+2026-04-07 19:07:28,637 - root - INFO - [系统] 服务器界面初始化完成
+2026-04-07 19:07:29,711 - root - INFO - [OK] 服务器已启动，监听 127.0.0.1:8000
+2026-04-07 19:07:29,711 - network_server - INFO - [OK] 服务器已启动，监听 127.0.0.1:8000
+2026-04-07 19:07:29,713 - root - INFO - [系统] 服务器已启动，监听 127.0.0.1:8000
+2026-04-07 19:08:42,823 - database - INFO - [WARNING] 用户 user1 账户已被锁定
+2026-04-07 19:09:26,098 - database - INFO - [OK] 用户ID 1 账户已解锁
+2026-04-07 19:09:55,553 - root - INFO - [登录] 用户 'user1' (127.0.0.1) 登录成功
+2026-04-07 19:09:55,559 - network_server - INFO - [登录] 用户 'user1' (127.0.0.1) 登录成功
+2026-04-07 19:09:55,559 - root - INFO - 👤 用户 'user1' 已认证 (IP: 127.0.0.1)
+2026-04-07 19:09:55,559 - network_server - INFO - 👤 用户 'user1' 已认证 (IP: 127.0.0.1)
+2026-04-07 19:10:26,525 - network_server - INFO - [踢出] 用户 user1 旧设备被踢出
+2026-04-07 19:10:26,543 - root - INFO - [登录] 用户 'user1' (127.0.0.1) 登录成功
+2026-04-07 19:10:26,546 - network_server - INFO - [登录] 用户 'user1' (127.0.0.1) 登录成功
+2026-04-07 19:10:26,546 - root - INFO - 👤 用户 'user1' 已认证 (IP: 127.0.0.1)
+2026-04-07 19:10:26,546 - network_server - INFO - 👤 用户 'user1' 已认证 (IP: 127.0.0.1)
+2026-04-07 19:10:55,791 - root - INFO - 📤 用户 'user1' 已断开连接
+2026-04-07 19:10:55,791 - network_server - INFO - 📤 用户 'user1' 已断开连接
+2026-04-07 19:11:38,545 - root - INFO - [登录] 用户 'user2' (127.0.0.1) 登录成功
+2026-04-07 19:11:38,546 - network_server - INFO - [登录] 用户 'user2' (127.0.0.1) 登录成功
+2026-04-07 19:11:38,546 - root - INFO - 👤 用户 'user2' 已认证 (IP: 127.0.0.1)
+2026-04-07 19:11:38,546 - network_server - INFO - 👤 用户 'user2' 已认证 (IP: 127.0.0.1)
+2026-04-07 19:12:13,529 - root - INFO - [注销] 用户 'user2' 注销退出
+2026-04-07 19:12:13,531 - network_server - INFO - [注销] 用户 'user2' 注销退出
+2026-04-07 19:12:13,552 - root - INFO - 📤 用户 'user2' 已断开连接
+2026-04-07 19:12:13,552 - network_server - INFO - 📤 用户 'user2' 已断开连接
+2026-04-07 19:12:13,555 - root - INFO - 📤 用户 'user2' 已断开连接
+2026-04-07 19:12:13,555 - network_server - INFO - 📤 用户 'user2' 已断开连接
+2026-04-07 19:12:31,744 - root - INFO - [登录] 用户 'user2' (127.0.0.1) 登录成功
+2026-04-07 19:12:31,747 - network_server - INFO - [登录] 用户 'user2' (127.0.0.1) 登录成功
+2026-04-07 19:12:31,747 - root - INFO - 👤 用户 'user2' 已认证 (IP: 127.0.0.1)
+2026-04-07 19:12:31,747 - network_server - INFO - 👤 用户 'user2' 已认证 (IP: 127.0.0.1)
+2026-04-07 19:13:02,240 - root - INFO - [注销] 用户 'user1' 注销退出
+2026-04-07 19:13:02,242 - network_server - INFO - [注销] 用户 'user1' 注销退出
+2026-04-07 19:13:02,259 - root - INFO - 📤 用户 'user1' 已断开连接
+2026-04-07 19:13:02,259 - network_server - INFO - 📤 用户 'user1' 已断开连接
+2026-04-07 19:13:02,261 - root - INFO - 📤 用户 'user1' 已断开连接
+2026-04-07 19:13:02,261 - network_server - INFO - 📤 用户 'user1' 已断开连接
+2026-04-07 19:13:16,783 - root - INFO - [登录] 用户 'user3' (127.0.0.1) 登录成功
+2026-04-07 19:13:16,785 - network_server - INFO - [登录] 用户 'user3' (127.0.0.1) 登录成功
+2026-04-07 19:13:16,785 - root - INFO - 👤 用户 'user3' 已认证 (IP: 127.0.0.1)
+2026-04-07 19:13:16,785 - network_server - INFO - 👤 用户 'user3' 已认证 (IP: 127.0.0.1)
+2026-04-07 19:13:51,919 - root - INFO - [注销] 用户 'user3' 注销退出
+2026-04-07 19:13:51,920 - network_server - INFO - [注销] 用户 'user3' 注销退出
+2026-04-07 19:13:51,940 - root - INFO - 📤 用户 'user3' 已断开连接
+2026-04-07 19:13:51,940 - network_server - INFO - 📤 用户 'user3' 已断开连接
+2026-04-07 19:13:51,943 - root - INFO - 📤 用户 'user3' 已断开连接
+2026-04-07 19:13:51,943 - network_server - INFO - 📤 用户 'user3' 已断开连接
+2026-04-07 19:14:15,306 - root - INFO - [登录] 用户 'user3' (127.0.0.1) 登录成功
+2026-04-07 19:14:15,309 - network_server - INFO - [登录] 用户 'user3' (127.0.0.1) 登录成功
+2026-04-07 19:14:15,309 - root - INFO - 👤 用户 'user3' 已认证 (IP: 127.0.0.1)
+2026-04-07 19:14:15,309 - network_server - INFO - 👤 用户 'user3' 已认证 (IP: 127.0.0.1)
+2026-04-07 19:22:54,414 - root - INFO - [注销] 用户 'user2' 注销退出
+2026-04-07 19:22:54,435 - network_server - INFO - [注销] 用户 'user2' 注销退出
+2026-04-07 19:22:54,455 - root - INFO - 📤 用户 'user2' 已断开连接
+2026-04-07 19:22:54,456 - network_server - INFO - 📤 用户 'user2' 已断开连接
+2026-04-07 19:22:54,458 - root - INFO - 📤 用户 'user2' 已断开连接
+2026-04-07 19:22:54,459 - network_server - INFO - 📤 用户 'user2' 已断开连接
+2026-04-07 19:28:02,259 - root - INFO - [系统] 服务器已停止
+2026-04-07 19:37:51,331 - database - INFO - 数据库路径: e:\tset\通讯\服务端\im_database.db
+2026-04-07 19:37:51,332 - database - INFO - 创建数据库目录: e:\tset\通讯\服务端
+2026-04-07 19:37:51,334 - database - INFO - [OK] 数据库初始化完成: e:\tset\通讯\服务端\im_database.db
+2026-04-07 19:37:51,639 - root - INFO - [系统] 服务器界面初始化完成
+2026-04-07 19:37:52,743 - root - INFO - [OK] 服务器已启动，监听 127.0.0.1:8000
+2026-04-07 19:37:52,743 - network_server - INFO - [OK] 服务器已启动，监听 127.0.0.1:8000
+2026-04-07 19:37:52,744 - root - INFO - [系统] 服务器已启动，监听 127.0.0.1:8000
+2026-04-07 19:38:30,643 - database - INFO - [OK] 用户注册成功: 1
+2026-04-07 19:38:44,665 - database - INFO - 数据库路径: e:\tset\通讯\服务端\im_database.db
+2026-04-07 19:38:44,665 - database - INFO - 创建数据库目录: e:\tset\通讯\服务端
+2026-04-07 19:38:44,667 - database - INFO - [OK] 数据库初始化完成: e:\tset\通讯\服务端\im_database.db
+2026-04-07 19:38:45,113 - root - INFO - [系统] 服务器界面初始化完成
+2026-04-07 19:44:38,624 - database - INFO - 数据库路径: e:\tset\通讯\服务端\im_database.db
+2026-04-07 19:44:38,625 - database - INFO - 创建数据库目录: e:\tset\通讯\服务端
+2026-04-07 19:44:38,627 - database - INFO - [OK] 数据库初始化完成: e:\tset\通讯\服务端\im_database.db
+2026-04-07 19:44:38,915 - root - INFO - [系统] 服务器界面初始化完成
+2026-04-07 19:44:43,944 - database - ERROR - [ERROR] 删除用户失败: no such table: friend_requests
+2026-04-07 19:44:52,572 - database - ERROR - [ERROR] 删除用户失败: database is locked
+2026-04-07 19:44:56,216 - root - INFO - [OK] 服务器已启动，监听 127.0.0.1:8000
+2026-04-07 19:44:56,216 - network_server - INFO - [OK] 服务器已启动，监听 127.0.0.1:8000
+2026-04-07 19:44:56,217 - root - INFO - [系统] 服务器已启动，监听 127.0.0.1:8000
+2026-04-07 19:45:05,776 - database - ERROR - [ERROR] 删除用户失败: database is locked
+2026-04-07 19:47:19,285 - database - INFO - 数据库路径: e:\tset\通讯\服务端\im_database.db
+2026-04-07 19:47:19,285 - database - INFO - 创建数据库目录: e:\tset\通讯\服务端
+2026-04-07 19:47:19,287 - database - INFO - [OK] 数据库初始化完成: e:\tset\通讯\服务端\im_database.db
+2026-04-07 19:47:19,580 - root - INFO - [系统] 服务器界面初始化完成
+2026-04-07 19:47:23,170 - database - ERROR - [ERROR] 删除用户失败: no such column: user_id
+2026-04-07 19:47:32,421 - database - ERROR - [ERROR] 删除用户失败: database is locked
+2026-04-07 19:47:35,482 - root - INFO - [OK] 服务器已启动，监听 127.0.0.1:8000
+2026-04-07 19:47:35,482 - network_server - INFO - [OK] 服务器已启动，监听 127.0.0.1:8000
+2026-04-07 19:47:35,482 - root - INFO - [系统] 服务器已启动，监听 127.0.0.1:8000
+2026-04-07 19:47:46,060 - database - ERROR - [ERROR] 删除用户失败: database is locked
+2026-04-07 19:47:53,652 - root - INFO - [系统] 服务器已停止
+2026-04-07 19:50:46,133 - database - INFO - 数据库路径: e:\tset\通讯\服务端\im_database.db
+2026-04-07 19:50:46,133 - database - INFO - 创建数据库目录: e:\tset\通讯\服务端
+2026-04-07 19:50:46,134 - database - INFO - [OK] 数据库初始化完成: e:\tset\通讯\服务端\im_database.db
+2026-04-07 19:50:46,441 - root - INFO - [系统] 服务器界面初始化完成
+2026-04-07 19:50:50,768 - database - INFO - [删除用户] 删除好友关系: 0 行
+2026-04-07 19:50:50,768 - database - ERROR - [ERROR] 删除用户失败: no such column: user_id
+2026-04-07 19:50:50,773 - database - ERROR - Traceback (most recent call last):
+  File "e:\tset\通讯\服务端\database.py", line 1104, in delete_user
+    cursor.execute('DELETE FROM offline_messages WHERE user_id = ?', (user_id,))
+sqlite3.OperationalError: no such column: user_id
+
+2026-04-07 19:50:54,551 - root - INFO - [OK] 服务器已启动，监听 127.0.0.1:8000
+2026-04-07 19:50:54,551 - network_server - INFO - [OK] 服务器已启动，监听 127.0.0.1:8000
+2026-04-07 19:50:54,553 - root - INFO - [系统] 服务器已启动，监听 127.0.0.1:8000
+2026-04-07 19:50:58,147 - database - INFO - [删除用户] 删除好友关系: 0 行
+2026-04-07 19:50:58,147 - database - ERROR - [ERROR] 删除用户失败: no such column: user_id
+2026-04-07 19:50:58,148 - database - ERROR - Traceback (most recent call last):
+  File "e:\tset\通讯\服务端\database.py", line 1104, in delete_user
+    cursor.execute('DELETE FROM offline_messages WHERE user_id = ?', (user_id,))
+sqlite3.OperationalError: no such column: user_id
+
+2026-04-07 19:56:58,202 - database - INFO - 数据库路径: e:\tset\通讯\服务端\im_database.db
+2026-04-07 19:56:58,203 - database - INFO - 创建数据库目录: e:\tset\通讯\服务端
+2026-04-07 19:56:58,204 - database - INFO - [OK] 数据库初始化完成: e:\tset\通讯\服务端\im_database.db
+2026-04-07 19:56:58,515 - root - INFO - [系统] 服务器界面初始化完成
+2026-04-07 19:57:07,849 - database - INFO - [删除用户] 删除好友关系: 0 行
+2026-04-07 19:57:07,849 - database - INFO - [删除用户] 删除离线消息: 0 行
+2026-04-07 19:57:07,849 - database - INFO - [删除用户] 删除会话: 0 行
+2026-04-07 19:57:07,849 - database - INFO - [删除用户] 删除群组成员: 0 行
+2026-04-07 19:57:07,849 - database - INFO - [删除用户] 删除消息记录: 0 行
+2026-04-07 19:57:07,849 - database - INFO - [删除用户] 删除群组: 0 行
+2026-04-07 19:57:07,852 - database - INFO - [删除用户] 删除用户: 1 行
+2026-04-07 19:57:07,858 - database - INFO - [SUCCESS] 用户 5 已删除
+2026-04-07 19:57:17,775 - root - INFO - [OK] 服务器已启动，监听 127.0.0.1:8000
+2026-04-07 19:57:17,775 - network_server - INFO - [OK] 服务器已启动，监听 127.0.0.1:8000
+2026-04-07 19:57:17,777 - root - INFO - [系统] 服务器已启动，监听 127.0.0.1:8000
+2026-04-07 20:03:25,682 - root - INFO - [系统] 服务器已停止
+2026-04-07 20:03:50,017 - database - INFO - 数据库路径: e:\tset\通讯\服务端\im_database.db
+2026-04-07 20:03:50,017 - database - INFO - 创建数据库目录: e:\tset\通讯\服务端
+2026-04-07 20:03:50,018 - database - INFO - [OK] 数据库初始化完成: e:\tset\通讯\服务端\im_database.db
+2026-04-07 20:03:50,306 - root - INFO - [系统] 服务器界面初始化完成
+2026-04-07 20:03:58,597 - root - INFO - [OK] 服务器已启动，监听 127.0.0.1:8000
+2026-04-07 20:03:58,597 - network_server - INFO - [OK] 服务器已启动，监听 127.0.0.1:8000
+2026-04-07 20:03:58,598 - root - INFO - [系统] 服务器已启动，监听 127.0.0.1:8000
+2026-04-07 20:04:06,666 - root - INFO - [系统] 服务器已停止
+2026-04-07 20:12:08,256 - database - INFO - 数据库路径: e:\tset\通讯\服务端\im_database.db
+2026-04-07 20:12:08,256 - database - INFO - 创建数据库目录: e:\tset\通讯\服务端
+2026-04-07 20:12:08,258 - database - INFO - [OK] 数据库初始化完成: e:\tset\通讯\服务端\im_database.db
+2026-04-07 20:12:08,619 - root - INFO - [系统] 服务器界面初始化完成
+2026-04-07 20:13:00,882 - root - INFO - [OK] 服务器已启动，监听 127.0.0.1:8000
+2026-04-07 20:13:00,883 - network_server - INFO - [OK] 服务器已启动，监听 127.0.0.1:8000
+2026-04-07 20:13:00,884 - root - INFO - [系统] 服务器已启动，监听 127.0.0.1:8000
+2026-04-07 20:13:07,370 - root - INFO - [登录] 用户 'user3' (127.0.0.1) 登录成功
+2026-04-07 20:13:07,372 - network_server - INFO - [登录] 用户 'user3' (127.0.0.1) 登录成功
+2026-04-07 20:13:07,373 - root - INFO - 👤 用户 'user3' 已认证 (IP: 127.0.0.1)
+2026-04-07 20:13:07,373 - network_server - INFO - 👤 用户 'user3' 已认证 (IP: 127.0.0.1)
+2026-04-07 20:45:47,624 - database - INFO - 数据库路径: e:\tset\通讯\服务端\im_database.db
+2026-04-07 20:45:47,625 - database - INFO - 创建数据库目录: e:\tset\通讯\服务端
+2026-04-07 20:45:47,625 - database - INFO - [OK] 数据库初始化完成: e:\tset\通讯\服务端\im_database.db
+2026-04-07 20:45:48,082 - root - INFO - [系统] 服务器界面初始化完成
+2026-04-07 20:46:28,959 - root - INFO - [OK] 服务器已启动，监听 127.0.0.1:8000
+2026-04-07 20:46:28,959 - network_server - INFO - [OK] 服务器已启动，监听 127.0.0.1:8000
+2026-04-07 20:46:28,961 - root - INFO - [系统] 服务器已启动，监听 127.0.0.1:8000
+2026-04-07 20:46:58,906 - root - INFO - [登录] 用户 'user3' (127.0.0.1) 登录成功
+2026-04-07 20:46:58,910 - network_server - INFO - [登录] 用户 'user3' (127.0.0.1) 登录成功
+2026-04-07 20:46:58,910 - root - INFO - 👤 用户 'user3' 已认证 (IP: 127.0.0.1)
+2026-04-07 20:46:58,910 - network_server - INFO - 👤 用户 'user3' 已认证 (IP: 127.0.0.1)
+2026-04-07 20:47:11,069 - root - INFO - [注销] 用户 'user3' 注销退出
+2026-04-07 20:47:11,071 - network_server - INFO - [注销] 用户 'user3' 注销退出
+2026-04-07 20:47:11,094 - root - INFO - 📤 用户 'user3' 已断开连接
+2026-04-07 20:47:11,094 - network_server - INFO - 📤 用户 'user3' 已断开连接
+2026-04-07 20:47:11,096 - root - INFO - 📤 用户 'user3' 已断开连接
+2026-04-07 20:47:11,096 - network_server - INFO - 📤 用户 'user3' 已断开连接
+2026-04-07 20:47:17,343 - root - INFO - [系统] 服务器已停止
+2026-04-07 20:55:51,141 - database - INFO - 数据库路径: e:\tset\通讯\服务端\im_database.db
+2026-04-07 20:55:51,142 - database - INFO - 创建数据库目录: e:\tset\通讯\服务端
+2026-04-07 20:55:51,144 - database - INFO - [OK] 数据库初始化完成: e:\tset\通讯\服务端\im_database.db
+2026-04-07 20:55:51,447 - root - INFO - [系统] 服务器界面初始化完成
+2026-04-07 20:55:57,756 - root - INFO - [OK] 服务器已启动，监听 127.0.0.1:8000
+2026-04-07 20:55:57,756 - network_server - INFO - [OK] 服务器已启动，监听 127.0.0.1:8000
+2026-04-07 20:55:57,757 - root - INFO - [系统] 服务器已启动，监听 127.0.0.1:8000
+2026-04-07 21:00:01,370 - root - INFO - [登录] 用户 'user3' (127.0.0.1) 登录成功
+2026-04-07 21:00:01,375 - network_server - INFO - [登录] 用户 'user3' (127.0.0.1) 登录成功
+2026-04-07 21:00:01,375 - root - INFO - 👤 用户 'user3' 已认证 (IP: 127.0.0.1)
+2026-04-07 21:00:01,375 - network_server - INFO - 👤 用户 'user3' 已认证 (IP: 127.0.0.1)
+2026-04-07 21:00:08,578 - root - INFO - [注销] 用户 'user3' 注销退出
+2026-04-07 21:00:08,579 - network_server - INFO - [注销] 用户 'user3' 注销退出
+2026-04-07 21:00:08,597 - root - INFO - 📤 用户 'user3' 已断开连接
+2026-04-07 21:00:08,597 - network_server - INFO - 📤 用户 'user3' 已断开连接
+2026-04-07 21:00:08,599 - root - INFO - 📤 用户 'user3' 已断开连接
+2026-04-07 21:00:08,599 - network_server - INFO - 📤 用户 'user3' 已断开连接
+2026-04-07 21:30:32,402 - database - INFO - 数据库路径: e:\tset\通讯\服务端\im_database.db
+2026-04-07 21:30:32,403 - database - INFO - 创建数据库目录: e:\tset\通讯\服务端
+2026-04-07 21:30:32,405 - database - INFO - [OK] 数据库初始化完成: e:\tset\通讯\服务端\im_database.db
+2026-04-07 21:30:32,852 - root - INFO - [系统] 服务器界面初始化完成
+2026-04-07 21:30:34,015 - root - INFO - [OK] 服务器已启动，监听 127.0.0.1:8000
+2026-04-07 21:30:34,015 - network_server - INFO - [OK] 服务器已启动，监听 127.0.0.1:8000
+2026-04-07 21:30:34,016 - root - INFO - [系统] 服务器已启动，监听 127.0.0.1:8000
+2026-04-07 21:30:43,802 - root - INFO - [登录] 用户 'user3' (127.0.0.1) 登录成功
+2026-04-07 21:30:43,804 - network_server - INFO - [登录] 用户 'user3' (127.0.0.1) 登录成功
+2026-04-07 21:30:43,804 - root - INFO - 👤 用户 'user3' 已认证 (IP: 127.0.0.1)
+2026-04-07 21:30:43,804 - network_server - INFO - 👤 用户 'user3' 已认证 (IP: 127.0.0.1)
+2026-04-07 21:42:48,795 - database - INFO - 数据库路径: e:\tset\通讯\服务端\im_database.db
+2026-04-07 21:42:48,796 - database - INFO - 创建数据库目录: e:\tset\通讯\服务端
+2026-04-07 21:42:48,797 - database - INFO - [OK] 数据库初始化完成: e:\tset\通讯\服务端\im_database.db
+2026-04-07 21:42:49,269 - root - INFO - [系统] 服务器界面初始化完成
+2026-04-07 21:42:50,627 - root - INFO - [OK] 服务器已启动，监听 127.0.0.1:8000
+2026-04-07 21:42:50,627 - network_server - INFO - [OK] 服务器已启动，监听 127.0.0.1:8000
+2026-04-07 21:42:50,628 - root - INFO - [系统] 服务器已启动，监听 127.0.0.1:8000
+2026-04-07 21:43:20,700 - root - INFO - [登录] 用户 'user3' (127.0.0.1) 登录成功
+2026-04-07 21:43:20,704 - network_server - INFO - [登录] 用户 'user3' (127.0.0.1) 登录成功
+2026-04-07 21:43:20,705 - root - INFO - 👤 用户 'user3' 已认证 (IP: 127.0.0.1)
+2026-04-07 21:43:20,705 - network_server - INFO - 👤 用户 'user3' 已认证 (IP: 127.0.0.1)
+2026-04-07 21:43:35,462 - root - INFO - 📤 用户 'user3' 已断开连接
+2026-04-07 21:43:35,462 - network_server - INFO - 📤 用户 'user3' 已断开连接
+2026-04-07 21:48:01,185 - database - INFO - 数据库路径: e:\tset\通讯\服务端\im_database.db
+2026-04-07 21:48:01,185 - database - INFO - 创建数据库目录: e:\tset\通讯\服务端
+2026-04-07 21:48:01,187 - database - INFO - [OK] 数据库初始化完成: e:\tset\通讯\服务端\im_database.db
+2026-04-07 21:48:01,623 - root - INFO - [系统] 服务器界面初始化完成
