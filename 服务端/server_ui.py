@@ -787,6 +787,9 @@ class ServerMainWindow(QMainWindow):
                 hours, remainder = divmod(int(uptime.total_seconds()), 3600)
                 minutes, seconds = divmod(remainder, 60)
                 self.uptime_card.set_value(f"{hours:02d}:{minutes:02d}:{seconds:02d}")
+                
+                # 更新在线用户列表
+                self.update_online_users()
             
         except Exception as e:
             self.log_message(f"[错误] 更新服务器状态失败: {e}")
@@ -844,9 +847,9 @@ class ServerMainWindow(QMainWindow):
         try:
             if not hasattr(self, 'user_manager_window') or not self.user_manager_window:
                 self.user_manager_window = UserManagerWindow(self.db)
-                # 将user_manager_window引用传递给server
-                if self.server:
-                    self.server.user_manager_window = self.user_manager_window
+            # 始终将user_manager_window引用传递给server，确保server能访问到最新的窗口实例
+            if self.server:
+                self.server.user_manager_window = self.user_manager_window
             self.user_manager_window.show()
             self.user_manager_window.raise_()
         except Exception as e:

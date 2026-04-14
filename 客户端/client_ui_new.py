@@ -118,9 +118,9 @@ class ModernButton(QPushButton):
                 background-color: {bg_color};
                 color: white;
                 border: none;
-                border-radius: 6px;
-                padding: 10px 20px;
-                font-size: 14px;
+                border-radius: 8px;
+                padding: 14px 28px;
+                font-size: 16px;
                 font-weight: 500;
                 font-family: 'Microsoft YaHei UI', 'Segoe UI';
             }}
@@ -135,7 +135,7 @@ class ModernButton(QPushButton):
                 color: #BFBFBF;
             }}
         """)
-        self.setMinimumHeight(40)
+        self.setMinimumHeight(50)
 
 
 class LoginDialog(QDialog):
@@ -990,8 +990,219 @@ class ForgotPasswordDialog(QDialog):
 # 保持原有的 ChatMainWindow 和其他类的代码...
 # 为了节省空间，这里只显示修改的部分
 
+class ChatWindow(QMainWindow):
+    """二级聊天窗口"""
+    
+    def __init__(self, username, friend_username, client, parent=None):
+        super().__init__(parent)
+        self.username = username
+        self.friend_username = friend_username
+        self.client = client
+        self.setWindowTitle(f'与 {friend_username} 聊天')
+        self.setGeometry(150, 150, 800, 600)
+        self._setup_ui()
+        self._start_message_listener()
+    
+    def _start_message_listener(self):
+        """启动消息监听器"""
+        self.message_timer = QTimer(self)
+        self.message_timer.timeout.connect(self._check_new_messages)
+        self.message_timer.start(500)
+    
+    def _check_new_messages(self):
+        """检查新消息"""
+        if not self.client:
+            return
+        
+        messages_to_remove = []
+        for i, msg in enumerate(self.client.message_queue):
+            msg_type = msg.get('type')
+            
+            if msg_type == 'chat':
+                from_user = msg.get('from', '')
+                content = msg.get('content', '')
+                
+                if self.friend_username == from_user:
+                    messages_to_remove.append(i)
+                    # 对方发的消息 - 左侧显示，灰色气泡
+                    self.chat_history.append(f'<div style="margin: 10px 0; display: flex; align-items: flex-start;"><img src="data:image/svg+xml;utf8,<svg xmlns=\\"http://www.w3.org/2000/svg\\" width=\\"40\\" height=\\"40\\" viewBox=\\"0 0 40 40\\"><circle cx=\\"20\\" cy=\\"20\\" r=\\"20\\" fill=\\"#E4E6EB\\"/><text x=\\"20\\" y=\\"25\\" font-size=\\"20\\" text-anchor=\\"middle\\" fill=\\"#666\\">{from_user[0].upper()}</text></svg>" style="width: 40px; height: 40px; border-radius: 20px; margin-right: 10px;"><div style="background-color: #F0F2F5; border-radius: 18px; padding: 12px 16px; max-width: 70%;"><p style="margin: 0; color: #333;">{content}</p></div></div>')
+            
+            elif msg_type == 'file_transfer_request':
+                from_username = msg.get('from_username')
+                if from_username == self.friend_username:
+                    messages_to_remove.append(i)
+                    file_name = msg.get('file_name')
+                    file_size = msg.get('file_size', 0)
+                    reply = QMessageBox.question(
+                        self, 
+                        '文件传输请求', 
+                        f'用户 {from_username} 想要发送文件:\n{file_name} ({file_size} bytes)\n\n是否接受？',
+                        QMessageBox.Yes | QMessageBox.No
+                    )
+                    accepted = reply == QMessageBox.Yes
+                    self.client.send_file_response(from_username, accepted)
+                    
+                    if accepted:
+                        self.chat_history.append(f'<div style="margin: 10px 0; display: flex; align-items: flex-start;"><div style="background-color: #E6F7FF; border-radius: 18px; padding: 12px 16px;"><p style="margin: 0; color: #1890FF;">[文件接收] 接受文件: {file_name}</p></div></div>')
+                    else:
+                        self.chat_history.append(f'<div style="margin: 10px 0; display: flex; align-items: flex-start;"><div style="background-color: #FFF1F0; border-radius: 18px; padding: 12px 16px;"><p style="margin: 0; color: #FF4D4F;">[文件接收] 拒绝文件: {file_name}</p></div></div>')
+            
+            elif msg_type == 'file_data':
+                from_username = msg.get('from_username')
+                if from_username == self.friend_username:
+                    messages_to_remove.append(i)
+                    file_name = msg.get('file_name')
+                    file_data_base64 = msg.get('data')
+                    try:
+                        file_data = base64.b64decode(file_data_base64)
+                        from PyQt5.QtWidgets import QFileDialog
+                        save_path, _ = QFileDialog.getSaveFileName(self, '保存文件', file_name, '所有文件 (*.*)')
+                        if save_path:
+                            with open(save_path, 'wb') as f:
+                                f.write(file_data)
+                            self.chat_history.append(f'<div style="margin: 10px 0; display: flex; align-items: flex-start;"><div style="background-color: #F6FFED; border-radius: 18px; padding: 12px 16px;"><p style="margin: 0; color: #52C41A;">[文件保存] 文件已保存: {file_name}</p></div></div>')
+                    except Exception as e:
+                        self.chat_history.append(f'<div style="margin: 10px 0; display: flex; align-items: flex-start;"><div style="background-color: #FFF1F0; border-radius: 18px; padding: 12px 16px;"><p style="margin: 0; color: #FF4D4F;">[文件错误] {str(e)}</p></div></div>')
+        
+        for i in reversed(messages_to_remove):
+            del self.client.message_queue[i]
+    
+    def _setup_ui(self):
+        """设置UI"""
+        central_widget = QWidget()
+        self.setCentralWidget(central_widget)
+        layout = QVBoxLayout(central_widget)
+        layout.setContentsMargins(0, 0, 0, 0)
+        layout.setSpacing(0)
+        
+        # 标题栏
+        title_bar = QWidget()
+        title_bar.setStyleSheet("background-color: #F8F9FA; padding: 15px; border-bottom: 1px solid #E0E0E0;")
+        title_layout = QHBoxLayout(title_bar)
+        title_layout.setContentsMargins(15, 10, 15, 10)
+        
+        friend_label = QLabel(f'与 {self.friend_username} 聊天')
+        friend_label.setStyleSheet("font-size: 16px; font-weight: bold; color: #333;")
+        title_layout.addWidget(friend_label)
+        title_layout.addStretch()
+        
+        # 聊天记录区域
+        self.chat_history = QTextEdit()
+        self.chat_history.setReadOnly(True)
+        self.chat_history.setStyleSheet("""
+            QTextEdit {
+                background-color: white;
+                border: none;
+                padding: 20px;
+                font-size: 16px;
+                line-height: 1.6;
+            }
+        """)
+        layout.addWidget(title_bar)
+        layout.addWidget(self.chat_history)
+        
+        # 输入区域
+        input_widget = QWidget()
+        input_widget.setStyleSheet("background-color: #F8F9FA; border-top: 1px solid #E0E0E0; padding: 10px;")
+        input_layout = QVBoxLayout(input_widget)
+        input_layout.setContentsMargins(10, 10, 10, 10)
+        
+        self.message_input = QTextEdit()
+        self.message_input.setPlaceholderText('请输入消息...')
+        self.message_input.setStyleSheet("""
+            QTextEdit {
+                background-color: white;
+                border: 1px solid #E0E0E0;
+                border-radius: 8px;
+                padding: 10px;
+                font-size: 14px;
+            }
+            QTextEdit:focus {
+                border: 1px solid #00B42A;
+            }
+        """)
+        self.message_input.setMaximumHeight(80)
+        input_layout.addWidget(self.message_input)
+        
+        btn_layout = QHBoxLayout()
+        btn_layout.setSpacing(10)
+        
+        send_file_btn = ModernButton('📎 发送文件', 'default')
+        send_file_btn.clicked.connect(self.send_file)
+        btn_layout.addWidget(send_file_btn)
+        
+        btn_layout.addStretch()
+        
+        send_btn = ModernButton('发 送', 'primary')
+        send_btn.clicked.connect(self.send_message)
+        btn_layout.addWidget(send_btn)
+        
+        input_layout.addLayout(btn_layout)
+        layout.addWidget(input_widget)
+    
+    def send_message(self):
+        """发送消息"""
+        message = self.message_input.toPlainText().strip()
+        if not message:
+            return
+        
+        if self.client and self.client.authenticated:
+            self.client.send_chat(self.friend_username, message)
+            # 本人发的消息 - 右侧显示，绿色气泡
+            self.chat_history.append(f'<div style="margin: 10px 0; display: flex; align-items: flex-start; justify-content: flex-end;"><div style="background-color: #00B42A; border-radius: 18px; padding: 12px 16px; max-width: 70%;"><p style="margin: 0; color: white;">{message}</p></div><img src="data:image/svg+xml;utf8,<svg xmlns=\\"http://www.w3.org/2000/svg\\" width=\\"40\\" height=\\"40\\" viewBox=\\"0 0 40 40\\"><circle cx=\\"20\\" cy=\\"20\\" r=\\"20\\" fill=\\"#E4E6EB\\"/><text x=\\"20\\" y=\\"25\\" font-size=\\"20\\" text-anchor=\\"middle\\" fill=\\"#666\\">{self.username[0].upper()}</text></svg>" style="width: 40px; height: 40px; border-radius: 20px; margin-left: 10px;"></div>')
+            self.message_input.clear()
+    
+    def send_file(self):
+        """发送文件"""
+        from PyQt5.QtWidgets import QFileDialog
+        file_path, _ = QFileDialog.getOpenFileName(self, '选择文件', '', '所有文件 (*.*)')
+        
+        if file_path:
+            import os
+            file_name = os.path.basename(file_path)
+            file_size = os.path.getsize(file_path)
+            
+            self.chat_history.append(f'<div style="margin: 10px 0; display: flex; align-items: flex-start;"><div style="background-color: #E6F7FF; border-radius: 18px; padding: 12px 16px;"><p style="margin: 0; color: #1890FF;">[文件发送] 正在发送: {file_name} ({file_size} bytes)</p></div></div>')
+            
+            try:
+                with open(file_path, 'rb') as f:
+                    file_data = f.read()
+            except Exception as e:
+                self.chat_history.append(f'<div style="margin: 10px 0; display: flex; align-items: flex-start;"><div style="background-color: #FFF1F0; border-radius: 18px; padding: 12px 16px;"><p style="margin: 0; color: #FF4D4F;">[文件错误] 文件读取失败: {str(e)}</p></div></div>')
+                return
+            
+            self.client.send_file_request(self.friend_username, file_name, file_size)
+            
+            import time
+            response_received = False
+            for _ in range(20):
+                for i, msg in enumerate(self.client.message_queue):
+                    if msg.get('type') == 'file_transfer_response':
+                        del self.client.message_queue[i]
+                        response_received = True
+                        accepted = msg.get('accepted', False)
+                        
+                        if accepted:
+                            try:
+                                self.client.send_file_data(self.friend_username, file_name, file_data)
+                                self.chat_history.append(f'<div style="margin: 10px 0; display: flex; align-items: flex-start;"><div style="background-color: #F6FFED; border-radius: 18px; padding: 12px 16px;"><p style="margin: 0; color: #52C41A;">[文件发送] 文件发送成功: {file_name}</p></div></div>')
+                            except Exception as e:
+                                self.chat_history.append(f'<div style="margin: 10px 0; display: flex; align-items: flex-start;"><div style="background-color: #FFF1F0; border-radius: 18px; padding: 12px 16px;"><p style="margin: 0; color: #FF4D4F;">[文件错误] {str(e)}</p></div></div>')
+                        else:
+                            self.chat_history.append(f'<div style="margin: 10px 0; display: flex; align-items: flex-start;"><div style="background-color: #FFF1F0; border-radius: 18px; padding: 12px 16px;"><p style="margin: 0; color: #FF4D4F;">[文件拒绝] 对方拒绝接收文件</p></div></div>')
+                        break
+                
+                if response_received:
+                    break
+                time.sleep(0.3)
+            
+            if not response_received:
+                self.chat_history.append(f'<div style="margin: 10px 0; display: flex; align-items: flex-start;"><div style="background-color: #FFF7E6; border-radius: 18px; padding: 12px 16px;"><p style="margin: 0; color: #FA8C16;">[文件超时] 等待响应超时</p></div></div>')
+
+
 class ChatMainWindow(QMainWindow):
     """聊天主窗口"""
+    
     def __init__(self, username, server_addr, client):
         super().__init__()
         self.username = username
@@ -999,10 +1210,12 @@ class ChatMainWindow(QMainWindow):
         self.client = client
         self.current_chat_friend = None
         self.user_avatar = getattr(client, 'avatar', None)  # 保存用户头像
+        self.friends_avatar_data = {}  # 存储好友头像数据
         self.pending_files = {}  # 保存待下载的文件 {file_id: {'from': username, 'name': filename, 'data': data}}
         self.file_counter = 0  # 文件计数器
+        self.chat_windows = {}  # 保存打开的聊天窗口
         self.setWindowTitle(f'Nova chatting - {username}')
-        self.setGeometry(100, 100, 1000, 700)
+        self.setGeometry(100, 100, 1300, 1000)
         self._setup_ui()
         self._load_friends()
         self._start_message_listener()
@@ -1042,10 +1255,23 @@ class ChatMainWindow(QMainWindow):
                 from_user = msg.get('from', '')
                 content = msg.get('content', '')
                 
-                if self.current_chat_friend == from_user:
-                    self.chat_history.append(f'<div style="margin: 8px 0; padding: 10px 15px; background-color: white; border-radius: 8px; display: inline-block;"><b style="color: #1890FF;">{from_user}:</b> {content}</div>')
+                # 对方发的消息 - 左侧显示，白色长条椭圆气泡，头像在左侧
+                # 获取对方头像数据
+                friend_avatar = getattr(self, 'friends_avatar_data', {}).get(from_user)
+                if friend_avatar:
+                    # 使用好友的真实头像
+                    avatar_html = f'<img src="{friend_avatar}" width="50" height="50" style="border-radius: 50%;">'
                 else:
-                    self.chat_history.append(f'<div style="margin: 8px 0; padding: 10px 15px; background-color: #FFF7E6; border-radius: 8px;"><b style="color: #FA8C16;">[来自 {from_user}]</b> {content}</div>')
+                    # 使用基于用户名的彩色默认头像
+                    initial = from_user[0].upper() if from_user else "?"
+                    avatar_colors = ['#FF6B6B', '#4ECDC4', '#45B7D1', '#96CEB4', '#FFEAA7', '#DDA0DD', '#98D8C8', '#F7DC6F']
+                    color_index = sum(ord(c) for c in from_user) % len(avatar_colors) if from_user else 0
+                    avatar_color = avatar_colors[color_index]
+                    avatar_html = f'<div style="width: 50px; height: 50px; background-color: {avatar_color}; border-radius: 50%; text-align: center; line-height: 50px; font-size: 22px; color: white; font-weight: bold; display: inline-block;">{initial}</div>'
+                
+                # 只有当前正在与该好友聊天时才显示消息
+                if self.current_chat_friend == from_user:
+                    self.chat_history.append(f'<table border="0" width="100%" cellpadding="0" cellspacing="0" style="margin-bottom: 20px;"><tr><td width="100%" align="left"><table border="0" cellpadding="0" cellspacing="0"><tr><td valign="middle">{avatar_html}</td><td width="12"></td><td valign="middle"><div style="background-color: #FFFFFF; border: 1px solid #E5E5E5; border-radius: 25px; padding: 16px 30px; display: inline-block; min-width: 80px; text-align: center;"><span style="color: black; font-size: 20px; font-weight: bold;">{content}</span></div></td></tr></table></td></tr></table>')
             
             elif msg_type == 'offline_messages':
                 messages_to_remove.append(i)
@@ -1058,8 +1284,11 @@ class ChatMainWindow(QMainWindow):
                         self.chat_history.append(f'<div style="margin: 8px 0; padding: 10px 15px; background-color: #E6F7FF; border-radius: 8px;"><b style="color: #1890FF;">[离线消息] {sender}:</b> {content}</div>')
             
             elif msg_type == 'friend_request_accepted':
-                messages_to_remove.append(i)
+                # 直接删除消息，避免索引越界
+                del self.client.message_queue[i]
                 self._load_friends()
+                # 跳过后续的删除操作，因为我们已经删除了这个消息
+                continue
             
             elif msg_type == 'kicked':
                 messages_to_remove.append(i)
@@ -1126,14 +1355,25 @@ class ChatMainWindow(QMainWindow):
             self.client.get_friends()
             import time
             for _ in range(10):
-                for i, msg in enumerate(self.client.message_queue):
+                # 遍历消息队列的副本，避免索引越界
+                for i, msg in enumerate(list(self.client.message_queue)):
                     if msg.get('type') == 'friends_list':
-                        del self.client.message_queue[i]
+                        # 安全删除消息
+                        try:
+                            del self.client.message_queue[i]
+                        except IndexError:
+                            pass
                         friends = msg.get('friends', [])
+                        # 存储好友头像数据
+                        self.friends_avatar_data = {}
                         self.friends_list.clear()
                         for friend in friends:
                             status = friend.get('status', 'offline')
                             username = friend.get('username', '')
+                            avatar_data = friend.get('avatar_data')
+                            # 存储头像数据
+                            if avatar_data:
+                                self.friends_avatar_data[username] = avatar_data
                             is_online = status == 'online'
                             status_indicator = '🟢' if is_online else '⚫'
                             item_text = f"  {status_indicator} {username}"
@@ -1149,7 +1389,7 @@ class ChatMainWindow(QMainWindow):
                     continue
                 break
     
-    def _load_user_avatar(self):
+    def _load_user_avatar(self, size=80):
         """加载用户头像"""
         try:
             # 如果用户有自定义头像
@@ -1157,7 +1397,6 @@ class ChatMainWindow(QMainWindow):
                 pixmap = QPixmap(self.user_avatar)
                 if not pixmap.isNull():
                     # 创建圆形头像
-                    size = 80
                     rounded_pixmap = QPixmap(size, size)
                     rounded_pixmap.fill(Qt.transparent)
                     
@@ -1196,7 +1435,6 @@ class ChatMainWindow(QMainWindow):
                 pixmap = QPixmap(default_avatar)
                 if not pixmap.isNull():
                     # 创建圆形头像
-                    size = 80
                     rounded_pixmap = QPixmap(size, size)
                     rounded_pixmap.fill(Qt.transparent)
                     
@@ -1222,6 +1460,33 @@ class ChatMainWindow(QMainWindow):
             logger.error(f"加载用户头像失败: {e}")
             return None
     
+    def _get_user_avatar_base64(self):
+        """获取用户头像的base64编码"""
+        try:
+            pixmap = self._load_user_avatar()
+            if pixmap:
+                # 将QPixmap转换为base64
+                from PyQt5.QtCore import QByteArray, QBuffer
+                import base64
+                
+                # 调整大小为50x50
+                pixmap = pixmap.scaled(50, 50, Qt.KeepAspectRatioByExpanding, Qt.SmoothTransformation)
+                
+                # 保存为PNG格式
+                byte_array = QByteArray()
+                buffer = QBuffer(byte_array)
+                buffer.open(QBuffer.WriteOnly)
+                pixmap.save(buffer, "PNG")
+                buffer.close()
+                
+                # 转换为base64
+                base64_data = base64.b64encode(byte_array.data()).decode('utf-8')
+                return f"data:image/png;base64,{base64_data}"
+            return None
+        except Exception as e:
+            logger.error(f"获取用户头像base64失败: {e}")
+            return None
+    
     def _setup_ui(self):
         """设置UI"""
         central_widget = QWidget()
@@ -1232,63 +1497,126 @@ class ChatMainWindow(QMainWindow):
         
         # 左侧边栏
         left_panel = QWidget()
-        left_panel.setFixedWidth(260)
-        left_panel.setStyleSheet("background-color: #2E2E2E;")
+        left_panel.setFixedWidth(320)
+        left_panel.setStyleSheet("background-color: white; border-right: 1px solid #E0E0E0;")
         left_layout = QVBoxLayout(left_panel)
         left_layout.setContentsMargins(0, 0, 0, 0)
         left_layout.setSpacing(0)
         
         # 用户信息头部
         user_header = QWidget()
-        user_header.setStyleSheet("background-color: #1E1E1E; padding: 20px;")
+        user_header.setStyleSheet("background-color: #F8F9FA;")
         user_header_layout = QVBoxLayout(user_header)
         user_header_layout.setAlignment(Qt.AlignCenter)
+        user_header_layout.setSpacing(15)
+        user_header_layout.setContentsMargins(20, 30, 20, 30)
         
         # 显示用户头像
         user_avatar_label = QLabel()
-        user_avatar_label.setFixedSize(80, 80)
+        user_avatar_label.setFixedSize(120, 120)
         user_avatar_label.setAlignment(Qt.AlignCenter)
         
         # 加载头像
-        avatar_pixmap = self._load_user_avatar()
+        avatar_pixmap = self._load_user_avatar(120)
         if avatar_pixmap:
             user_avatar_label.setPixmap(avatar_pixmap)
         else:
             user_avatar_label.setText("👤")
-            user_avatar_label.setStyleSheet("font-size: 48px;")
+            user_avatar_label.setStyleSheet("font-size: 72px;")
         
         user_header_layout.addWidget(user_avatar_label, 0, Qt.AlignCenter)
         
         user_name = QLabel(self.username)
-        user_name.setStyleSheet("color: white; font-size: 16px; font-weight: bold;")
+        user_name.setStyleSheet("color: #333; font-size: 22px; font-weight: bold;")
         user_name.setAlignment(Qt.AlignCenter)
         user_header_layout.addWidget(user_name, 0, Qt.AlignCenter)
         
         left_layout.addWidget(user_header)
         
-        # 好友列表标题栏
-        friends_header = QWidget()
-        friends_header.setStyleSheet("background-color: #2E2E2E; padding: 8px;")
-        friends_header_layout = QHBoxLayout(friends_header)
-        friends_header_layout.setContentsMargins(10, 5, 10, 5)
+        # 功能按钮区 - 重新排列为垂直布局
+        btn_widget = QWidget()
+        btn_widget.setStyleSheet("background-color: white; padding: 10px;")
+        btn_layout = QVBoxLayout(btn_widget)
+        btn_layout.setSpacing(8)
         
-        friends_title = QLabel('好友列表')
-        friends_title.setStyleSheet("color: #AAAAAA; font-size: 12px;")
-        friends_header_layout.addWidget(friends_title)
-        
-        refresh_btn = QPushButton('刷新')
-        refresh_btn.setFixedSize(50, 26)
-        refresh_btn.setStyleSheet("""
+        add_friend_btn = QPushButton('➕ 添加好友')
+        add_friend_btn.setStyleSheet("""
             QPushButton {
-                background-color: #3E3E3E;
-                color: #AAAAAA;
+                background-color: #F0F2F5;
+                color: #333;
                 border: none;
-                border-radius: 4px;
-                font-size: 12px;
+                border-radius: 10px;
+                padding: 16px;
+                font-size: 16px;
+                text-align: left;
             }
             QPushButton:hover {
-                background-color: #4E4E4E;
-                color: white;
+                background-color: #E4E6EB;
+            }
+        """)
+        add_friend_btn.clicked.connect(self.show_add_friend_dialog)
+        btn_layout.addWidget(add_friend_btn)
+        
+        friend_req_btn = QPushButton('📨 好友申请')
+        friend_req_btn.setStyleSheet("""
+            QPushButton {
+                background-color: #F0F2F5;
+                color: #333;
+                border: none;
+                border-radius: 10px;
+                padding: 16px;
+                font-size: 16px;
+                text-align: left;
+            }
+            QPushButton:hover {
+                background-color: #E4E6EB;
+            }
+        """)
+        friend_req_btn.clicked.connect(self.show_friend_requests)
+        btn_layout.addWidget(friend_req_btn)
+        
+        profile_btn = QPushButton('👤 个人资料')
+        profile_btn.setStyleSheet("""
+            QPushButton {
+                background-color: #F0F2F5;
+                color: #333;
+                border: none;
+                border-radius: 10px;
+                padding: 16px;
+                font-size: 16px;
+                text-align: left;
+            }
+            QPushButton:hover {
+                background-color: #E4E6EB;
+            }
+        """)
+        profile_btn.clicked.connect(self.show_profile_dialog)
+        btn_layout.addWidget(profile_btn)
+        
+        left_layout.addWidget(btn_widget)
+        
+        # 好友列表标题栏
+        friends_header = QWidget()
+        friends_header.setStyleSheet("background-color: #F8F9FA; padding: 10px;")
+        friends_header_layout = QHBoxLayout(friends_header)
+        friends_header_layout.setContentsMargins(15, 5, 15, 5)
+        
+        friends_title = QLabel('好友列表')
+        friends_title.setStyleSheet("color: #666; font-size: 14px; font-weight: bold;")
+        friends_header_layout.addWidget(friends_title)
+        
+        refresh_btn = QPushButton('🔄')
+        refresh_btn.setFixedSize(32, 32)
+        refresh_btn.setStyleSheet("""
+            QPushButton {
+                background-color: #E4E6EB;
+                color: #333;
+                border: none;
+                border-radius: 16px;
+                font-size: 14px;
+            }
+            QPushButton:hover {
+                background-color: #DADDE1;
             }
         """)
         refresh_btn.clicked.connect(self._load_friends)
@@ -1301,82 +1629,30 @@ class ChatMainWindow(QMainWindow):
         self.friends_list = QListWidget()
         self.friends_list.setStyleSheet("""
             QListWidget {
-                background-color: #2E2E2E;
+                background-color: white;
                 border: none;
-                color: white;
+                color: #333;
             }
             QListWidget::item {
-                padding: 12px 15px;
-                border-bottom: 1px solid #3E3E3E;
+                padding: 15px;
+                border-bottom: 1px solid #F0F0F0;
+                color: #333;
             }
             QListWidget::item:selected {
-                background-color: #3E3E3E;
+                background-color: #E6F7FF;
+                color: #1890FF;
             }
             QListWidget::item:hover {
-                background-color: #383838;
+                background-color: #F8F9FA;
             }
         """)
         self.friends_list.itemDoubleClicked.connect(self._on_friend_selected)
         left_layout.addWidget(self.friends_list)
-        
-        # 功能按钮区
-        btn_widget = QWidget()
-        btn_widget.setStyleSheet("background-color: #1E1E1E; padding: 10px;")
-        btn_layout = QHBoxLayout(btn_widget)
-        btn_layout.setSpacing(10)
-        
-        add_friend_btn = QPushButton('➕ 添加')
-        add_friend_btn.setStyleSheet("""
-            QPushButton {
-                background-color: #3E3E3E;
-                color: white;
-                border: none;
-                border-radius: 4px;
-                padding: 8px 12px;
-                font-size: 12px;
-            }
-            QPushButton:hover { background-color: #4E4E4E; }
-        """)
-        add_friend_btn.clicked.connect(self.show_add_friend_dialog)
-        btn_layout.addWidget(add_friend_btn)
-        
-        friend_req_btn = QPushButton('📨 申请')
-        friend_req_btn.setStyleSheet("""
-            QPushButton {
-                background-color: #3E3E3E;
-                color: white;
-                border: none;
-                border-radius: 4px;
-                padding: 8px 12px;
-                font-size: 12px;
-            }
-            QPushButton:hover { background-color: #4E4E4E; }
-        """)
-        friend_req_btn.clicked.connect(self.show_friend_requests)
-        btn_layout.addWidget(friend_req_btn)
-        
-        # 修改资料按钮
-        profile_btn = QPushButton('👤 资料')
-        profile_btn.setStyleSheet("""
-            QPushButton {
-                background-color: #3E3E3E;
-                color: white;
-                border: none;
-                border-radius: 4px;
-                padding: 8px 12px;
-                font-size: 12px;
-            }
-            QPushButton:hover { background-color: #4E4E4E; }
-        """)
-        profile_btn.clicked.connect(self.show_profile_dialog)
-        btn_layout.addWidget(profile_btn)
-        
-        left_layout.addWidget(btn_widget)
         layout.addWidget(left_panel)
         
         # 右侧聊天区域
         right_panel = QWidget()
-        right_panel.setStyleSheet("background-color: #F5F5F5;")
+        right_panel.setStyleSheet("background-color: white;")
         right_layout = QVBoxLayout(right_panel)
         right_layout.setContentsMargins(0, 0, 0, 0)
         right_layout.setSpacing(0)
@@ -1385,10 +1661,10 @@ class ChatMainWindow(QMainWindow):
         self.chat_title = QLabel('请选择好友开始聊天')
         self.chat_title.setAlignment(Qt.AlignCenter)
         self.chat_title.setStyleSheet("""
-            font-size: 15px;
+            font-size: 18px;
             font-weight: bold;
-            padding: 18px;
-            background-color: white;
+            padding: 20px;
+            background-color: #F8F9FA;
             border-bottom: 1px solid #E0E0E0;
             color: #333;
         """)
@@ -1396,7 +1672,7 @@ class ChatMainWindow(QMainWindow):
         
         # 聊天记录区域
         chat_widget = QWidget()
-        chat_widget.setStyleSheet("background-color: #EFEFEF;")
+        chat_widget.setStyleSheet("background-color: white;")
         chat_layout = QVBoxLayout(chat_widget)
         chat_layout.setContentsMargins(0, 0, 0, 0)
         
@@ -1404,10 +1680,11 @@ class ChatMainWindow(QMainWindow):
         self.chat_history.setReadOnly(True)
         self.chat_history.setStyleSheet("""
             QTextEdit {
-                background-color: #EFEFEF;
+                background-color: white;
                 border: none;
-                padding: 15px;
+                padding: 20px;
                 font-size: 14px;
+                line-height: 1.4;
             }
         """)
         chat_layout.addWidget(self.chat_history)
@@ -1448,15 +1725,15 @@ class ChatMainWindow(QMainWindow):
             QTextEdit {
                 background-color: #F5F5F5;
                 border: 1px solid #E0E0E0;
-                border-radius: 6px;
-                padding: 8px;
-                font-size: 14px;
+                border-radius: 8px;
+                padding: 12px;
+                font-size: 16px;
             }
             QTextEdit:focus {
                 border: 1px solid #1890FF;
             }
         """)
-        self.message_input.setMaximumHeight(70)
+        self.message_input.setMaximumHeight(200)
         input_layout.addWidget(self.message_input)
         
         send_btn_layout = QHBoxLayout()
@@ -1478,7 +1755,7 @@ class ChatMainWindow(QMainWindow):
         layout.addWidget(right_panel)
     
     def _on_friend_selected(self, item):
-        """选择好友开始聊天"""
+        """选择好友开始聊天 - 在主界面显示"""
         friend_text = item.text().strip()
         # 格式: "🟢 username" 或 "⚫ username"
         parts = friend_text.split()
@@ -1874,7 +2151,14 @@ class ChatMainWindow(QMainWindow):
         # 发送消息到服务器
         if self.client and self.client.authenticated:
             self.client.send_chat(self.current_chat_friend, message)
-            self.chat_history.append(f'<div style="text-align: right;"><b>{self.username}:</b> {message}</div>')
+            # 本人发的消息 - 右侧显示，绿色长条椭圆气泡，头像在右侧
+            avatar_base64 = self._get_user_avatar_base64()
+            if avatar_base64:
+                avatar_html = f'<img src="{avatar_base64}" width="50" height="50" style="border-radius: 50%;">'
+            else:
+                initial = self.username[0].upper() if self.username else "?"
+                avatar_html = f'<div style="width: 50px; height: 50px; background-color: #E4E6EB; border-radius: 50%; text-align: center; line-height: 50px; font-size: 22px; color: #666; font-weight: bold; display: inline-block;">{initial}</div>'
+            self.chat_history.append(f'<table border="0" width="100%" cellpadding="0" cellspacing="0" style="margin-bottom: 20px;"><tr><td width="100%" align="right"><table border="0" cellpadding="0" cellspacing="0"><tr><td valign="middle"><div style="background-color: #95EC69; border-radius: 25px; padding: 16px 30px; display: inline-block; min-width: 80px; text-align: center;"><span style="color: black; font-size: 20px; font-weight: bold;">{message}</span></div></td><td width="12"></td><td valign="middle">{avatar_html}</td></tr></table></td></tr></table>')
             self.message_input.clear()
         else:
             QMessageBox.warning(self, '错误', '未连接到服务器')

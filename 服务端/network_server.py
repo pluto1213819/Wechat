@@ -465,12 +465,26 @@ class ClientThread(threading.Thread):
         """处理获取好友列表"""
         friends = self.db.get_friends(self.username)
         
-        # 更新好友在线状态
+        # 更新好友在线状态并处理头像
         online_friends = []
         with self.server.lock:
             for friend in friends:
                 is_online = friend['username'] in self.server.clients
                 friend['status'] = 'online' if is_online else 'offline'
+                
+                # 处理头像数据
+                avatar_path = friend.get('avatar')
+                if avatar_path and os.path.exists(avatar_path):
+                    try:
+                        with open(avatar_path, 'rb') as f:
+                            avatar_data = base64.b64encode(f.read()).decode('utf-8')
+                            friend['avatar_data'] = f"data:image/png;base64,{avatar_data}"
+                    except Exception as e:
+                        logger.error(f"读取好友头像失败: {e}")
+                        friend['avatar_data'] = None
+                else:
+                    friend['avatar_data'] = None
+                
                 online_friends.append(friend)
         
         self._send_message({
@@ -835,6 +849,9 @@ class IMServer:
         self.running = False
         self.clients = {}  # {username: ClientThread}
         self.lock = threading.Lock()
+        
+        # 用户管理窗口引用
+        self.user_manager_window = None
         
         # 支持直接传入数据库实例
         if db:

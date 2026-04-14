@@ -1,0 +1,13 @@
+{
+  "server": {
+    "host": "127.0.0.1",
+    "port": 8000
+  },
+  "database": {
+    "path": "im_database.db"
+  },
+  "logging": {
+    "level": "INFO",
+    "log_file": "server.log"
+  }
+}

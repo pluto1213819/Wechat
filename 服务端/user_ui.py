@@ -9,7 +9,7 @@ from PyQt5.QtWidgets import (
     QCheckBox, QSpinBox, QToolBar, QAction, QFileDialog
 )
 from PyQt5.QtCore import Qt, QSize
-from PyQt5.QtGui import QFont, QColor, QIcon, QPixmap, QPainter, QBrush, QPainterPath
+from PyQt5.QtGui import QFont, QColor, QIcon, QPixmap, QPainter, QBrush, QPainterPath, QPen
 from datetime import datetime
 import logging
 import os
@@ -27,6 +27,12 @@ class UserManagerWindow(QMainWindow):
         self.db = db
         self.init_ui()
         self.load_users()
+        
+        # 添加自动刷新定时器（每5秒刷新一次）
+        from PyQt5.QtCore import QTimer
+        self.refresh_timer = QTimer(self)
+        self.refresh_timer.timeout.connect(self.load_users)
+        self.refresh_timer.start(5000)  # 5秒刷新一次
     
     def init_ui(self):
         self.setWindowTitle("用户管理")
@@ -143,12 +149,28 @@ class UserManagerWindow(QMainWindow):
         self.user_table.setEditTriggers(QTableWidget.NoEditTriggers)
         self.user_table.setSelectionMode(QTableWidget.SingleSelection)
         
+        # 设置表格样式，头像列选中时不变色
+        self.user_table.setStyleSheet("""
+            QTableWidget {
+                border: 1px solid #d9d9d9;
+                background-color: #ffffff;
+                gridline-color: #f0f0f0;
+            }
+            QTableWidget::item:selected {
+                background-color: #e6f7ff;
+                color: #1890ff;
+            }
+            QTableWidget::item:selected QLabel {
+                background-color: transparent;
+            }
+        """)
+        
         # 设置列宽比例 - 更协调的比例
         header = self.user_table.horizontalHeader()
         header.setSectionResizeMode(0, QHeaderView.Fixed)  # ID - 固定宽度
         self.user_table.setColumnWidth(0, 60)
         header.setSectionResizeMode(1, QHeaderView.Fixed)  # 头像 - 固定宽度
-        self.user_table.setColumnWidth(1, 100)
+        self.user_table.setColumnWidth(1, 80)
         header.setSectionResizeMode(2, QHeaderView.Stretch)  # 用户名 - 自动拉伸
         header.setSectionResizeMode(3, QHeaderView.Stretch)  # 密码 - 自动拉伸
         header.setSectionResizeMode(4, QHeaderView.Fixed)  # 状态 - 固定宽度
@@ -157,51 +179,12 @@ class UserManagerWindow(QMainWindow):
         self.user_table.setColumnWidth(5, 80)
         
         # 设置行高
-        self.user_table.verticalHeader().setDefaultSectionSize(70)
+        self.user_table.verticalHeader().setDefaultSectionSize(80)  # 调整行高以容纳头像
         self.user_table.verticalHeader().setVisible(False)
         
         layout.addWidget(self.user_table, 1)
     
-    def _create_default_avatar(self, username):
-        """创建默认头像"""
-        # 根据用户名选择默认头像
-        if username:
-            first_char = username[0].lower()
-            if first_char in 'abcdef':
-                default_avatar = os.path.join('..', '客户端', 'w.webp')
-            else:
-                default_avatar = os.path.join('..', '客户端', 'm.webp')
-        else:
-            default_avatar = os.path.join('..', '客户端', 'm.webp')
-        
-        # 尝试加载默认头像文件
-        if os.path.exists(default_avatar):
-            pixmap = QPixmap(default_avatar)
-            if not pixmap.isNull():
-                pixmap = pixmap.scaled(65, 65, Qt.KeepAspectRatio, Qt.SmoothTransformation)
-                return pixmap
-        
-        # 如果默认头像不存在，创建蓝色圆形头像
-        pixmap = QPixmap(65, 65)
-        pixmap.fill(Qt.transparent)
-        
-        painter = QPainter(pixmap)
-        painter.setRenderHint(QPainter.Antialiasing)
-        
-        # 绘制圆形背景
-        painter.setBrush(QBrush(QColor(24, 144, 255)))
-        painter.setPen(Qt.NoPen)
-        painter.drawEllipse(0, 0, 65, 65)
-        
-        # 绘制首字母
-        painter.setPen(QColor(255, 255, 255))
-        font = QFont("Microsoft YaHei UI", 26, QFont.Bold)
-        painter.setFont(font)
-        initial = username[0].upper() if username else "?"
-        painter.drawText(pixmap.rect(), Qt.AlignCenter, initial)
-        
-        painter.end()
-        return pixmap
+
     
     def load_users(self):
         """加载用户列表"""
@@ -211,6 +194,8 @@ class UserManagerWindow(QMainWindow):
             users = sorted(users, key=lambda x: x.get('id', 0))
             self.user_table.setRowCount(len(users))
             
+
+            
             for row, user in enumerate(users):
                 # ID
                 id_item = QTableWidgetItem(str(user['id']))
@@ -218,25 +203,42 @@ class UserManagerWindow(QMainWindow):
                 self.user_table.setItem(row, 0, id_item)
                 
                 # 头像
-                avatar_item = QTableWidgetItem()
-                avatar_item.setTextAlignment(Qt.AlignCenter)
-                username = user.get('username', '')
-                avatar_path = user.get('avatar', '')
-                
+                avatar_label = QLabel()
+                avatar_label.setAlignment(Qt.AlignCenter)
+                avatar_path = user.get('avatar')
                 if avatar_path and os.path.exists(avatar_path):
                     pixmap = QPixmap(avatar_path)
                     if not pixmap.isNull():
-                        pixmap = pixmap.scaled(65, 65, Qt.KeepAspectRatio, Qt.SmoothTransformation)
-                        avatar_item.setIcon(QIcon(pixmap))
-                        avatar_item.setSizeHint(QSize(65, 65))
+                        # 创建圆形头像
+                        size = 60
+                        rounded_pixmap = QPixmap(size, size)
+                        rounded_pixmap.fill(Qt.transparent)
+                        
+                        painter = QPainter(rounded_pixmap)
+                        painter.setRenderHint(QPainter.Antialiasing)
+                        painter.setRenderHint(QPainter.SmoothPixmapTransform)
+                        
+                        # 创建圆形路径
+                        path = QPainterPath()
+                        path.addEllipse(0, 0, size, size)
+                        painter.setClipPath(path)
+                        
+                        # 缩放并绘制头像
+                        scaled_pixmap = pixmap.scaled(size, size, Qt.KeepAspectRatioByExpanding, Qt.SmoothTransformation)
+                        painter.drawPixmap(0, 0, scaled_pixmap)
+                        painter.end()
+                        
+                        avatar_label.setPixmap(rounded_pixmap)
+                    else:
+                        avatar_label.setText("👤")
+                        avatar_label.setStyleSheet("font-size: 36px;")
                 else:
-                    default_avatar = self._create_default_avatar(username)
-                    avatar_item.setIcon(QIcon(default_avatar))
-                    avatar_item.setSizeHint(QSize(65, 65))
-                
-                self.user_table.setItem(row, 1, avatar_item)
+                    avatar_label.setText("👤")
+                    avatar_label.setStyleSheet("font-size: 36px;")
+                self.user_table.setCellWidget(row, 1, avatar_label)
                 
                 # 用户名
+                username = user.get('username', '')
                 username_item = QTableWidgetItem(username)
                 username_item.setTextAlignment(Qt.AlignCenter)
                 self.user_table.setItem(row, 2, username_item)
@@ -472,7 +474,7 @@ class AddUserDialog(QDialog):
         super().__init__(parent)
         self.avatar_path = ''  # 保存头像路径
         self.setWindowTitle("添加用户")
-        self.setFixedSize(380, 380)
+        self.setFixedSize(380, 420)
         self.init_ui()
     
     def init_ui(self):
@@ -504,6 +506,8 @@ class AddUserDialog(QDialog):
         self.username_edit.setPlaceholderText("请输入用户名（英文和数字）")
         form_layout.addRow("用户名*:", self.username_edit)
         
+        layout.addLayout(form_layout)
+        
         # 头像区域
         avatar_group_box = QGroupBox("头像设置")
         avatar_group_box.setStyleSheet("""
@@ -529,7 +533,7 @@ class AddUserDialog(QDialog):
         current_avatar_layout.addWidget(current_avatar_label)
         
         self.avatar_label = QLabel()
-        self.avatar_label.setFixedSize(50, 50)
+        self.avatar_label.setFixedSize(60, 60)
         self._update_avatar_display()
         current_avatar_layout.addWidget(self.avatar_label)
         current_avatar_layout.addStretch()
@@ -542,14 +546,14 @@ class AddUserDialog(QDialog):
         default_avatar_layout.addWidget(default_avatar_label)
         
         male_avatar_btn = QPushButton()
-        male_avatar_btn.setFixedSize(40, 40)
+        male_avatar_btn.setFixedSize(50, 50)
         male_avatar_btn.setToolTip('男性头像')
         male_avatar_btn.clicked.connect(lambda: self._select_default_avatar('m.webp'))
         self._set_default_avatar_button(male_avatar_btn, 'm.webp')
         default_avatar_layout.addWidget(male_avatar_btn)
         
         female_avatar_btn = QPushButton()
-        female_avatar_btn.setFixedSize(40, 40)
+        female_avatar_btn.setFixedSize(50, 50)
         female_avatar_btn.setToolTip('女性头像')
         female_avatar_btn.clicked.connect(lambda: self._select_default_avatar('w.webp'))
         self._set_default_avatar_button(female_avatar_btn, 'w.webp')
@@ -564,18 +568,21 @@ class AddUserDialog(QDialog):
         layout.addWidget(avatar_group_box)
         
         # 密码
+        form_layout2 = QFormLayout()
+        form_layout2.setSpacing(12)
+        
         self.password_edit = QLineEdit()
         self.password_edit.setPlaceholderText("请输入密码")
         self.password_edit.setEchoMode(QLineEdit.Password)
-        form_layout.addRow("密码*:", self.password_edit)
+        form_layout2.addRow("密码*:", self.password_edit)
         
         # 确认密码
         self.confirm_edit = QLineEdit()
         self.confirm_edit.setPlaceholderText("请确认密码")
         self.confirm_edit.setEchoMode(QLineEdit.Password)
-        form_layout.addRow("确认密码*:", self.confirm_edit)
+        form_layout2.addRow("确认密码*:", self.confirm_edit)
         
-        layout.addLayout(form_layout)
+        layout.addLayout(form_layout2)
         
         # 按钮
         button_box = QDialogButtonBox(QDialogButtonBox.Ok | QDialogButtonBox.Cancel)
@@ -588,13 +595,39 @@ class AddUserDialog(QDialog):
         if self.avatar_path and os.path.exists(self.avatar_path):
             pixmap = QPixmap(self.avatar_path)
             if not pixmap.isNull():
-                pixmap = pixmap.scaled(48, 48, Qt.KeepAspectRatio, Qt.SmoothTransformation)
-                self.avatar_label.setPixmap(pixmap)
+                # 创建圆形头像
+                size = 60
+                rounded_pixmap = QPixmap(size, size)
+                rounded_pixmap.fill(Qt.transparent)
+                
+                painter = QPainter(rounded_pixmap)
+                painter.setRenderHint(QPainter.Antialiasing)
+                painter.setRenderHint(QPainter.SmoothPixmapTransform)
+                
+                # 创建圆形裁剪路径
+                path = QPainterPath()
+                path.addEllipse(0, 0, size, size)
+                painter.setClipPath(path)
+                
+                # 缩放并绘制头像（居中放大）
+                scaled_pixmap = pixmap.scaled(
+                    size, size,
+                    Qt.KeepAspectRatioByExpanding,
+                    Qt.SmoothTransformation
+                )
+                
+                x_offset = (scaled_pixmap.width() - size) // 2
+                y_offset = (scaled_pixmap.height() - size) // 2
+                
+                painter.drawPixmap(-x_offset, -y_offset, scaled_pixmap)
+                painter.end()
+                
+                self.avatar_label.setPixmap(rounded_pixmap)
                 return
         
         # 默认显示👤图标
         self.avatar_label.setText("👤")
-        self.avatar_label.setStyleSheet("font-size: 24px; border: 2px solid #D9D9D9; border-radius: 24px;")
+        self.avatar_label.setStyleSheet("font-size: 30px; border: 2px solid #D9D9D9; border-radius: 30px; background-color: #1890ff; color: white;")
         self.avatar_label.setAlignment(Qt.AlignCenter)
     
     def _set_default_avatar_button(self, button, avatar_file):
@@ -606,7 +639,7 @@ class AddUserDialog(QDialog):
                 pixmap = QPixmap(client_avatar_path)
                 if not pixmap.isNull():
                     # 创建圆形头像
-                    size = 36
+                    size = 46
                     rounded_pixmap = QPixmap(size, size)
                     rounded_pixmap.fill(Qt.transparent)
                     
@@ -619,20 +652,28 @@ class AddUserDialog(QDialog):
                     path.addEllipse(0, 0, size, size)
                     painter.setClipPath(path)
                     
-                    # 缩放并绘制头像
-                    scaled_pixmap = pixmap.scaled(size, size, Qt.KeepAspectRatioByExpanding, Qt.SmoothTransformation)
-                    painter.drawPixmap(0, 0, scaled_pixmap)
+                    # 缩放并绘制头像（居中放大）
+                    scaled_pixmap = pixmap.scaled(
+                        size, size,
+                        Qt.KeepAspectRatioByExpanding,
+                        Qt.SmoothTransformation
+                    )
+                    
+                    x_offset = (scaled_pixmap.width() - size) // 2
+                    y_offset = (scaled_pixmap.height() - size) // 2
+                    
+                    painter.drawPixmap(-x_offset, -y_offset, scaled_pixmap)
                     painter.end()
                     
                     button.setIcon(QIcon(rounded_pixmap))
                     button.setIconSize(QSize(size, size))
-                    button.setStyleSheet("border: 1px solid #D9D9D9; border-radius: 20px;")
+                    button.setStyleSheet("border: 1px solid #D9D9D9; border-radius: 23px;")
                     return
         except Exception as e:
             logger.error(f"设置默认头像按钮失败: {e}")
         
         button.setText('👤' if avatar_file == 'm.webp' else '👩')
-        button.setStyleSheet("font-size: 16px; border: 1px solid #D9D9D9; border-radius: 20px;")
+        button.setStyleSheet("font-size: 20px; border: 1px solid #D9D9D9; border-radius: 23px; background-color: #1890ff; color: white;")
     
     def _select_default_avatar(self, avatar_file):
         """选择默认头像"""
@@ -700,7 +741,7 @@ class EditUserDialog(QDialog):
         self.user_info = user_info or {}
         self.avatar_path = self.user_info.get('avatar', '')
         self.setWindowTitle(f"编辑用户 - {self.user_info.get('username', '')}")
-        self.setFixedSize(350, 300)
+        self.setFixedSize(420, 520)
         self.init_ui()
     
     def init_ui(self):
@@ -721,85 +762,361 @@ class EditUserDialog(QDialog):
         """)
         
         layout = QVBoxLayout(self)
-        layout.setContentsMargins(20, 20, 20, 20)
-        layout.setSpacing(12)
+        layout.setContentsMargins(25, 25, 25, 25)
+        layout.setSpacing(20)
         
-        form_layout = QFormLayout()
-        form_layout.setSpacing(12)
+        # 顶部用户信息卡片
+        user_card = QWidget()
+        user_card.setStyleSheet("""
+            QWidget {
+                background-color: #f8f9fa;
+                border-radius: 8px;
+                border: 1px solid #e8e8e8;
+            }
+        """)
+        user_card_layout = QHBoxLayout(user_card)
+        user_card_layout.setContentsMargins(20, 15, 20, 15)
+        user_card_layout.setSpacing(20)
         
-        # 用户名（只读）
-        username_label = QLabel(self.user_info.get('username', ''))
-        username_label.setStyleSheet("font-weight: bold;")
-        form_layout.addRow("用户名:", username_label)
-        
-        # 头像
-        avatar_layout = QHBoxLayout()
+        # 当前头像（放大显示）
         self.avatar_label = QLabel()
-        self.avatar_label.setFixedSize(48, 48)
+        self.avatar_label.setFixedSize(80, 80)
         self._update_avatar_display()
-        avatar_layout.addWidget(self.avatar_label)
+        user_card_layout.addWidget(self.avatar_label)
         
-        upload_btn = QPushButton("上传头像")
+        # 用户名信息
+        user_info_layout = QVBoxLayout()
+        user_info_layout.setSpacing(8)
+        
+        username_title = QLabel("用户名")
+        username_title.setStyleSheet("color: #666; font-size: 12px; border: none; background: transparent;")
+        user_info_layout.addWidget(username_title)
+        
+        username_value = QLabel(self.user_info.get('username', ''))
+        username_value.setStyleSheet("font-weight: bold; font-size: 18px; color: #333; border: none; background: transparent;")
+        user_info_layout.addWidget(username_value)
+        
+        user_info_layout.addStretch()
+        user_card_layout.addLayout(user_info_layout)
+        user_card_layout.addStretch()
+        
+        layout.addWidget(user_card)
+        
+        # 头像选择区域
+        avatar_section = QWidget()
+        avatar_section_layout = QVBoxLayout(avatar_section)
+        avatar_section_layout.setContentsMargins(0, 0, 0, 0)
+        avatar_section_layout.setSpacing(15)
+        
+        avatar_title = QLabel("选择头像")
+        avatar_title.setStyleSheet("font-weight: bold; font-size: 14px; color: #333;")
+        avatar_section_layout.addWidget(avatar_title)
+        
+        # 头像选项布局
+        avatar_options_layout = QHBoxLayout()
+        avatar_options_layout.setSpacing(20)
+        
+        # 默认头像1（男性）
+        male_btn_layout = QVBoxLayout()
+        male_btn_layout.setSpacing(8)
+        male_btn_layout.setAlignment(Qt.AlignCenter)
+        
+        male_avatar_btn = QPushButton()
+        male_avatar_btn.setFixedSize(60, 60)
+        male_avatar_btn.setToolTip('选择男性默认头像')
+        male_avatar_btn.clicked.connect(lambda: self._select_default_avatar('m.webp'))
+        self._set_default_avatar_button(male_avatar_btn, 'm.webp')
+        male_btn_layout.addWidget(male_avatar_btn, alignment=Qt.AlignCenter)
+        
+        male_label = QLabel("默认1")
+        male_label.setStyleSheet("color: #666; font-size: 11px;")
+        male_label.setAlignment(Qt.AlignCenter)
+        male_btn_layout.addWidget(male_label)
+        
+        avatar_options_layout.addLayout(male_btn_layout)
+        
+        # 默认头像2（女性）
+        female_btn_layout = QVBoxLayout()
+        female_btn_layout.setSpacing(8)
+        female_btn_layout.setAlignment(Qt.AlignCenter)
+        
+        female_avatar_btn = QPushButton()
+        female_avatar_btn.setFixedSize(60, 60)
+        female_avatar_btn.setToolTip('选择女性默认头像')
+        female_avatar_btn.clicked.connect(lambda: self._select_default_avatar('w.webp'))
+        self._set_default_avatar_button(female_avatar_btn, 'w.webp')
+        female_btn_layout.addWidget(female_avatar_btn, alignment=Qt.AlignCenter)
+        
+        female_label = QLabel("默认2")
+        female_label.setStyleSheet("color: #666; font-size: 11px;")
+        female_label.setAlignment(Qt.AlignCenter)
+        female_btn_layout.addWidget(female_label)
+        
+        avatar_options_layout.addLayout(female_btn_layout)
+        
+        # 上传自定义头像
+        upload_btn_layout = QVBoxLayout()
+        upload_btn_layout.setSpacing(8)
+        upload_btn_layout.setAlignment(Qt.AlignCenter)
+        
+        upload_btn = QPushButton("+")
+        upload_btn.setFixedSize(60, 60)
+        upload_btn.setStyleSheet("""
+            QPushButton {
+                font-size: 24px;
+                color: #999;
+                border: 2px dashed #d9d9d9;
+                border-radius: 30px;
+                background-color: #fafafa;
+            }
+            QPushButton:hover {
+                border-color: #1890ff;
+                color: #1890ff;
+                background-color: #e6f7ff;
+            }
+        """)
+        upload_btn.setToolTip('上传自定义头像')
         upload_btn.clicked.connect(self.upload_avatar)
-        avatar_layout.addWidget(upload_btn)
-        avatar_layout.addStretch()
-        form_layout.addRow("头像:", avatar_layout)
+        upload_btn_layout.addWidget(upload_btn, alignment=Qt.AlignCenter)
+        
+        upload_label = QLabel("自定义")
+        upload_label.setStyleSheet("color: #666; font-size: 11px;")
+        upload_label.setAlignment(Qt.AlignCenter)
+        upload_btn_layout.addWidget(upload_label)
+        
+        avatar_options_layout.addLayout(upload_btn_layout)
+        avatar_options_layout.addStretch()
+        
+        avatar_section_layout.addLayout(avatar_options_layout)
+        layout.addWidget(avatar_section)
+        
+        # 分隔线
+        line = QLabel()
+        line.setFixedHeight(1)
+        line.setStyleSheet("background-color: #e8e8e8;")
+        layout.addWidget(line)
+        
+        # 密码设置区域
+        password_section = QWidget()
+        password_layout = QVBoxLayout(password_section)
+        password_layout.setContentsMargins(0, 0, 0, 0)
+        password_layout.setSpacing(15)
+        
+        password_title = QLabel("修改密码")
+        password_title.setStyleSheet("font-weight: bold; font-size: 14px; color: #333;")
+        password_layout.addWidget(password_title)
         
         # 新密码
+        password_form = QFormLayout()
+        password_form.setSpacing(12)
+        password_form.setVerticalSpacing(20)
+        password_form.setLabelAlignment(Qt.AlignLeft)
+        
         self.password_edit = QLineEdit()
         self.password_edit.setPlaceholderText("留空表示不修改密码")
         self.password_edit.setEchoMode(QLineEdit.Password)
-        form_layout.addRow("新密码:", self.password_edit)
+        self.password_edit.setStyleSheet("""
+            QLineEdit {
+                padding: 10px;
+                border: 1px solid #d9d9d9;
+                border-radius: 6px;
+                font-size: 14px;
+                color: #000000;
+                background-color: #ffffff;
+                min-height: 20px;
+            }
+            QLineEdit:focus {
+                border: 2px solid #1890ff;
+                background-color: #ffffff;
+            }
+        """)
+        password_form.addRow("新密码:", self.password_edit)
         
         # 确认密码
         self.confirm_edit = QLineEdit()
         self.confirm_edit.setPlaceholderText("请确认新密码")
         self.confirm_edit.setEchoMode(QLineEdit.Password)
-        form_layout.addRow("确认密码:", self.confirm_edit)
+        self.confirm_edit.setStyleSheet("""
+            QLineEdit {
+                padding: 10px;
+                border: 1px solid #d9d9d9;
+                border-radius: 6px;
+                font-size: 14px;
+                color: #000000;
+                background-color: #ffffff;
+                min-height: 20px;
+            }
+            QLineEdit:focus {
+                border: 2px solid #1890ff;
+                background-color: #ffffff;
+            }
+        """)
+        password_form.addRow("确认密码:", self.confirm_edit)
         
         # 显示密码复选框
         self.show_password_cb = QCheckBox("显示密码")
+        self.show_password_cb.setStyleSheet("color: #666;")
         self.show_password_cb.stateChanged.connect(self.toggle_password_visibility)
-        form_layout.addRow("", self.show_password_cb)
+        password_form.addRow("", self.show_password_cb)
         
-        layout.addLayout(form_layout)
+        password_layout.addLayout(password_form)
+        layout.addWidget(password_section)
         
-        # 按钮
-        button_box = QDialogButtonBox(QDialogButtonBox.Ok | QDialogButtonBox.Cancel)
-        button_box.accepted.connect(self.accept)
-        button_box.rejected.connect(self.reject)
-        layout.addWidget(button_box)
+        layout.addStretch()
+        
+        # 底部按钮
+        button_layout = QHBoxLayout()
+        button_layout.setSpacing(12)
+        
+        cancel_btn = QPushButton("取消")
+        cancel_btn.setStyleSheet("""
+            QPushButton {
+                padding: 10px 30px;
+                border: 1px solid #d9d9d9;
+                border-radius: 6px;
+                background-color: white;
+                color: #333;
+                font-size: 14px;
+            }
+            QPushButton:hover {
+                border-color: #1890ff;
+                color: #1890ff;
+            }
+        """)
+        cancel_btn.clicked.connect(self.reject)
+        button_layout.addWidget(cancel_btn)
+        
+        save_btn = QPushButton("保存")
+        save_btn.setStyleSheet("""
+            QPushButton {
+                padding: 10px 30px;
+                border: none;
+                border-radius: 6px;
+                background-color: #1890ff;
+                color: white;
+                font-size: 14px;
+            }
+            QPushButton:hover {
+                background-color: #40a9ff;
+            }
+        """)
+        save_btn.clicked.connect(self.accept)
+        button_layout.addWidget(save_btn)
+        
+        layout.addLayout(button_layout)
     
     def _update_avatar_display(self):
         """更新头像显示"""
         if self.avatar_path and os.path.exists(self.avatar_path):
             pixmap = QPixmap(self.avatar_path)
             if not pixmap.isNull():
-                pixmap = pixmap.scaled(48, 48, Qt.KeepAspectRatio, Qt.SmoothTransformation)
-                self.avatar_label.setPixmap(pixmap)
+                # 创建圆形头像
+                size = 60
+                rounded_pixmap = QPixmap(size, size)
+                rounded_pixmap.fill(Qt.transparent)
+                
+                painter = QPainter(rounded_pixmap)
+                painter.setRenderHint(QPainter.Antialiasing)
+                painter.setRenderHint(QPainter.SmoothPixmapTransform)
+                
+                # 创建圆形裁剪路径
+                path = QPainterPath()
+                path.addEllipse(0, 0, size, size)
+                painter.setClipPath(path)
+                
+                # 缩放并绘制头像（居中放大）
+                scaled_pixmap = pixmap.scaled(
+                    size, size,
+                    Qt.KeepAspectRatioByExpanding,
+                    Qt.SmoothTransformation
+                )
+                
+                x_offset = (scaled_pixmap.width() - size) // 2
+                y_offset = (scaled_pixmap.height() - size) // 2
+                
+                painter.drawPixmap(-x_offset, -y_offset, scaled_pixmap)
+                painter.end()
+                
+                self.avatar_label.setPixmap(rounded_pixmap)
                 return
         
         # 默认头像
         username = self.user_info.get('username', '?')
-        pixmap = QPixmap(48, 48)
+        size = 60
+        pixmap = QPixmap(size, size)
         pixmap.fill(Qt.transparent)
         painter = QPainter(pixmap)
         painter.setRenderHint(QPainter.Antialiasing)
         painter.setBrush(QBrush(QColor(24, 144, 255)))
         painter.setPen(Qt.NoPen)
-        painter.drawEllipse(0, 0, 48, 48)
+        painter.drawEllipse(0, 0, size, size)
         painter.setPen(QColor(255, 255, 255))
-        font = QFont("Microsoft YaHei UI", 20, QFont.Bold)
+        font = QFont("Microsoft YaHei UI", 25, QFont.Bold)
         painter.setFont(font)
         painter.drawText(pixmap.rect(), Qt.AlignCenter, username[0].upper() if username else "?")
         painter.end()
         self.avatar_label.setPixmap(pixmap)
     
+    def _set_default_avatar_button(self, button, avatar_file):
+        """设置默认头像按钮"""
+        try:
+            # 检查客户端目录中的默认头像
+            client_avatar_path = os.path.join('..', '客户端', avatar_file)
+            if os.path.exists(client_avatar_path):
+                pixmap = QPixmap(client_avatar_path)
+                if not pixmap.isNull():
+                    # 创建圆形头像
+                    size = 46
+                    rounded_pixmap = QPixmap(size, size)
+                    rounded_pixmap.fill(Qt.transparent)
+                    
+                    painter = QPainter(rounded_pixmap)
+                    painter.setRenderHint(QPainter.Antialiasing)
+                    painter.setRenderHint(QPainter.SmoothPixmapTransform)
+                    
+                    # 创建圆形路径
+                    path = QPainterPath()
+                    path.addEllipse(0, 0, size, size)
+                    painter.setClipPath(path)
+                    
+                    # 缩放并绘制头像（居中放大）
+                    scaled_pixmap = pixmap.scaled(
+                        size, size,
+                        Qt.KeepAspectRatioByExpanding,
+                        Qt.SmoothTransformation
+                    )
+                    
+                    x_offset = (scaled_pixmap.width() - size) // 2
+                    y_offset = (scaled_pixmap.height() - size) // 2
+                    
+                    painter.drawPixmap(-x_offset, -y_offset, scaled_pixmap)
+                    painter.end()
+                    
+                    button.setIcon(QIcon(rounded_pixmap))
+                    button.setIconSize(QSize(size, size))
+                    button.setStyleSheet("border: 1px solid #D9D9D9; border-radius: 23px;")
+                    return
+        except Exception as e:
+            logger.error(f"设置默认头像按钮失败: {e}")
+        
+        button.setText('👤' if avatar_file == 'm.webp' else '👩')
+        button.setStyleSheet("font-size: 20px; border: 1px solid #D9D9D9; border-radius: 23px; background-color: #1890ff; color: white;")
+    
+    def _select_default_avatar(self, avatar_file):
+        """选择默认头像"""
+        # 检查客户端目录中的默认头像
+        client_avatar_path = os.path.join('..', '客户端', avatar_file)
+        if os.path.exists(client_avatar_path):
+            self.avatar_path = client_avatar_path
+            self._update_avatar_display()
+        else:
+            QMessageBox.information(self, '提示', f'默认头像文件 {avatar_file} 不存在')
+    
     def upload_avatar(self):
         """上传头像"""
         file_path, _ = QFileDialog.getOpenFileName(
             self, "选择头像", "",
-            "图片文件 (*.png *.jpg *.jpeg *.bmp *.gif)"
+            "图片文件 (*.png *.jpg *.jpeg *.bmp *.gif *.webp)"
         )
         if file_path:
             self.avatar_path = file_path
@@ -860,10 +1177,12 @@ if __name__ == "__main__":
     class MockDatabase:
         def __init__(self):
             self.users = [
-                {'id': 1, 'username': 'admin', 'status': 'offline', 'is_locked': 0, 'avatar': ''},
-                {'id': 2, 'username': 'user1', 'status': 'offline', 'is_locked': 0, 'avatar': ''},
-                {'id': 3, 'username': 'user2', 'status': 'offline', 'is_locked': 0, 'avatar': ''},
-                {'id': 4, 'username': 'test', 'status': 'offline', 'is_locked': 0, 'avatar': ''},
+                {'id': 1, 'username': 'admin', 'password': '123456', 'status': 'offline', 'is_locked': 0, 'avatar': ''},
+                {'id': 2, 'username': 'user1', 'password': '123456', 'status': 'offline', 'is_locked': 0, 'avatar': ''},
+                {'id': 3, 'username': 'user2', 'password': '123456', 'status': 'offline', 'is_locked': 0, 'avatar': ''},
+                {'id': 4, 'username': 'test', 'password': '123456', 'status': 'offline', 'is_locked': 0, 'avatar': ''},
+                {'id': 5, 'username': 'u1', 'password': '123456', 'status': 'offline', 'is_locked': 0, 'avatar': ''},
+                {'id': 6, 'username': 'u2', 'password': '123456', 'status': 'offline', 'is_locked': 0, 'avatar': ''},
             ]
         
         def get_all_users(self):
@@ -875,18 +1194,22 @@ if __name__ == "__main__":
                     return user
             return None
         
-        def create_user(self, username, password):
+        def add_user(self, username, password, avatar=''):
+            for user in self.users:
+                if user['username'] == username:
+                    return {'success': False, 'message': '用户名已存在'}
             new_user = {
                 'id': len(self.users) + 1,
                 'username': username,
+                'password': password,
                 'status': 'offline',
                 'is_locked': 0,
-                'avatar': '',
+                'avatar': avatar,
                 'last_login': None,
                 'created_at': '2024-11-20 10:00:00'
             }
             self.users.append(new_user)
-            return True
+            return {'success': True}
         
         def update_user(self, user_id, **kwargs):
             for user in self.users:
@@ -900,6 +1223,22 @@ if __name__ == "__main__":
             for i, user in enumerate(self.users):
                 if user['id'] == user_id:
                     self.users.pop(i)
+                    return True
+            return False
+        
+        def lock_user_by_id(self, user_id):
+            for user in self.users:
+                if user['id'] == user_id:
+                    user['is_locked'] = 1
+                    user['status'] = 'banned'
+                    return True
+            return False
+        
+        def unlock_user_by_id(self, user_id):
+            for user in self.users:
+                if user['id'] == user_id:
+                    user['is_locked'] = 0
+                    user['status'] = 'offline'
                     return True
             return False
     
