@@ -6,7 +6,8 @@ from PyQt5.QtWidgets import (
     QGroupBox, QFormLayout, QMessageBox,
     QDialog, QDialogButtonBox, QInputDialog,
     QHeaderView, QTabWidget, QGridLayout,
-    QCheckBox, QSpinBox, QToolBar, QAction, QFileDialog
+    QCheckBox, QSpinBox, QToolBar, QAction, QFileDialog,
+    QSizePolicy
 )
 from PyQt5.QtCore import Qt, QSize
 from PyQt5.QtGui import QFont, QColor, QIcon, QPixmap, QPainter, QBrush, QPainterPath, QPen
@@ -907,14 +908,14 @@ class EditUserDialog(QDialog):
         password_layout.addWidget(password_title)
         
         # 新密码
-        password_form = QFormLayout()
-        password_form.setSpacing(12)
-        password_form.setVerticalSpacing(20)
-        password_form.setLabelAlignment(Qt.AlignLeft)
-        
+        password_row1 = QHBoxLayout()
+        password_label1 = QLabel("新密码:")
+        password_label1.setStyleSheet("color: #666;")
+        password_label1.setFixedWidth(80)
         self.password_edit = QLineEdit()
         self.password_edit.setPlaceholderText("留空表示不修改密码")
         self.password_edit.setEchoMode(QLineEdit.Password)
+        self.password_edit.setSizePolicy(QSizePolicy.Expanding, QSizePolicy.Fixed)
         self.password_edit.setStyleSheet("""
             QLineEdit {
                 padding: 10px;
@@ -930,12 +931,24 @@ class EditUserDialog(QDialog):
                 background-color: #ffffff;
             }
         """)
-        password_form.addRow("新密码:", self.password_edit)
+        password_row1.addWidget(password_label1)
+        password_row1.addWidget(self.password_edit, 1)
+        password_layout.addLayout(password_row1)
+        
+        # 间距
+        spacing1 = QWidget()
+        spacing1.setFixedHeight(15)
+        password_layout.addWidget(spacing1)
         
         # 确认密码
+        password_row2 = QHBoxLayout()
+        password_label2 = QLabel("确认密码:")
+        password_label2.setStyleSheet("color: #666;")
+        password_label2.setFixedWidth(80)
         self.confirm_edit = QLineEdit()
         self.confirm_edit.setPlaceholderText("请确认新密码")
         self.confirm_edit.setEchoMode(QLineEdit.Password)
+        self.confirm_edit.setSizePolicy(QSizePolicy.Expanding, QSizePolicy.Fixed)
         self.confirm_edit.setStyleSheet("""
             QLineEdit {
                 padding: 10px;
@@ -951,15 +964,15 @@ class EditUserDialog(QDialog):
                 background-color: #ffffff;
             }
         """)
-        password_form.addRow("确认密码:", self.confirm_edit)
+        password_row2.addWidget(password_label2)
+        password_row2.addWidget(self.confirm_edit, 1)
+        password_layout.addLayout(password_row2)
         
         # 显示密码复选框
         self.show_password_cb = QCheckBox("显示密码")
         self.show_password_cb.setStyleSheet("color: #666;")
         self.show_password_cb.stateChanged.connect(self.toggle_password_visibility)
-        password_form.addRow("", self.show_password_cb)
-        
-        password_layout.addLayout(password_form)
+        password_layout.addWidget(self.show_password_cb)
         layout.addWidget(password_section)
         
         layout.addStretch()

@@ -131,7 +131,7 @@ class ModernButton(QPushButton):
                 background-color: {bg_color};
             }}
             QPushButton:disabled {{
-                background-color: #E0E0E0;
+                background-color: #EEEEF0;
                 color: #BFBFBF;
             }}
         """)
@@ -145,7 +145,7 @@ class LoginDialog(QDialog):
     def __init__(self):
         super().__init__()
         self.setWindowTitle('Nova chatting')
-        self.setFixedSize(440, 620)
+        self.setFixedSize(550, 775)
         self.setWindowFlags(self.windowFlags() & ~Qt.WindowContextHelpButtonHint)
         self.client = None
         self._setup_ui()
@@ -157,7 +157,7 @@ class LoginDialog(QDialog):
         
         # 顶部标题栏
         header_widget = QWidget()
-        header_widget.setFixedHeight(140)
+        header_widget.setFixedHeight(175)
         header_widget.setStyleSheet("""
             background: qlineargradient(x1:0, y1:0, x2:1, y2:1,
                 stop:0 #1a237e, stop:1 #0d47a1);
@@ -169,17 +169,17 @@ class LoginDialog(QDialog):
         # Logo图标
         logo_label = QLabel('💬')
         logo_label.setAlignment(Qt.AlignCenter)
-        logo_label.setStyleSheet("font-size: 48px;")
+        logo_label.setStyleSheet("font-size: 72px;")
         header_layout.addWidget(logo_label)
         
         title_label = QLabel('Nova chatting')
         title_label.setAlignment(Qt.AlignCenter)
-        title_label.setStyleSheet("color: white; font-size: 26px; font-weight: bold; font-family: 'Microsoft YaHei UI';")
+        title_label.setStyleSheet("color: white; font-size: 38px; font-weight: bold; font-family: 'Microsoft YaHei UI';")
         header_layout.addWidget(title_label)
         
         subtitle_label = QLabel('Secure Instant Messaging')
         subtitle_label.setAlignment(Qt.AlignCenter)
-        subtitle_label.setStyleSheet("color: rgba(255,255,255,0.7); font-size: 12px; font-family: 'Segoe UI';")
+        subtitle_label.setStyleSheet("color: rgba(255,255,255,0.7); font-size: 18px; font-weight: bold; font-family: 'Segoe UI';")
         header_layout.addWidget(subtitle_label)
         
         main_layout.addWidget(header_widget)
@@ -188,8 +188,8 @@ class LoginDialog(QDialog):
         form_widget = QWidget()
         form_widget.setStyleSheet("background-color: #FAFAFA;")
         form_layout = QVBoxLayout(form_widget)
-        form_layout.setContentsMargins(35, 25, 35, 15)
-        form_layout.setSpacing(12)
+        form_layout.setContentsMargins(44, 31, 44, 19)
+        form_layout.setSpacing(15)
         
         # 服务器设置区域（可折叠样式）
         server_group = QWidget()
@@ -201,27 +201,28 @@ class LoginDialog(QDialog):
             }
         """)
         server_group_layout = QVBoxLayout(server_group)
-        server_group_layout.setContentsMargins(15, 12, 15, 12)
-        server_group_layout.setSpacing(10)
+        server_group_layout.setContentsMargins(19, 15, 19, 15)
+        server_group_layout.setSpacing(12)
         
         server_title = QLabel('服务器设置')
-        server_title.setStyleSheet("font-size: 13px; color: #666; font-weight: bold; border: none; background: transparent;")
+        server_title.setStyleSheet("font-size: 18px; color: #666; font-weight: bold; border: none; background: transparent;")
         server_group_layout.addWidget(server_title)
         
         server_row = QHBoxLayout()
-        server_row.setSpacing(10)
+        server_row.setSpacing(12)
         
         server_label = QLabel('地址:')
-        server_label.setStyleSheet("font-size: 13px; color: #333; border: none; background: transparent;")
-        server_label.setFixedWidth(40)
+        server_label.setStyleSheet("font-size: 18px; color: #333; font-weight: bold; border: none; background: transparent;")
+        server_label.setFixedWidth(55)
         self.server_input = QLineEdit('127.0.0.1')
         self.server_input.setStyleSheet("""
             QLineEdit {
                 background-color: #F5F5F5;
                 border: 1px solid #E0E0E0;
-                border-radius: 6px;
-                padding: 8px 10px;
-                font-size: 13px;
+                border-radius: 8px;
+                padding: 12px 14px;
+                font-size: 18px;
+                font-weight: bold;
             }
             QLineEdit:focus {
                 border: 2px solid #1a237e;
@@ -232,19 +233,20 @@ class LoginDialog(QDialog):
         server_row.addWidget(self.server_input)
         
         port_label = QLabel('端口:')
-        port_label.setStyleSheet("font-size: 13px; color: #333; border: none; background: transparent;")
-        port_label.setFixedWidth(40)
+        port_label.setStyleSheet("font-size: 18px; color: #333; font-weight: bold; border: none; background: transparent;")
+        port_label.setFixedWidth(55)
         self.port_input = QSpinBox()
         self.port_input.setRange(1, 65535)
         self.port_input.setValue(8000)
-        self.port_input.setFixedWidth(100)
+        self.port_input.setFixedWidth(140)
         self.port_input.setStyleSheet("""
             QSpinBox {
                 background-color: #F5F5F5;
                 border: 1px solid #E0E0E0;
-                border-radius: 6px;
-                padding: 8px 10px;
-                font-size: 13px;
+                border-radius: 8px;
+                padding: 12px 14px;
+                font-size: 18px;
+                font-weight: bold;
             }
             QSpinBox:focus {
                 border: 2px solid #1a237e;
@@ -263,14 +265,14 @@ class LoginDialog(QDialog):
             QWidget {
                 background-color: white;
                 border: 1px solid #E0E0E0;
-                border-radius: 8px;
+                border-radius: 10px;
             }
         """)
         username_layout = QHBoxLayout(username_widget)
-        username_layout.setContentsMargins(15, 12, 15, 12)
+        username_layout.setContentsMargins(19, 15, 19, 15)
         
         user_icon = QLabel('👤')
-        user_icon.setStyleSheet("font-size: 18px; border: none; background: transparent;")
+        user_icon.setStyleSheet("font-size: 26px; border: none; background: transparent;")
         username_layout.addWidget(user_icon)
         
         self.username_input = QLineEdit()
@@ -279,8 +281,9 @@ class LoginDialog(QDialog):
             QLineEdit {
                 background-color: transparent;
                 border: none;
-                padding: 5px;
-                font-size: 14px;
+                padding: 8px;
+                font-size: 20px;
+                font-weight: bold;
             }
         """)
         username_layout.addWidget(self.username_input)
@@ -293,14 +296,14 @@ class LoginDialog(QDialog):
             QWidget {
                 background-color: white;
                 border: 1px solid #E0E0E0;
-                border-radius: 8px;
+                border-radius: 10px;
             }
         """)
         password_layout = QHBoxLayout(password_widget)
-        password_layout.setContentsMargins(15, 12, 15, 12)
+        password_layout.setContentsMargins(19, 15, 19, 15)
         
         pwd_icon = QLabel('🔒')
-        pwd_icon.setStyleSheet("font-size: 18px; border: none; background: transparent;")
+        pwd_icon.setStyleSheet("font-size: 26px; border: none; background: transparent;")
         password_layout.addWidget(pwd_icon)
         
         self.password_input = QLineEdit()
@@ -310,8 +313,9 @@ class LoginDialog(QDialog):
             QLineEdit {
                 background-color: transparent;
                 border: none;
-                padding: 5px;
-                font-size: 14px;
+                padding: 8px;
+                font-size: 20px;
+                font-weight: bold;
             }
         """)
         password_layout.addWidget(self.password_input)
@@ -320,18 +324,19 @@ class LoginDialog(QDialog):
         
         # 复选框区域
         checkbox_layout = QHBoxLayout()
-        checkbox_layout.setSpacing(20)
+        checkbox_layout.setSpacing(25)
         
         self.remember_checkbox = QCheckBox('记住密码')
         self.remember_checkbox.setStyleSheet("""
             QCheckBox {
-                font-size: 12px;
+                font-size: 18px;
                 color: #666;
+                font-weight: bold;
             }
             QCheckBox::indicator {
-                width: 16px;
-                height: 16px;
-                border-radius: 3px;
+                width: 24px;
+                height: 24px;
+                border-radius: 5px;
                 border: 1px solid #D9D9D9;
                 background-color: white;
             }
@@ -344,13 +349,14 @@ class LoginDialog(QDialog):
         self.auto_login_checkbox = QCheckBox('自动登录')
         self.auto_login_checkbox.setStyleSheet("""
             QCheckBox {
-                font-size: 12px;
+                font-size: 18px;
                 color: #666;
+                font-weight: bold;
             }
             QCheckBox::indicator {
-                width: 16px;
-                height: 16px;
-                border-radius: 3px;
+                width: 24px;
+                height: 24px;
+                border-radius: 5px;
                 border: 1px solid #D9D9D9;
                 background-color: white;
             }
@@ -374,9 +380,9 @@ class LoginDialog(QDialog):
                     stop:0 #1a237e, stop:1 #0d47a1);
                 color: white;
                 border: none;
-                border-radius: 8px;
-                padding: 14px;
-                font-size: 15px;
+                border-radius: 12px;
+                padding: 20px;
+                font-size: 22px;
                 font-weight: bold;
             }
             QPushButton:hover {
@@ -396,7 +402,7 @@ class LoginDialog(QDialog):
         
         # 底部按钮区域
         bottom_btn_layout = QHBoxLayout()
-        bottom_btn_layout.setSpacing(15)
+        bottom_btn_layout.setSpacing(22)
         
         self.register_btn = QPushButton('注册账号')
         self.register_btn.setCursor(Qt.PointingHandCursor)
@@ -405,9 +411,10 @@ class LoginDialog(QDialog):
                 background-color: transparent;
                 color: #52C41A;
                 border: 1px solid #52C41A;
-                border-radius: 6px;
-                padding: 10px;
-                font-size: 13px;
+                border-radius: 10px;
+                padding: 15px;
+                font-size: 19px;
+                font-weight: bold;
             }
             QPushButton:hover {
                 background-color: #F6FFED;
@@ -423,9 +430,10 @@ class LoginDialog(QDialog):
                 background-color: transparent;
                 color: #FA8C16;
                 border: 1px solid #FA8C16;
-                border-radius: 6px;
-                padding: 10px;
-                font-size: 13px;
+                border-radius: 10px;
+                padding: 15px;
+                font-size: 19px;
+                font-weight: bold;
             }
             QPushButton:hover {
                 background-color: #FFF7E6;
@@ -435,14 +443,16 @@ class LoginDialog(QDialog):
         bottom_btn_layout.addWidget(self.forgot_btn)
         
         form_layout.addLayout(bottom_btn_layout)
-        form_layout.addStretch()
         
         main_layout.addWidget(form_widget)
+        
+        # 添加弹性空间让按钮填充下方空白
+        main_layout.addStretch(1)
         
         # 状态标签
         self.status_label = QLabel('')
         self.status_label.setAlignment(Qt.AlignCenter)
-        self.status_label.setStyleSheet("color: #999; font-size: 11px; padding: 8px; background-color: #FAFAFA;")
+        self.status_label.setStyleSheet("color: #999; font-size: 14px; padding: 10px; background-color: #FAFAFA;")
         main_layout.addWidget(self.status_label)
     
     def do_login(self):
@@ -520,7 +530,7 @@ class RegisterDialog(QDialog):
         self.captcha_question = ''
         self.captcha_answer = ''
         self.setWindowTitle('用户注册')
-        self.setFixedSize(450, 680)
+        self.setFixedSize(550, 850)
         self._setup_ui()
     
     def _setup_ui(self):
@@ -529,16 +539,17 @@ class RegisterDialog(QDialog):
                 background-color: #F5F5F5;
             }
             QLabel {
-                font-size: 14px;
+                font-size: 18px;
                 color: #333;
                 font-weight: bold;
             }
             QLineEdit {
                 background-color: white;
                 border: 1px solid #D9D9D9;
-                border-radius: 4px;
-                padding: 8px 12px;
-                font-size: 14px;
+                border-radius: 6px;
+                padding: 12px 16px;
+                font-size: 18px;
+                font-weight: bold;
             }
             QLineEdit:focus {
                 border: 2px solid #1890FF;
@@ -546,19 +557,19 @@ class RegisterDialog(QDialog):
         """)
         
         layout = QVBoxLayout(self)
-        layout.setContentsMargins(30, 30, 30, 30)
-        layout.setSpacing(15)
+        layout.setContentsMargins(40, 40, 40, 40)
+        layout.setSpacing(20)
         
         # 标题
         title = QLabel('用户注册')
         title.setAlignment(Qt.AlignCenter)
-        title.setStyleSheet("font-size: 20px; font-weight: bold; color: #1890FF; margin-bottom: 10px;")
+        title.setStyleSheet("font-size: 28px; font-weight: bold; color: #1890FF; margin-bottom: 15px;")
         layout.addWidget(title)
         
         # 服务器信息
         server_info = QLabel(f'服务器: {self.server_addr}:{self.port}')
         server_info.setAlignment(Qt.AlignCenter)
-        server_info.setStyleSheet("font-size: 12px; color: #666; font-weight: normal; margin-bottom: 10px;")
+        server_info.setStyleSheet("font-size: 16px; color: #666; font-weight: bold; margin-bottom: 15px;")
         layout.addWidget(server_info)
         
         # 头像选择区域
@@ -566,15 +577,16 @@ class RegisterDialog(QDialog):
         avatar_group.setStyleSheet("""
             QGroupBox {
                 font-weight: bold;
+                font-size: 20px;
                 border: 1px solid #D9D9D9;
-                border-radius: 4px;
-                margin-top: 10px;
-                padding-top: 10px;
+                border-radius: 6px;
+                margin-top: 15px;
+                padding-top: 15px;
             }
             QGroupBox::title {
                 subcontrol-origin: margin;
-                left: 10px;
-                padding: 0 5px;
+                left: 15px;
+                padding: 0 8px;
             }
         """)
         avatar_main_layout = QVBoxLayout(avatar_group)
@@ -582,13 +594,13 @@ class RegisterDialog(QDialog):
         # 当前头像显示
         current_avatar_layout = QHBoxLayout()
         current_avatar_label = QLabel('当前头像:')
-        current_avatar_label.setStyleSheet("font-weight: normal; color: #666;")
+        current_avatar_label.setStyleSheet("font-weight: bold; color: #666; font-size: 18px;")
         current_avatar_layout.addWidget(current_avatar_label)
         
         self.avatar_label = QLabel()
-        self.avatar_label.setFixedSize(60, 60)
+        self.avatar_label.setFixedSize(80, 80)
         self.avatar_label.setAlignment(Qt.AlignCenter)
-        self.avatar_label.setStyleSheet("border: 2px solid #D9D9D9; border-radius: 30px;")
+        self.avatar_label.setStyleSheet("border: 2px solid #D9D9D9; border-radius: 40px;")
         self._update_avatar_display()
         current_avatar_layout.addWidget(self.avatar_label)
         current_avatar_layout.addStretch()
@@ -597,21 +609,24 @@ class RegisterDialog(QDialog):
         # 默认头像选择
         default_avatar_layout = QHBoxLayout()
         default_avatar_label = QLabel('默认头像:')
-        default_avatar_label.setStyleSheet("font-weight: normal; color: #666;")
+        default_avatar_label.setStyleSheet("font-weight: bold; color: #666; font-size: 18px;")
         default_avatar_layout.addWidget(default_avatar_label)
         
+        # 获取客户端目录路径
+        self.client_dir = os.path.dirname(os.path.abspath(__file__))
+        
         male_avatar_btn = QPushButton()
-        male_avatar_btn.setFixedSize(45, 45)
+        male_avatar_btn.setFixedSize(55, 55)
         male_avatar_btn.setToolTip('男性头像')
-        male_avatar_btn.clicked.connect(lambda: self._select_default_avatar('m.webp'))
-        self._set_default_avatar_button(male_avatar_btn, 'm.webp')
+        male_avatar_btn.clicked.connect(lambda: self._select_default_avatar(os.path.join(self.client_dir, 'm.webp')))
+        self._set_default_avatar_button(male_avatar_btn, os.path.join(self.client_dir, 'm.webp'))
         default_avatar_layout.addWidget(male_avatar_btn)
         
         female_avatar_btn = QPushButton()
-        female_avatar_btn.setFixedSize(45, 45)
+        female_avatar_btn.setFixedSize(55, 55)
         female_avatar_btn.setToolTip('女性头像')
-        female_avatar_btn.clicked.connect(lambda: self._select_default_avatar('w.webp'))
-        self._set_default_avatar_button(female_avatar_btn, 'w.webp')
+        female_avatar_btn.clicked.connect(lambda: self._select_default_avatar(os.path.join(self.client_dir, 'w.webp')))
+        self._set_default_avatar_button(female_avatar_btn, os.path.join(self.client_dir, 'w.webp'))
         default_avatar_layout.addWidget(female_avatar_btn)
         
         # 上传按钮
@@ -626,7 +641,8 @@ class RegisterDialog(QDialog):
         
         # 表单
         form_layout = QFormLayout()
-        form_layout.setSpacing(12)
+        form_layout.setSpacing(16)
+        form_layout.setVerticalSpacing(20)
         
         self.username_input = QLineEdit()
         self.username_input.setPlaceholderText('请输入用户名（英文和数字）')
@@ -654,9 +670,9 @@ class RegisterDialog(QDialog):
             QLabel {
                 background-color: #F0F0F0;
                 border: 1px solid #D9D9D9;
-                border-radius: 4px;
-                padding: 8px 12px;
-                font-size: 14px;
+                border-radius: 6px;
+                padding: 12px 16px;
+                font-size: 20px;
                 font-weight: bold;
                 color: #1890FF;
             }
@@ -664,14 +680,14 @@ class RegisterDialog(QDialog):
         captcha_layout.addWidget(self.captcha_label)
         
         refresh_btn = QPushButton('🔄')
-        refresh_btn.setFixedSize(35, 35)
+        refresh_btn.setFixedSize(45, 45)
         refresh_btn.setToolTip('刷新验证码')
         refresh_btn.setStyleSheet("""
             QPushButton {
                 background-color: white;
                 border: 1px solid #D9D9D9;
-                border-radius: 4px;
-                font-size: 16px;
+                border-radius: 6px;
+                font-size: 20px;
             }
             QPushButton:hover {
                 background-color: #F5F5F5;
@@ -689,11 +705,12 @@ class RegisterDialog(QDialog):
         
         # 状态标签
         self.status_label = QLabel('')
-        self.status_label.setStyleSheet("color: #666; font-size: 12px; font-weight: normal;")
+        self.status_label.setStyleSheet("color: #666; font-size: 16px; font-weight: bold;")
         layout.addWidget(self.status_label)
         
         # 按钮
         btn_layout = QHBoxLayout()
+        btn_layout.setSpacing(20)
         self.register_btn = ModernButton('注 册', 'success')
         self.register_btn.clicked.connect(self.do_register)
         cancel_btn = ModernButton('取 消', 'default')
@@ -853,7 +870,7 @@ class ForgotPasswordDialog(QDialog):
         self.captcha_question = ''
         self.captcha_answer = ''
         self.setWindowTitle('找回密码')
-        self.setFixedSize(450, 400)
+        self.setFixedSize(550, 500)
         self._setup_ui()
     
     def _setup_ui(self):
@@ -862,16 +879,17 @@ class ForgotPasswordDialog(QDialog):
                 background-color: #F5F5F5;
             }
             QLabel {
-                font-size: 14px;
+                font-size: 18px;
                 color: #333;
                 font-weight: bold;
             }
             QLineEdit {
                 background-color: white;
                 border: 1px solid #D9D9D9;
-                border-radius: 4px;
-                padding: 8px 12px;
-                font-size: 14px;
+                border-radius: 6px;
+                padding: 12px 16px;
+                font-size: 18px;
+                font-weight: bold;
             }
             QLineEdit:focus {
                 border: 2px solid #1890FF;
@@ -879,19 +897,19 @@ class ForgotPasswordDialog(QDialog):
         """)
         
         layout = QVBoxLayout(self)
-        layout.setContentsMargins(30, 30, 30, 30)
-        layout.setSpacing(15)
+        layout.setContentsMargins(40, 40, 40, 40)
+        layout.setSpacing(20)
         
         # 标题
         title = QLabel('找回密码')
         title.setAlignment(Qt.AlignCenter)
-        title.setStyleSheet("font-size: 20px; font-weight: bold; color: #FA8C16; margin-bottom: 20px;")
+        title.setStyleSheet("font-size: 28px; font-weight: bold; color: #FA8C16; margin-bottom: 25px;")
         layout.addWidget(title)
         
         # 说明
         info = QLabel('请输入您的用户名，我们将帮您找回密码')
         info.setAlignment(Qt.AlignCenter)
-        info.setStyleSheet("font-size: 13px; color: #666; font-weight: normal;")
+        info.setStyleSheet("font-size: 16px; color: #666; font-weight: bold;")
         info.setWordWrap(True)
         layout.addWidget(info)
         
@@ -914,9 +932,9 @@ class ForgotPasswordDialog(QDialog):
             QLabel {
                 background-color: #F0F0F0;
                 border: 1px solid #D9D9D9;
-                border-radius: 4px;
-                padding: 8px 12px;
-                font-size: 14px;
+                border-radius: 6px;
+                padding: 12px 16px;
+                font-size: 20px;
                 font-weight: bold;
                 color: #1890FF;
             }
@@ -924,14 +942,14 @@ class ForgotPasswordDialog(QDialog):
         captcha_layout.addWidget(self.captcha_label)
         
         refresh_btn = QPushButton('🔄')
-        refresh_btn.setFixedSize(35, 35)
+        refresh_btn.setFixedSize(45, 45)
         refresh_btn.setToolTip('刷新验证码')
         refresh_btn.setStyleSheet("""
             QPushButton {
                 background-color: white;
                 border: 1px solid #D9D9D9;
-                border-radius: 4px;
-                font-size: 16px;
+                border-radius: 6px;
+                font-size: 20px;
             }
             QPushButton:hover {
                 background-color: #F5F5F5;
@@ -947,6 +965,7 @@ class ForgotPasswordDialog(QDialog):
         
         # 按钮
         btn_layout = QHBoxLayout()
+        btn_layout.setSpacing(20)
         submit_btn = ModernButton('提 交', 'warning')
         submit_btn.clicked.connect(self.do_submit)
         cancel_btn = ModernButton('取 消', 'default')
@@ -1025,7 +1044,7 @@ class ChatWindow(QMainWindow):
                 if self.friend_username == from_user:
                     messages_to_remove.append(i)
                     # 对方发的消息 - 左侧显示，灰色气泡
-                    self.chat_history.append(f'<div style="margin: 10px 0; display: flex; align-items: flex-start;"><img src="data:image/svg+xml;utf8,<svg xmlns=\\"http://www.w3.org/2000/svg\\" width=\\"40\\" height=\\"40\\" viewBox=\\"0 0 40 40\\"><circle cx=\\"20\\" cy=\\"20\\" r=\\"20\\" fill=\\"#E4E6EB\\"/><text x=\\"20\\" y=\\"25\\" font-size=\\"20\\" text-anchor=\\"middle\\" fill=\\"#666\\">{from_user[0].upper()}</text></svg>" style="width: 40px; height: 40px; border-radius: 20px; margin-right: 10px;"><div style="background-color: #F0F2F5; border-radius: 18px; padding: 12px 16px; max-width: 70%;"><p style="margin: 0; color: #333;">{content}</p></div></div>')
+                    self.chat_history.append(f'<div style="margin: 10px 0; display: flex; align-items: flex-start;"><img src="data:image/svg+xml;utf8,<svg xmlns=\\"http://www.w3.org/2000/svg\\" width=\\"40\\" height=\\"40\\" viewBox=\\"0 0 40 40\\"><circle cx=\\"20\\" cy=\\"20\\" r=\\"20\\" fill=\\"#E4E6EB\\"/><text x=\\"20\\" y=\\"25\\" font-size=\\"20\\" text-anchor=\\"middle\\" fill=\\"#666\\">{from_user[0].upper()}</text></svg>" style="width: 40px; height: 40px; border-radius: 20px; margin-right: 10px;"><div style="background-color: #EEEEF0; border-radius: 18px; padding: 12px 16px; max-width: 70%;"><p style="margin: 0; color: #333;">{content}</p></div></div>')
             
             elif msg_type == 'file_transfer_request':
                 from_username = msg.get('from_username')
@@ -1542,7 +1561,7 @@ class ChatMainWindow(QMainWindow):
         add_friend_btn = QPushButton('➕ 添加好友')
         add_friend_btn.setStyleSheet("""
             QPushButton {
-                background-color: #F0F2F5;
+                background-color: #EEEEF0;
                 color: #333;
                 border: none;
                 border-radius: 10px;
@@ -1560,7 +1579,7 @@ class ChatMainWindow(QMainWindow):
         friend_req_btn = QPushButton('📨 好友申请')
         friend_req_btn.setStyleSheet("""
             QPushButton {
-                background-color: #F0F2F5;
+                background-color: #EEEEF0;
                 color: #333;
                 border: none;
                 border-radius: 10px;
@@ -1578,7 +1597,7 @@ class ChatMainWindow(QMainWindow):
         profile_btn = QPushButton('👤 个人资料')
         profile_btn.setStyleSheet("""
             QPushButton {
-                background-color: #F0F2F5;
+                background-color: #EEEEF0;
                 color: #333;
                 border: none;
                 border-radius: 10px;

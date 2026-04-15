@@ -213,37 +213,53 @@ class ClientThread(threading.Thread):
         security_answer = msg_data.get('security_answer', '')
         avatar = msg_data.get('avatar', '')
         
+        logger.info(f"[注册请求] 用户名: {username}")
+        
         if not username or not password:
-            self._send_message({
-                'type': 'register_response',
-                'success': False,
-                'message': '用户名和密码不能为空'
-            })
+            self._send_register_response(False, '用户名和密码不能为空')
             return
         
         if len(username) < 3 or len(username) > 20:
-            self._send_message({
-                'type': 'register_response',
-                'success': False,
-                'message': '用户名长度必须在3-20个字符之间'
-            })
+            self._send_register_response(False, '用户名长度必须在3-20个字符之间')
             return
         
         if len(password) < 6:
-            self._send_message({
-                'type': 'register_response',
-                'success': False,
-                'message': '密码长度至少6个字符'
-            })
+            self._send_register_response(False, '密码长度至少6个字符')
             return
         
         result = self.db.add_user(username, password, nickname, security_question, security_answer, avatar)
         
-        self._send_message({
+        logger.info(f"[注册结果] 用户名: {username}, 成功: {result['success']}, 消息: {result['message']}")
+        
+        # 统一使用 _send_register_response 发送响应
+        self._send_register_response(result['success'], result['message'])
+    
+    def _send_register_response(self, success, message):
+        """发送注册响应并关闭连接"""
+        response = {
             'type': 'register_response',
-            'success': result['success'],
-            'message': result['message']
-        })
+            'success': success,
+            'message': message
+        }
+        
+        try:
+            import json
+            import struct
+            msg_json = json.dumps(response, ensure_ascii=False).encode('utf-8')
+            msg_len = struct.pack('!I', len(msg_json))
+            
+            # 先发送数据
+            self.client_socket.sendall(msg_len + msg_json)
+            logger.info(f"[注册响应] 已发送: {message}, 数据长度: {len(msg_json)}")
+            
+            # 使用 shutdown 确保数据完全发送
+            self.client_socket.shutdown(socket.SHUT_WR)
+            logger.info("[注册响应] Socket shutdown 完成")
+            
+        except Exception as e:
+            logger.error(f"[注册响应] 发送失败: {e}")
+        
+        self.running = False
     
     def _handle_reset_password(self, msg_data):
         """处理密码重置"""
@@ -833,7 +849,13 @@ class ClientThread(threading.Thread):
                 if hasattr(self.server, 'client_disconnected'):
                     self.server.client_disconnected(self.username)
             
-            self.client_socket.close()
+            # 安全关闭 socket
+            try:
+                if self.client_socket and not getattr(self.client_socket, '_closed', False):
+                    self.client_socket.close()
+            except:
+                pass
+                
         except Exception as e:
             logger.error(f"清理资源时出错: {e}")
 

@@ -151,28 +151,55 @@ class NetworkClient:
             if not self.send_message(msg):
                 return {'success': False, 'message': '发送注册请求失败'}
             
-            # 直接接收响应（不使用消息队列）
-            for _ in range(10):
-                try:
-                    raw_len = self._recvall(4)
-                    if raw_len:
-                        msg_len = struct.unpack('!I', raw_len)[0]
-                        json_data = self._recvall(msg_len)
-                        if json_data:
-                            response = json.loads(json_data.decode('utf-8'))
-                            if response.get('type') == 'register_response':
-                                return {
-                                    'success': response.get('success', False),
-                                    'message': response.get('message', '')
-                                }
-                except Exception as e:
-                    logger.error(f"接收注册响应异常: {e}")
-                    break
-                time.sleep(0.3)
+            logger.info("注册请求已发送，等待响应...")
             
-            return {'success': False, 'message': '注册超时'}
+            # 设置接收超时
+            self.socket.settimeout(10)
+            
+            try:
+                # 接收数据长度
+                raw_len = self.socket.recv(4)
+                if not raw_len or len(raw_len) < 4:
+                    logger.error(f"接收长度失败: raw_len={raw_len}")
+                    return {'success': False, 'message': '接收数据长度失败'}
+                
+                msg_len = struct.unpack('!I', raw_len)[0]
+                logger.info(f"接收到消息长度: {msg_len}")
+                
+                # 接收消息内容
+                json_data = b''
+                while len(json_data) < msg_len:
+                    chunk = self.socket.recv(msg_len - len(json_data))
+                    if not chunk:
+                        logger.error(f"接收数据中断: 已接收 {len(json_data)}/{msg_len}")
+                        return {'success': False, 'message': '接收数据中断'}
+                    json_data += chunk
+                
+                logger.info(f"接收到完整数据: {len(json_data)} 字节")
+                
+                response = json.loads(json_data.decode('utf-8'))
+                logger.info(f"解析响应: {response}")
+                
+                if response.get('type') == 'register_response':
+                    return {
+                        'success': response.get('success', False),
+                        'message': response.get('message', '')
+                    }
+                else:
+                    return {'success': False, 'message': f"收到非注册响应: {response.get('type')}"}
+                    
+            except socket.timeout:
+                logger.error("接收响应超时")
+                return {'success': False, 'message': '注册超时，服务器未响应'}
+            except Exception as e:
+                logger.error(f"接收响应异常: {e}")
+                return {'success': False, 'message': f'接收响应异常: {str(e)}'}
+            finally:
+                # 恢复阻塞模式
+                self.socket.settimeout(None)
             
         except Exception as e:
+            logger.error(f"注册异常: {e}")
             return {'success': False, 'message': f'注册异常: {str(e)}'}
     
     def _recvall(self, n):
